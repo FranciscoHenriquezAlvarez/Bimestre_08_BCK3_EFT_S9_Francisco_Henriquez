@@ -1,0 +1,11 @@
+EVIDENCIA: Retiro ATM
+FECHA: 2026-10-05T16:54:19-03:00
+OBJETIVO: Publicar monto válido por Kafka
+COMANDO: POST /api/bff/atm/accounts/$ACCOUNT_ID/withdraw; amount=10000
+
+RESULTADO REAL:
+Cuenta: 102
+HTTP status: 202
+{"transactionId":"2bf0e66c-fa42-427d-8819-939b14b6ede1","status":"PENDING"}
+TRANSACTION_ID=2bf0e66c-fa42-427d-8819-939b14b6ede1
+RESULTADO: PASS

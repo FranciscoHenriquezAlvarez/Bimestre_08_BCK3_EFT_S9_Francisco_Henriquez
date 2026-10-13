@@ -1,0 +1,54 @@
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       4.0Gi       208Mi        21Mi       3.7Gi       3.6Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /
+=== ESTADO DE TODOS LOS SERVICIOS ===
+
+POSTGRES: 1/1
+  etf_s9-postgres-1: running, healthy
+
+KAFKA: 1/1
+  etf_s9-kafka-1: running, healthy
+
+CONFIG-SERVER: 1/1
+  etf_s9-config-server-1: running, healthy
+
+EUREKA-SERVER: 1/1
+  etf_s9-eureka-server-1: running, healthy
+
+AUTHORIZATION-SERVER: 1/1
+  etf_s9-authorization-server-1: running, healthy
+
+BATCH-INIT: 1/1
+  etf_s9-batch-init-1: exited, EXIT_CODE=0
+
+CUSTOMER-SERVICE: 2/2
+  etf_s9-customer-service-1: running, healthy
+  etf_s9-customer-service-2: running, healthy
+
+CORE-BANKING-SERVICE: 2/2
+  etf_s9-core-banking-service-1: running, healthy
+  etf_s9-core-banking-service-2: running, healthy
+
+PAYMENT-SERVICE: 2/2
+  etf_s9-payment-service-1: running, healthy
+  etf_s9-payment-service-2: running, healthy
+
+BFF-WEB-SERVICE: 1/1
+  etf_s9-bff-web-service-1: running, healthy
+
+BFF-MOBILE-SERVICE: 1/1
+  etf_s9-bff-mobile-service-1: running, healthy
+
+BFF-ATM-SERVICE: 1/1
+  etf_s9-bff-atm-service-1: running, healthy
+
+=== RESUMEN FINAL ===
+CONTENEDORES PERMANENTES SALUDABLES: 14/14
+REPLICAS BANCARIAS ESPERADAS: 6
+TOTAL CONTENEDORES EFT: 15/15
+
+=== RECURSOS AWS ===
+
+VERIFICACION INTEGRAL AWS COMPLETADA

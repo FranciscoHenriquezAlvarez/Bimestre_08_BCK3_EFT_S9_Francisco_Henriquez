@@ -1,0 +1,15 @@
+Usuario: webuser / ROLE_WEB
+Endpoint: GET /api/bff/web/accounts/104
+
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 27 Sep 2026 19:55:39 GMT
+
+{"accountId":104,"accountName":"Bob Johnson","accountType":"prestamo","initialBalance":10000.00,"interestRate":0.0200,"calculatedInterest":200.00,"finalBalance":10200.00}

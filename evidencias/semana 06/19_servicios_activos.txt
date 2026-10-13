@@ -1,0 +1,8 @@
+Puertos y procesos activos durante la prueba:
+
+LISTEN 0      100                 *:8761             *:*    users:(("java",pid=61091,fd=9))      
+LISTEN 0      100                 *:8888             *:*    users:(("java",pid=60959,fd=9))      
+LISTEN 0      100                 *:8084             *:*    users:(("java",pid=62673,fd=11))     
+LISTEN 0      100                 *:8083             *:*    users:(("java",pid=62515,fd=11))     
+LISTEN 0      100                 *:8082             *:*    users:(("java",pid=62367,fd=11))     
+LISTEN 0      100                 *:8081             *:*    users:(("java",pid=63158,fd=21))     

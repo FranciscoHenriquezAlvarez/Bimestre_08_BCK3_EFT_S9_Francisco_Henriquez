@@ -1,0 +1,4 @@
+=== JWT ATM ===
+POST /auth/login con atmuser
+{"accessToken": "eyJhbGciOiJIUzM4...[JWT oculto]", "tokenType": "Bearer", "role": "ATM"}
+Longitudes de tokens en memoria: ATM=172, WEB=172, MOBILE=180

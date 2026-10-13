@@ -1,0 +1,173 @@
+EVIDENCIA: Reset y arranque
+FECHA: 2026-10-05T16:43:31-03:00
+OBJETIVO: Reproducir desde cero
+COMANDO: docker compose down -v --remove-orphans; docker compose up -d
+
+RESULTADO REAL:
+ Container proyecto-bff-web-service-1 Stopping 
+ Container proyecto-bff-atm-service-1 Stopping 
+ Container proyecto-bff-mobile-service-1 Stopping 
+ Container proyecto-bff-mobile-service-1 Stopped 
+ Container proyecto-bff-mobile-service-1 Removing 
+ Container proyecto-bff-web-service-1 Stopped 
+ Container proyecto-bff-web-service-1 Removing 
+ Container proyecto-bff-mobile-service-1 Removed 
+ Container proyecto-bff-atm-service-1 Stopped 
+ Container proyecto-bff-atm-service-1 Removing 
+ Container proyecto-bff-web-service-1 Removed 
+ Container proyecto-bff-atm-service-1 Removed 
+ Container proyecto-core-banking-service-1 Stopping 
+ Container proyecto-core-banking-service-1 Stopped 
+ Container proyecto-core-banking-service-1 Removing 
+ Container proyecto-core-banking-service-1 Removed 
+ Container proyecto-batch-init-1 Stopping 
+ Container proyecto-batch-init-1 Stopped 
+ Container proyecto-batch-init-1 Removing 
+ Container proyecto-batch-init-1 Removed 
+ Container proyecto-eureka-server-1 Stopping 
+ Container proyecto-authorization-server-1 Stopping 
+ Container banco-xyz-kafka Stopping 
+ Container proyecto-authorization-server-1 Stopped 
+ Container proyecto-authorization-server-1 Removing 
+ Container proyecto-authorization-server-1 Removed 
+ Container proyecto-eureka-server-1 Stopped 
+ Container proyecto-eureka-server-1 Removing 
+ Container proyecto-eureka-server-1 Removed 
+ Container proyecto-config-server-1 Stopping 
+ Container proyecto-config-server-1 Stopped 
+ Container proyecto-config-server-1 Removing 
+ Container proyecto-config-server-1 Removed 
+ Container banco-xyz-postgres Stopping 
+ Container banco-xyz-kafka Stopped 
+ Container banco-xyz-kafka Removing 
+ Container banco-xyz-kafka Removed 
+ Container banco-xyz-postgres Stopped 
+ Container banco-xyz-postgres Removing 
+ Container banco-xyz-postgres Removed 
+ Volume proyecto_postgres_data Removing 
+ Network proyecto_default Removing 
+ Volume proyecto_postgres_data Removed 
+ Network proyecto_default Removed 
+ Network proyecto_default Creating 
+ Network proyecto_default Creating 
+ Volume proyecto_postgres_data Creating 
+ Volume proyecto_postgres_data Creating 
+ Volume proyecto_postgres_data Created 
+ Volume proyecto_postgres_data Created 
+ Network proyecto_default Created 
+ Network proyecto_default Created 
+ Container banco-xyz-postgres Creating 
+ Container proyecto-authorization-server-1 Creating 
+ Container banco-xyz-kafka Creating 
+ Container proyecto-authorization-server-1 Created 
+ Container banco-xyz-kafka Created 
+ Container banco-xyz-postgres Created 
+ Container proyecto-config-server-1 Creating 
+ Container proyecto-config-server-1 Created 
+ Container proyecto-eureka-server-1 Creating 
+ Container proyecto-eureka-server-1 Created 
+ Container proyecto-batch-init-1 Creating 
+ Container proyecto-batch-init-1 Created 
+ Container proyecto-core-banking-service-1 Creating 
+ Container proyecto-core-banking-service-1 Created 
+ Container proyecto-bff-web-service-1 Creating 
+ Container proyecto-bff-mobile-service-1 Creating 
+ Container proyecto-bff-atm-service-1 Creating 
+ Container proyecto-bff-atm-service-1 Created 
+ Container proyecto-bff-mobile-service-1 Created 
+ Container proyecto-bff-web-service-1 Created 
+ Container proyecto-authorization-server-1 Starting 
+ Container banco-xyz-kafka Starting 
+ Container banco-xyz-postgres Starting 
+ Container proyecto-authorization-server-1 Started 
+ Container banco-xyz-kafka Started 
+ Container banco-xyz-postgres Started 
+ Container banco-xyz-postgres Waiting 
+ Container banco-xyz-postgres Healthy 
+ Container proyecto-config-server-1 Starting 
+ Container proyecto-config-server-1 Started 
+ Container proyecto-config-server-1 Waiting 
+ Container proyecto-config-server-1 Healthy 
+ Container proyecto-eureka-server-1 Starting 
+ Container proyecto-eureka-server-1 Started 
+ Container proyecto-authorization-server-1 Waiting 
+ Container banco-xyz-postgres Waiting 
+ Container banco-xyz-kafka Waiting 
+ Container proyecto-config-server-1 Waiting 
+ Container proyecto-eureka-server-1 Waiting 
+ Container banco-xyz-postgres Healthy 
+ Container banco-xyz-kafka Healthy 
+ Container proyecto-config-server-1 Healthy 
+ Container proyecto-authorization-server-1 Healthy 
+ Container proyecto-eureka-server-1 Healthy 
+ Container proyecto-batch-init-1 Starting 
+ Container proyecto-batch-init-1 Started 
+ Container proyecto-authorization-server-1 Waiting 
+ Container banco-xyz-kafka Waiting 
+ Container proyecto-batch-init-1 Waiting 
+ Container banco-xyz-kafka Healthy 
+ Container proyecto-authorization-server-1 Healthy 
+ Container proyecto-batch-init-1 Exited 
+ Container proyecto-core-banking-service-1 Starting 
+ Container proyecto-core-banking-service-1 Started 
+ Container proyecto-core-banking-service-1 Waiting 
+ Container proyecto-authorization-server-1 Waiting 
+ Container banco-xyz-kafka Waiting 
+ Container proyecto-core-banking-service-1 Waiting 
+ Container proyecto-authorization-server-1 Waiting 
+ Container proyecto-authorization-server-1 Waiting 
+ Container proyecto-core-banking-service-1 Waiting 
+ Container proyecto-authorization-server-1 Healthy 
+ Container banco-xyz-kafka Healthy 
+ Container proyecto-authorization-server-1 Healthy 
+ Container proyecto-authorization-server-1 Healthy 
+ Container proyecto-core-banking-service-1 Healthy 
+ Container proyecto-bff-atm-service-1 Starting 
+ Container proyecto-core-banking-service-1 Healthy 
+ Container proyecto-bff-web-service-1 Starting 
+ Container proyecto-core-banking-service-1 Healthy 
+ Container proyecto-bff-mobile-service-1 Starting 
+ Container proyecto-bff-atm-service-1 Started 
+ Container proyecto-bff-web-service-1 Started 
+ Container proyecto-bff-mobile-service-1 Started 
+/var/run/postgresql:5432 - accepting connections
+PostgreSQL y Kafka disponibles mediante sus herramientas.
+batch-init: Exited (0).
+Config Server disponible: HTTP 200, status UP.
+Eureka disponible: HTTP 200, status UP.
+Authorization Server disponible: HTTP 200, status UP.
+Core disponible: HTTP 200, status UP.
+curl: (56) Recv failure: Connection reset by peer
+curl: (56) Recv failure: Connection reset by peer
+curl: (56) Recv failure: Connection reset by peer
+curl: (56) Recv failure: Connection reset by peer
+Web disponible: HTTP 200, status UP.
+curl: (56) Recv failure: Connection reset by peer
+curl: (56) Recv failure: Connection reset by peer
+Mobile disponible: HTTP 200, status UP.
+ATM disponible: HTTP 200, status UP.
+BFF-ATM-SERVICE UP
+BFF-MOBILE-SERVICE UP
+BFF-WEB-SERVICE UP
+CORE-BANKING-SERVICE UP
+postgres: running healthy
+kafka: running healthy
+config-server: running healthy
+eureka-server: running healthy
+authorization-server: running healthy
+core-banking-service: running healthy
+bff-web-service: running healthy
+bff-mobile-service: running healthy
+bff-atm-service: running healthy
+NAME                              IMAGE                           COMMAND                  SERVICE                CREATED         STATUS                          PORTS
+banco-xyz-kafka                   apache/kafka:3.9.1              "/__cacert_entrypoin…"   kafka                  2 minutes ago   Up 2 minutes (healthy)          0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp
+banco-xyz-postgres                postgres:16                     "docker-entrypoint.s…"   postgres               2 minutes ago   Up 2 minutes (healthy)          0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+proyecto-authorization-server-1   proyecto-authorization-server   "java -jar /app/app.…"   authorization-server   2 minutes ago   Up 2 minutes (healthy)          0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp
+proyecto-batch-init-1             proyecto-batch-init             "/usr/local/bin/batc…"   batch-init             2 minutes ago   Exited (0) About a minute ago   
+proyecto-bff-atm-service-1        proyecto-bff-atm-service        "java -jar /app/app.…"   bff-atm-service        2 minutes ago   Up 47 seconds (healthy)         0.0.0.0:8084->8084/tcp, [::]:8084->8084/tcp
+proyecto-bff-mobile-service-1     proyecto-bff-mobile-service     "java -jar /app/app.…"   bff-mobile-service     2 minutes ago   Up 45 seconds (healthy)         0.0.0.0:8083->8083/tcp, [::]:8083->8083/tcp
+proyecto-bff-web-service-1        proyecto-bff-web-service        "java -jar /app/app.…"   bff-web-service        2 minutes ago   Up 46 seconds (healthy)         0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+proyecto-config-server-1          proyecto-config-server          "java -jar /app/app.…"   config-server          2 minutes ago   Up 2 minutes (healthy)          0.0.0.0:8888->8888/tcp, [::]:8888->8888/tcp
+proyecto-core-banking-service-1   proyecto-core-banking-service   "java -jar /app/app.…"   core-banking-service   2 minutes ago   Up About a minute (healthy)     0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+proyecto-eureka-server-1          proyecto-eureka-server          "java -jar /app/app.…"   eureka-server          2 minutes ago   Up 2 minutes (healthy)          0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+RESULTADO: PASS

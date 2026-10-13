@@ -1,0 +1,15 @@
+EVIDENCIA: Consumer group
+FECHA: 2026-10-05T16:55:23-03:00
+OBJETIVO: Inspeccionar consumidores, asignaciones y lag
+COMANDO: kafka-consumer-groups.sh --describe --group core-banking-withdrawal-group
+
+RESULTADO REAL:
+
+GROUP                         TOPIC                     PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                                   HOST            CLIENT-ID
+core-banking-withdrawal-group bank.withdrawal.requested 2          -               0               -               consumer-core-banking-withdrawal-group-3-c644e80b-5582-40b4-b9a6-3aae5289b127 /172.22.0.7     consumer-core-banking-withdrawal-group-3
+core-banking-withdrawal-group bank.withdrawal.requested 1          -               0               -               consumer-core-banking-withdrawal-group-2-c7d33bec-0662-4a16-97c7-6f165581c2e9 /172.22.0.7     consumer-core-banking-withdrawal-group-2
+core-banking-withdrawal-group bank.withdrawal.requested 0          1               1               0               consumer-core-banking-withdrawal-group-1-133f1f74-ee63-4214-8dbd-83b46ce78685 /172.22.0.7     consumer-core-banking-withdrawal-group-1
+GROUP                         CONSUMER-ID                                                                   HOST            CLIENT-ID                                #PARTITIONS     ASSIGNMENT
+core-banking-withdrawal-group consumer-core-banking-withdrawal-group-3-c644e80b-5582-40b4-b9a6-3aae5289b127 /172.22.0.7     consumer-core-banking-withdrawal-group-3 1               (2)
+core-banking-withdrawal-group consumer-core-banking-withdrawal-group-2-c7d33bec-0662-4a16-97c7-6f165581c2e9 /172.22.0.7     consumer-core-banking-withdrawal-group-2 1               (1)
+core-banking-withdrawal-group consumer-core-banking-withdrawal-group-1-133f1f74-ee63-4214-8dbd-83b46ce78685 /172.22.0.7     consumer-core-banking-withdrawal-group-1 1               (0)

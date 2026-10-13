@@ -1,0 +1,79 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Banco XYZ - Semana 8                                               [pom]
+[INFO] shared-events                                                      [jar]
+[INFO] core-banking-service                                               [jar]
+[INFO] 
+[INFO] --------------< cl.duoc.bancoxyz:banco-xyz-microservices >--------------
+[INFO] Building Banco XYZ - Semana 8 1.0.0                                [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:shared-events >-------------------
+[INFO] Building shared-events 1.0.0                                       [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ shared-events ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ shared-events ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ shared-events ---
+[INFO] 
+[INFO] ---------------< cl.duoc.bancoxyz:core-banking-service >----------------
+[INFO] Building core-banking-service 1.0.0                                [3/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ core-banking-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ core-banking-service ---
+[INFO] Copying 3 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ core-banking-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.41 s -- in cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Banco XYZ - Semana 8 1.0.0:
+[INFO] 
+[INFO] Banco XYZ - Semana 8 ............................... SUCCESS [  0.002 s]
+[INFO] shared-events ...................................... SUCCESS [  0.703 s]
+[INFO] core-banking-service ............................... SUCCESS [ 47.195 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  48.334 s
+[INFO] Finished at: 2026-10-12T18:14:46-03:00
+[INFO] ------------------------------------------------------------------------
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT realChannelPermissionsInvalidSignaturesAndAbsentCustomersPreventWrites PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT unavailableCustomerApplicationRejectsOpeningAndRecoversWithoutPartialData PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT realWebAndMobileTokensOpenMaintainAndCloseUsingActualCustomers PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT applicationRestartPreservesAccountsBalancesLedgerAndSequence PASS
+Tests run: 4 Failures: 0 Errors: 0 Skipped: 0
+RESULTADO: PASS; casos distintos de la seleccion, no adicionales al reactor.

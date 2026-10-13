@@ -1,0 +1,16 @@
+=== RETIRO OFICIAL EXITOSO ===
+HTTP/1.1 202 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:06:46 GMT
+
+{"transactionId":"e1f51bbc-3167-4973-bbfc-a083e5b4f56a","status":"PENDING"}
+TX_OK=e1f51bbc-3167-4973-bbfc-a083e5b4f56a
+Estado final:
+{"transactionId":"e1f51bbc-3167-4973-bbfc-a083e5b4f56a","accountId":104,"amount":10000.00,"status":"COMPLETED","finalBalance":200.00,"rejectionReason":null,"updatedAt":"2026-09-29T01:06:46.837616Z"}

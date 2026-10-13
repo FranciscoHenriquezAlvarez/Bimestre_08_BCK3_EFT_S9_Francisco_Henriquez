@@ -1,0 +1,44 @@
+EVIDENCIA SEGURIDAD WEB - SEMANA 5
+
+WEB AUTORIZADO
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:16:06 GMT
+
+{"accountId":101,"accountName":"Charlie Green","accountType":"prestamo","initialBalance":8000.00,"interestRate":0.0200,"calculatedInterest":160.00,"finalBalance":8160.00}
+WEB SIN CREDENCIALES
+HTTP/1.1 401 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 85
+Date: Mon, 14 Sep 2026 01:16:06 GMT
+
+{"status":401,"error":"UNAUTHORIZED","message":"Credenciales requeridas o invalidas"}
+WEB PASSWORD INCORRECTA
+HTTP/1.1 401 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 85
+Date: Mon, 14 Sep 2026 01:16:06 GMT
+
+{"status":401,"error":"UNAUTHORIZED","message":"Credenciales requeridas o invalidas"}

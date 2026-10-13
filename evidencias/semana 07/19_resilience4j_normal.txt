@@ -1,0 +1,13 @@
+=== RESILIENCE4J NORMAL ===
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:08:34 GMT
+
+{"accountId":104,"balance":200.00}

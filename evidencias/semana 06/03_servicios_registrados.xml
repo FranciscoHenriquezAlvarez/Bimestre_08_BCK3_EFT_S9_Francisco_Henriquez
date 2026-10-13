@@ -1,0 +1,152 @@
+<applications>
+  <versions__delta>1</versions__delta>
+  <apps__hashcode>UP_4_</apps__hashcode>
+  <application>
+    <name>BFF-WEB-SERVICE</name>
+    <instance>
+      <instanceId>10.255.255.254:bff-web-service:8082</instanceId>
+      <hostName>localhost</hostName>
+      <app>BFF-WEB-SERVICE</app>
+      <ipAddr>10.255.255.254</ipAddr>
+      <status>UP</status>
+      <overriddenstatus>UNKNOWN</overriddenstatus>
+      <port enabled="true">8082</port>
+      <securePort enabled="false">443</securePort>
+      <countryId>1</countryId>
+      <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+        <name>MyOwn</name>
+      </dataCenterInfo>
+      <leaseInfo>
+        <renewalIntervalInSecs>30</renewalIntervalInSecs>
+        <durationInSecs>90</durationInSecs>
+        <registrationTimestamp>1790538901811</registrationTimestamp>
+        <lastRenewalTimestamp>1790538901811</lastRenewalTimestamp>
+        <evictionTimestamp>0</evictionTimestamp>
+        <serviceUpTimestamp>1790538901291</serviceUpTimestamp>
+      </leaseInfo>
+      <metadata>
+        <management.port>8082</management.port>
+      </metadata>
+      <homePageUrl>http://localhost:8082/</homePageUrl>
+      <statusPageUrl>http://localhost:8082/actuator/info</statusPageUrl>
+      <healthCheckUrl>http://localhost:8082/actuator/health</healthCheckUrl>
+      <vipAddress>bff-web-service</vipAddress>
+      <secureVipAddress>bff-web-service</secureVipAddress>
+      <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+      <lastUpdatedTimestamp>1790538901811</lastUpdatedTimestamp>
+      <lastDirtyTimestamp>1790538901210</lastDirtyTimestamp>
+      <actionType>ADDED</actionType>
+    </instance>
+  </application>
+  <application>
+    <name>CORE-BANKING-SERVICE</name>
+    <instance>
+      <instanceId>10.255.255.254:core-banking-service:8081</instanceId>
+      <hostName>localhost</hostName>
+      <app>CORE-BANKING-SERVICE</app>
+      <ipAddr>10.255.255.254</ipAddr>
+      <status>UP</status>
+      <overriddenstatus>UNKNOWN</overriddenstatus>
+      <port enabled="true">8081</port>
+      <securePort enabled="false">443</securePort>
+      <countryId>1</countryId>
+      <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+        <name>MyOwn</name>
+      </dataCenterInfo>
+      <leaseInfo>
+        <renewalIntervalInSecs>30</renewalIntervalInSecs>
+        <durationInSecs>90</durationInSecs>
+        <registrationTimestamp>1790538797126</registrationTimestamp>
+        <lastRenewalTimestamp>1790539014346</lastRenewalTimestamp>
+        <evictionTimestamp>0</evictionTimestamp>
+        <serviceUpTimestamp>1790538796142</serviceUpTimestamp>
+      </leaseInfo>
+      <metadata>
+        <management.port>8081</management.port>
+      </metadata>
+      <homePageUrl>http://localhost:8081/</homePageUrl>
+      <statusPageUrl>http://localhost:8081/actuator/info</statusPageUrl>
+      <healthCheckUrl>http://localhost:8081/actuator/health</healthCheckUrl>
+      <vipAddress>core-banking-service</vipAddress>
+      <secureVipAddress>core-banking-service</secureVipAddress>
+      <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+      <lastUpdatedTimestamp>1790538797126</lastUpdatedTimestamp>
+      <lastDirtyTimestamp>1790538795980</lastDirtyTimestamp>
+      <actionType>ADDED</actionType>
+    </instance>
+  </application>
+  <application>
+    <name>BFF-MOBILE-SERVICE</name>
+    <instance>
+      <instanceId>10.255.255.254:bff-mobile-service:8083</instanceId>
+      <hostName>localhost</hostName>
+      <app>BFF-MOBILE-SERVICE</app>
+      <ipAddr>10.255.255.254</ipAddr>
+      <status>UP</status>
+      <overriddenstatus>UNKNOWN</overriddenstatus>
+      <port enabled="true">8083</port>
+      <securePort enabled="false">443</securePort>
+      <countryId>1</countryId>
+      <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+        <name>MyOwn</name>
+      </dataCenterInfo>
+      <leaseInfo>
+        <renewalIntervalInSecs>30</renewalIntervalInSecs>
+        <durationInSecs>90</durationInSecs>
+        <registrationTimestamp>1790538912624</registrationTimestamp>
+        <lastRenewalTimestamp>1790538912624</lastRenewalTimestamp>
+        <evictionTimestamp>0</evictionTimestamp>
+        <serviceUpTimestamp>1790538912103</serviceUpTimestamp>
+      </leaseInfo>
+      <metadata>
+        <management.port>8083</management.port>
+      </metadata>
+      <homePageUrl>http://localhost:8083/</homePageUrl>
+      <statusPageUrl>http://localhost:8083/actuator/info</statusPageUrl>
+      <healthCheckUrl>http://localhost:8083/actuator/health</healthCheckUrl>
+      <vipAddress>bff-mobile-service</vipAddress>
+      <secureVipAddress>bff-mobile-service</secureVipAddress>
+      <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+      <lastUpdatedTimestamp>1790538912625</lastUpdatedTimestamp>
+      <lastDirtyTimestamp>1790538912029</lastDirtyTimestamp>
+      <actionType>ADDED</actionType>
+    </instance>
+  </application>
+  <application>
+    <name>BFF-ATM-SERVICE</name>
+    <instance>
+      <instanceId>10.255.255.254:bff-atm-service:8084</instanceId>
+      <hostName>localhost</hostName>
+      <app>BFF-ATM-SERVICE</app>
+      <ipAddr>10.255.255.254</ipAddr>
+      <status>UP</status>
+      <overriddenstatus>UNKNOWN</overriddenstatus>
+      <port enabled="true">8084</port>
+      <securePort enabled="false">443</securePort>
+      <countryId>1</countryId>
+      <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+        <name>MyOwn</name>
+      </dataCenterInfo>
+      <leaseInfo>
+        <renewalIntervalInSecs>30</renewalIntervalInSecs>
+        <durationInSecs>90</durationInSecs>
+        <registrationTimestamp>1790538923097</registrationTimestamp>
+        <lastRenewalTimestamp>1790538923097</lastRenewalTimestamp>
+        <evictionTimestamp>0</evictionTimestamp>
+        <serviceUpTimestamp>1790538922583</serviceUpTimestamp>
+      </leaseInfo>
+      <metadata>
+        <management.port>8084</management.port>
+      </metadata>
+      <homePageUrl>http://localhost:8084/</homePageUrl>
+      <statusPageUrl>http://localhost:8084/actuator/info</statusPageUrl>
+      <healthCheckUrl>http://localhost:8084/actuator/health</healthCheckUrl>
+      <vipAddress>bff-atm-service</vipAddress>
+      <secureVipAddress>bff-atm-service</secureVipAddress>
+      <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+      <lastUpdatedTimestamp>1790538923097</lastUpdatedTimestamp>
+      <lastDirtyTimestamp>1790538922519</lastDirtyTimestamp>
+      <actionType>ADDED</actionType>
+    </instance>
+  </application>
+</applications>

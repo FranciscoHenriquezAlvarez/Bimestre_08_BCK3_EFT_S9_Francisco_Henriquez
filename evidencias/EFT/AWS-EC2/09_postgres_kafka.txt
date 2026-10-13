@@ -1,0 +1,371 @@
+ Image postgres:16 Pulling 
+ Image apache/kafka:3.9.1 Pulling 
+ f7cdaeb78991 Pulling fs layer 0B
+ f18232174bc9 Pulling fs layer 0B
+ f6cd406c8d97 Pulling fs layer 0B
+ 74f6a226ed93 Pulling fs layer 0B
+ e6744199aa66 Pulling fs layer 0B
+ cda86626eeb3 Pulling fs layer 0B
+ 304e58a73598 Pulling fs layer 0B
+ 34d370b15c91 Pulling fs layer 0B
+ 6e6e21ba9841 Pulling fs layer 0B
+ a34edb4da622 Pulling fs layer 0B
+ f7cdaeb78991 Download complete 0B
+ f18232174bc9 Downloading 3.146MB
+ 6e6e21ba9841 Downloading 4.217MB
+ 74f6a226ed93 Downloading 1.049MB
+ e6744199aa66 Download complete 0B
+ f18232174bc9 Download complete 0B
+ f6cd406c8d97 Downloading 7.34MB
+ cda86626eeb3 Download complete 0B
+ 6e6e21ba9841 Download complete 0B
+ f18232174bc9 Extracting 1B
+ 74f6a226ed93 Downloading 5.243MB
+ f6cd406c8d97 Downloading 13.63MB
+ 304e58a73598 Downloading 1.049MB
+ f18232174bc9 Extracting 1B
+ f6cd406c8d97 Download complete 0B
+ 304e58a73598 Downloading 6.291MB
+ a34edb4da622 Downloading 2.283kB
+ 74f6a226ed93 Downloading 11.53MB
+ 34d370b15c91 Download complete 0B
+ f18232174bc9 Extracting 1B
+ 304e58a73598 Downloading 10.49MB
+ a34edb4da622 Download complete 0B
+ 74f6a226ed93 Downloading 15.73MB
+ f18232174bc9 Extracting 1B
+ 9731e27f2541 Pulling fs layer 0B
+ ecc510c1e359 Pulling fs layer 0B
+ 79faf13a8736 Pulling fs layer 0B
+ 6456bfbf35e7 Pulling fs layer 0B
+ b353db459ed1 Pulling fs layer 0B
+ 99f49de4fe2b Pulling fs layer 0B
+ 83d1a2a3917c Pulling fs layer 0B
+ 715ea0948cb1 Pulling fs layer 0B
+ 486e8305f56f Pulling fs layer 0B
+ e7d675f11ded Pulling fs layer 0B
+ c49864c27f35 Pulling fs layer 0B
+ 770ef8b308ea Pulling fs layer 0B
+ 50c25daa0302 Pulling fs layer 0B
+ 8309db3ae5b6 Pulling fs layer 0B
+ 74f6a226ed93 Downloading 19.92MB
+ 304e58a73598 Downloading 13.63MB
+ f18232174bc9 Extracting 1B
+ 304e58a73598 Downloading 17.83MB
+ 434e8934394d Downloading 1.02kB
+ 74f6a226ed93 Downloading 24.12MB
+ f18232174bc9 Extracting 1B
+ 9731e27f2541 Downloading 185B
+ 434e8934394d Download complete 0B
+ 74f6a226ed93 Downloading 28.31MB
+ 304e58a73598 Downloading 20.97MB
+ f18232174bc9 Extracting 1B
+ ecc510c1e359 Downloading 2.097MB
+ 304e58a73598 Downloading 24.12MB
+ 74f6a226ed93 Downloading 31.46MB
+ f18232174bc9 Pull complete 0B
+ 9731e27f2541 Download complete 0B
+ f6cd406c8d97 Extracting 1B
+ ecc510c1e359 Downloading 5.243MB
+ 304e58a73598 Downloading 27.26MB
+ 74f6a226ed93 Downloading 34.6MB
+ f6cd406c8d97 Extracting 1B
+ ecc510c1e359 Downloading 9.437MB
+ 304e58a73598 Downloading 31.46MB
+ 74f6a226ed93 Downloading 37.75MB
+ f6cd406c8d97 Extracting 1B
+ ecc510c1e359 Downloading 12.58MB
+ 304e58a73598 Downloading 34.6MB
+ 74f6a226ed93 Downloading 41.94MB
+ f6cd406c8d97 Extracting 1B
+ ecc510c1e359 Downloading 16.78MB
+ 304e58a73598 Downloading 37.75MB
+ 74f6a226ed93 Downloading 45.09MB
+ f6cd406c8d97 Extracting 1B
+ ecc510c1e359 Downloading 18.87MB
+ 304e58a73598 Downloading 40.89MB
+ 74f6a226ed93 Downloading 48.23MB
+ f6cd406c8d97 Extracting 1B
+ ecc510c1e359 Downloading 23.07MB
+ 74f6a226ed93 Downloading 52.43MB
+ 304e58a73598 Downloading 45.09MB
+ f6cd406c8d97 Extracting 1B
+ 74f6a226ed93 Downloading 53.06MB
+ 304e58a73598 Downloading 48.23MB
+ 79faf13a8736 Download complete 0B
+ ecc510c1e359 Downloading 27.26MB
+ f6cd406c8d97 Extracting 1B
+ 304e58a73598 Downloading 51.38MB
+ ecc510c1e359 Download complete 0B
+ 6456bfbf35e7 Downloading 4.194MB
+ b353db459ed1 Downloading 1.257MB
+ 74f6a226ed93 Download complete 0B
+ ecc510c1e359 Extracting 1B
+ 6456bfbf35e7 Downloading 6.291MB
+ b353db459ed1 Download complete 0B
+ 99f49de4fe2b Downloading 1.049MB
+ f6cd406c8d97 Extracting 1B
+ ecc510c1e359 Extracting 1B
+ 304e58a73598 Downloading 55.57MB
+ 6456bfbf35e7 Download complete 0B
+ 99f49de4fe2b Downloading 4.194MB
+ 486e8305f56f Download complete 0B
+ f6cd406c8d97 Extracting 1B
+ 715ea0948cb1 Download complete 0B
+ 304e58a73598 Downloading 58.72MB
+ ecc510c1e359 Extracting 1B
+ f6cd406c8d97 Extracting 2B
+ c49864c27f35 Download complete 0B
+ 304e58a73598 Downloading 61.87MB
+ 83d1a2a3917c Download complete 0B
+ e7d675f11ded Downloading 1.049MB
+ 99f49de4fe2b Download complete 0B
+ ecc510c1e359 Extracting 1B
+ f6cd406c8d97 Extracting 2B
+ 304e58a73598 Downloading 66.06MB
+ 8309db3ae5b6 Download complete 0B
+ 770ef8b308ea Download complete 0B
+ 7940de88f6c7 Downloading 2.097MB
+ e7d675f11ded Downloading 6.291MB
+ 50c25daa0302 Download complete 0B
+ 304e58a73598 Downloading 68.16MB
+ ecc510c1e359 Extracting 1B
+ f6cd406c8d97 Pull complete 0B
+ 74f6a226ed93 Extracting 1B
+ 7940de88f6c7 Download complete 0B
+ e7d675f11ded Downloading 11.53MB
+ 304e58a73598 Downloading 74.45MB
+ 64b26645b0da Download complete 0B
+ ecc510c1e359 Extracting 1B
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 78.64MB
+ e7d675f11ded Downloading 17.83MB
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 81.79MB
+ ecc510c1e359 Extracting 2B
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 87.03MB
+ e7d675f11ded Downloading 26.21MB
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 90.18MB
+ ecc510c1e359 Extracting 2B
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 92.27MB
+ e7d675f11ded Downloading 32.51MB
+ ecc510c1e359 Extracting 2B
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 95.42MB
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 98.57MB
+ e7d675f11ded Downloading 39.85MB
+ ecc510c1e359 Extracting 2B
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 102.8MB
+ 74f6a226ed93 Extracting 1B
+ 304e58a73598 Downloading 105.9MB
+ e7d675f11ded Downloading 48.23MB
+ ecc510c1e359 Extracting 2B
+ 74f6a226ed93 Extracting 2B
+ 304e58a73598 Downloading 108MB
+ 74f6a226ed93 Extracting 2B
+ 304e58a73598 Downloading 112.2MB
+ e7d675f11ded Downloading 53.48MB
+ ecc510c1e359 Extracting 3B
+ 74f6a226ed93 Extracting 2B
+ 304e58a73598 Downloading 116.4MB
+ 74f6a226ed93 Extracting 2B
+ 304e58a73598 Downloading 119.5MB
+ e7d675f11ded Downloading 61.87MB
+ ecc510c1e359 Extracting 3B
+ 74f6a226ed93 Extracting 2B
+ 304e58a73598 Downloading 122.7MB
+ 74f6a226ed93 Extracting 2B
+ 304e58a73598 Downloading 125.8MB
+ e7d675f11ded Downloading 68.16MB
+ ecc510c1e359 Extracting 3B
+ 74f6a226ed93 Extracting 2B
+ 304e58a73598 Downloading 126.5MB
+ 74f6a226ed93 Extracting 2B
+ e7d675f11ded Downloading 77.59MB
+ 304e58a73598 Download complete 0B
+ ecc510c1e359 Extracting 3B
+ 74f6a226ed93 Extracting 2B
+ e7d675f11ded Downloading 83.89MB
+ 74f6a226ed93 Extracting 2B
+ ecc510c1e359 Extracting 3B
+ 74f6a226ed93 Extracting 3B
+ e7d675f11ded Downloading 93.32MB
+ ecc510c1e359 Extracting 3B
+ 74f6a226ed93 Extracting 3B
+ e7d675f11ded Downloading 99.61MB
+ ecc510c1e359 Pull complete 0B
+ 74f6a226ed93 Extracting 3B
+ e7d675f11ded Downloading 107MB
+ 79faf13a8736 Pull complete 0B
+ 6456bfbf35e7 Extracting 1B
+ 74f6a226ed93 Extracting 3B
+ e7d675f11ded Downloading 113.2MB
+ 74f6a226ed93 Extracting 3B
+ 6456bfbf35e7 Extracting 1B
+ 74f6a226ed93 Extracting 3B
+ e7d675f11ded Download complete 0B
+ 6456bfbf35e7 Extracting 1B
+ 74f6a226ed93 Extracting 3B
+ 6456bfbf35e7 Extracting 1B
+ 74f6a226ed93 Extracting 3B
+ 6456bfbf35e7 Extracting 1B
+ 74f6a226ed93 Extracting 3B
+ b353db459ed1 Extracting 1B
+ 6456bfbf35e7 Pull complete 0B
+ 74f6a226ed93 Extracting 3B
+ b353db459ed1 Pull complete 0B
+ 99f49de4fe2b Extracting 1B
+ 74f6a226ed93 Extracting 4B
+ 99f49de4fe2b Extracting 1B
+ 74f6a226ed93 Extracting 4B
+ 99f49de4fe2b Extracting 1B
+ 74f6a226ed93 Extracting 4B
+ 74f6a226ed93 Extracting 4B
+ 99f49de4fe2b Extracting 1B
+ 99f49de4fe2b Extracting 1B
+ 74f6a226ed93 Extracting 4B
+ 99f49de4fe2b Extracting 1B
+ 74f6a226ed93 Extracting 4B
+ 83d1a2a3917c Extracting 1B
+ 99f49de4fe2b Pull complete 0B
+ 74f6a226ed93 Extracting 4B
+ 83d1a2a3917c Pull complete 0B
+ 74f6a226ed93 Extracting 4B
+ 486e8305f56f Pull complete 0B
+ 715ea0948cb1 Pull complete 0B
+ e7d675f11ded Extracting 1B
+ 74f6a226ed93 Extracting 4B
+ e7d675f11ded Extracting 1B
+ 74f6a226ed93 Extracting 4B
+ e7d675f11ded Extracting 1B
+ 74f6a226ed93 Extracting 5B
+ e6744199aa66 Pull complete 0B
+ cda86626eeb3 Pull complete 0B
+ e7d675f11ded Extracting 1B
+ 74f6a226ed93 Pull complete 0B
+ 304e58a73598 Extracting 1B
+ e7d675f11ded Extracting 1B
+ 304e58a73598 Extracting 1B
+ e7d675f11ded Extracting 1B
+ 304e58a73598 Extracting 1B
+ 304e58a73598 Extracting 1B
+ e7d675f11ded Extracting 1B
+ e7d675f11ded Extracting 1B
+ 304e58a73598 Extracting 1B
+ 304e58a73598 Extracting 1B
+ e7d675f11ded Extracting 1B
+ 304e58a73598 Extracting 1B
+ e7d675f11ded Extracting 1B
+ e7d675f11ded Extracting 1B
+ 304e58a73598 Extracting 1B
+ e7d675f11ded Extracting 2B
+ 304e58a73598 Extracting 1B
+ e7d675f11ded Extracting 2B
+ 304e58a73598 Extracting 1B
+ 304e58a73598 Extracting 1B
+ e7d675f11ded Extracting 2B
+ e7d675f11ded Extracting 2B
+ 304e58a73598 Extracting 2B
+ 304e58a73598 Extracting 2B
+ e7d675f11ded Extracting 2B
+ 304e58a73598 Extracting 2B
+ e7d675f11ded Extracting 2B
+ 304e58a73598 Extracting 2B
+ e7d675f11ded Extracting 2B
+ e7d675f11ded Extracting 2B
+ 304e58a73598 Extracting 2B
+ 304e58a73598 Extracting 2B
+ e7d675f11ded Extracting 2B
+ e7d675f11ded Extracting 2B
+ 304e58a73598 Extracting 2B
+ 304e58a73598 Extracting 2B
+ e7d675f11ded Extracting 3B
+ e7d675f11ded Extracting 3B
+ 304e58a73598 Extracting 2B
+ 304e58a73598 Extracting 2B
+ e7d675f11ded Extracting 3B
+ 304e58a73598 Extracting 3B
+ e7d675f11ded Extracting 3B
+ 304e58a73598 Extracting 3B
+ e7d675f11ded Extracting 3B
+ 304e58a73598 Extracting 3B
+ e7d675f11ded Extracting 3B
+ 304e58a73598 Extracting 3B
+ e7d675f11ded Extracting 3B
+ 6e6e21ba9841 Extracting 1B
+ 34d370b15c91 Pull complete 0B
+ 304e58a73598 Pull complete 0B
+ e7d675f11ded Extracting 3B
+ 6e6e21ba9841 Extracting 1B
+ e7d675f11ded Extracting 3B
+ 6e6e21ba9841 Extracting 1B
+ e7d675f11ded Extracting 3B
+ 6e6e21ba9841 Pull complete 0B
+ a34edb4da622 Pull complete 0B
+ e7d675f11ded Extracting 4B
+ f7cdaeb78991 Pull complete 0B
+ Image apache/kafka:3.9.1 Pulled 
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 4B
+ e7d675f11ded Extracting 5B
+ e7d675f11ded Extracting 5B
+ e7d675f11ded Extracting 5B
+ e7d675f11ded Extracting 5B
+ e7d675f11ded Extracting 5B
+ e7d675f11ded Extracting 5B
+ e7d675f11ded Extracting 5B
+ e7d675f11ded Extracting 5B
+ c49864c27f35 Pull complete 0B
+ 770ef8b308ea Pull complete 0B
+ 50c25daa0302 Pull complete 0B
+ e7d675f11ded Pull complete 0B
+ 9731e27f2541 Pull complete 0B
+ 8309db3ae5b6 Pull complete 0B
+ Image postgres:16 Pulled 
+ Network etf_s9_default Creating 
+ Network etf_s9_default Creating 
+ Volume etf_s9_postgres_data Creating 
+ Volume etf_s9_postgres_data Creating 
+ Volume etf_s9_kafka_data Creating 
+ Volume etf_s9_kafka_data Creating 
+ Volume etf_s9_postgres_data Created 
+ Volume etf_s9_postgres_data Created 
+ Volume etf_s9_kafka_data Created 
+ Volume etf_s9_kafka_data Created 
+ Network etf_s9_default Created 
+ Network etf_s9_default Created 
+ Container etf_s9-postgres-1 Creating 
+ Container etf_s9-kafka-1 Creating 
+ Container etf_s9-postgres-1 Created 
+ Container etf_s9-kafka-1 Created 
+ Container etf_s9-postgres-1 Starting 
+ Container etf_s9-kafka-1 Starting 
+ Container etf_s9-postgres-1 Started 
+ Container etf_s9-kafka-1 Started 
+=== ESTADO DE SERVICIOS ===
+NAME                IMAGE                COMMAND                  SERVICE    CREATED         STATUS                                     PORTS
+etf_s9-kafka-1      apache/kafka:3.9.1   "/__cacert_entrypoin…"   kafka      6 seconds ago   Up Less than a second (health: starting)   9092/tcp
+etf_s9-postgres-1   postgres:16          "docker-entrypoint.s…"   postgres   6 seconds ago   Up Less than a second (health: starting)   5432/tcp
+=== CONSUMO DE RECURSOS DOCKER ===
+NAME                MEM USAGE / LIMIT     CPU %
+etf_s9-postgres-1   37.32MiB / 7.632GiB   73.96%
+etf_s9-kafka-1      2.074MiB / 7.632GiB   111.00%
+=== MEMORIA DISPONIBLE ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       848Mi       431Mi        14Mi       6.7Gi       6.8Gi
+Swap:             0B          0B          0B
+=== DISCO DISPONIBLE ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /

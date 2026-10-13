@@ -1,0 +1,35 @@
+=== METADATOS OAUTH2 ===
+issuer: http://authorization-server:9000
+token_endpoint: http://authorization-server:9000/oauth2/token
+grant_types_supported: ['authorization_code', 'client_credentials', 'refresh_token', 'urn:ietf:params:oauth:grant-type:device_code', 'urn:ietf:params:oauth:grant-type:token-exchange']
+scopes_supported: NO INFORMADO
+=== RUTAS API BFF WEB ===
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebBffController.java:8:@RequestMapping("/api/bff/web/accounts")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebBffController.java:16:    @GetMapping("/{id}")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebBffController.java:23:    @GetMapping("/{id}/annual-statement")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:9:@RequestMapping("/api/bff/web")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:17:    @PostMapping("/accounts")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:20:    @PutMapping("/accounts/{id}")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:23:    @PostMapping("/accounts/{id}/close")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:26:    @PostMapping("/customers")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:29:    @GetMapping("/customers/{id}")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:32:    @PutMapping("/customers/{id}")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:35:    @GetMapping("/customers/{id}/profile")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:38:    @PutMapping("/customers/{id}/profile")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:41:    @PostMapping("/payments")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:44:    @PostMapping("/payments/deposits")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:47:    @PostMapping("/payments/transfers")
+bff-web-service/src/main/java/cl/duoc/bancoxyz/web/WebServicesController.java:50:    @GetMapping("/payments/operations/{operationId}")
+=== RUTAS API BFF MOBILE ===
+bff-mobile-service/src/main/java/cl/duoc/bancoxyz/mobile/MobileBffController.java:9:@RequestMapping("/api/bff/mobile/accounts")
+bff-mobile-service/src/main/java/cl/duoc/bancoxyz/mobile/MobileBffController.java:17:    @GetMapping("/{id}")
+bff-mobile-service/src/main/java/cl/duoc/bancoxyz/mobile/MobileBffController.java:23:    @GetMapping("/{id}/transactions")
+bff-mobile-service/src/main/java/cl/duoc/bancoxyz/mobile/MobileServicesController.java:8:@RequestMapping("/api/bff/mobile")
+bff-mobile-service/src/main/java/cl/duoc/bancoxyz/mobile/MobileServicesController.java:16:    @GetMapping("/customers/{id}")
+bff-mobile-service/src/main/java/cl/duoc/bancoxyz/mobile/MobileServicesController.java:21:    @GetMapping("/payments/operations/{operationId}")
+=== RUTAS API BFF ATM ===
+bff-atm-service/src/main/java/cl/duoc/bancoxyz/atm/AtmBffController.java:15:@RequestMapping("/api/bff/atm/accounts")
+bff-atm-service/src/main/java/cl/duoc/bancoxyz/atm/AtmBffController.java:25:    @GetMapping("/{id}/balance")
+bff-atm-service/src/main/java/cl/duoc/bancoxyz/atm/AtmBffController.java:30:    @PostMapping("/{id}/withdraw")
+bff-atm-service/src/main/java/cl/duoc/bancoxyz/atm/AtmBffController.java:39:    @GetMapping("/transactions/{transactionId}")
+=== FIN PREPARACION PRUEBAS FUNCIONALES ===

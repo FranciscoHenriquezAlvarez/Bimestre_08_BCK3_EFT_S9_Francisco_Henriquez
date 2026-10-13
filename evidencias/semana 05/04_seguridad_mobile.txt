@@ -1,0 +1,44 @@
+EVIDENCIA SEGURIDAD MOBILE - SEMANA 5
+
+MOBILE AUTORIZADO
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:17:51 GMT
+
+{"accountId":101,"accountName":"Charlie Green","balance":8160.00,"accountType":"prestamo"}
+MOVIMIENTOS MOBILE
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:17:51 GMT
+
+[{"movementDate":"2024-12-22","transaction":"deposito","amount":2500.00},{"movementDate":"2024-10-06","transaction":"deposito","amount":1500.00},{"movementDate":"2024-09-25","transaction":"deposito","amount":2500.00},{"movementDate":"2024-09-05","transaction":"deposito","amount":2500.00},{"movementDate":"2024-07-09","transaction":"retiro","amount":-1000.00}]
+WEB INTENTA ACCEDER A MOBILE
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 95
+Date: Mon, 14 Sep 2026 01:17:51 GMT
+
+{"status":403,"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal"}

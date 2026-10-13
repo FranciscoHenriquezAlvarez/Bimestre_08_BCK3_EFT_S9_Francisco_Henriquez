@@ -1,0 +1,15 @@
+Usuario autenticado: webuser / ROLE_WEB
+Endpoint solicitado: BFF Mobile
+
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 95
+Date: Sun, 27 Sep 2026 19:55:39 GMT
+
+{"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal","status":403}

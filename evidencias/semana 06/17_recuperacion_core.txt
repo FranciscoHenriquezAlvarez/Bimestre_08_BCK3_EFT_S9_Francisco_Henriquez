@@ -1,0 +1,53 @@
+Core Banking reiniciado.
+
+CORE-BANKING-SERVICE EN EUREKA:
+<application>
+  <name>CORE-BANKING-SERVICE</name>
+  <instance>
+    <instanceId>10.255.255.254:core-banking-service:8081</instanceId>
+    <hostName>localhost</hostName>
+    <app>CORE-BANKING-SERVICE</app>
+    <ipAddr>10.255.255.254</ipAddr>
+    <status>UP</status>
+    <overriddenstatus>UNKNOWN</overriddenstatus>
+    <port enabled="true">8081</port>
+    <securePort enabled="false">443</securePort>
+    <countryId>1</countryId>
+    <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+      <name>MyOwn</name>
+    </dataCenterInfo>
+    <leaseInfo>
+      <renewalIntervalInSecs>30</renewalIntervalInSecs>
+      <durationInSecs>90</durationInSecs>
+      <registrationTimestamp>1790538967987</registrationTimestamp>
+      <lastRenewalTimestamp>1790538967987</lastRenewalTimestamp>
+      <evictionTimestamp>0</evictionTimestamp>
+      <serviceUpTimestamp>1790538967471</serviceUpTimestamp>
+    </leaseInfo>
+    <metadata>
+      <management.port>8081</management.port>
+    </metadata>
+    <homePageUrl>http://localhost:8081/</homePageUrl>
+    <statusPageUrl>http://localhost:8081/actuator/info</statusPageUrl>
+    <healthCheckUrl>http://localhost:8081/actuator/health</healthCheckUrl>
+    <vipAddress>core-banking-service</vipAddress>
+    <secureVipAddress>core-banking-service</secureVipAddress>
+    <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+    <lastUpdatedTimestamp>1790538967987</lastUpdatedTimestamp>
+    <lastDirtyTimestamp>1790538967419</lastDirtyTimestamp>
+    <actionType>ADDED</actionType>
+  </instance>
+</application>
+LLAMADA WEB DESPUES DE LA RECUPERACION:
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 27 Sep 2026 19:56:08 GMT
+
+{"accountId":104,"accountName":"Bob Johnson","accountType":"prestamo","initialBalance":10000.00,"interestRate":0.0200,"calculatedInterest":200.00,"finalBalance":200.00}

@@ -1,0 +1,5 @@
+=== TOPICS KAFKA ===
+__consumer_offsets
+bank.withdrawal.completed
+bank.withdrawal.rejected
+bank.withdrawal.requested

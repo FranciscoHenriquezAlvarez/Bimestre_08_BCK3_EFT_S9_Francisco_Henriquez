@@ -1,0 +1,8 @@
+Comando: curl -i http://localhost:8761/actuator/health
+
+HTTP/1.1 200 
+Content-Type: application/vnd.spring-boot.actuator.v3+json
+Transfer-Encoding: chunked
+Date: Sun, 27 Sep 2026 19:55:27 GMT
+
+{"status":"UP"}

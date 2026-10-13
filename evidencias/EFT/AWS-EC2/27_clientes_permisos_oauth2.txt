@@ -1,0 +1,24 @@
+
+=== AUTHORIZATION-SERVER ===
+AuthorizationSecurityConfig.java:22: import org.springframework.security.oauth2.core.AuthorizationGrantType;
+AuthorizationSecurityConfig.java:46: .authorizeHttpRequests(auth -> auth.requestMatchers("/actuator/health").permitAll()
+AuthorizationSecurityConfig.java:73: return RegisteredClient.withId(UUID.randomUUID().toString()).clientId(id)
+AuthorizationSecurityConfig.java:77: .scope(scope)
+COINCIDENCIAS: 4
+
+=== BFF-WEB-SERVICE ===
+SecurityConfig.java:19: .requestMatchers("/actuator/health").permitAll()
+SecurityConfig.java:20: .anyRequest().hasAuthority("SCOPE_web"))
+COINCIDENCIAS: 2
+
+=== BFF-MOBILE-SERVICE ===
+SecurityConfig.java:19: .requestMatchers("/actuator/health").permitAll()
+SecurityConfig.java:20: .anyRequest().hasAuthority("SCOPE_mobile"))
+COINCIDENCIAS: 2
+
+=== BFF-ATM-SERVICE ===
+SecurityConfig.java:19: .requestMatchers("/actuator/health").permitAll()
+SecurityConfig.java:20: .anyRequest().hasAuthority("SCOPE_atm"))
+COINCIDENCIAS: 2
+
+=== FIN PASO 30 ===

@@ -1,0 +1,733 @@
+COMANDO: ./mvnw test
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Banco XYZ - Semana 8                                               [pom]
+[INFO] shared-events                                                      [jar]
+[INFO] authorization-server                                               [jar]
+[INFO] config-server                                                      [jar]
+[INFO] eureka-server                                                      [jar]
+[INFO] core-banking-service                                               [jar]
+[INFO] bff-web-service                                                    [jar]
+[INFO] bff-mobile-service                                                 [jar]
+[INFO] bff-atm-service                                                    [jar]
+[INFO] payment-service                                                    [jar]
+[INFO] customer-service                                                   [jar]
+[INFO] 
+[INFO] --------------< cl.duoc.bancoxyz:banco-xyz-microservices >--------------
+[INFO] Building Banco XYZ - Semana 8 1.0.0                               [1/11]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:shared-events >-------------------
+[INFO] Building shared-events 1.0.0                                      [2/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ shared-events ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ shared-events ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ shared-events ---
+[INFO] 
+[INFO] ---------------< cl.duoc.bancoxyz:authorization-server >----------------
+[INFO] Building authorization-server 1.0.0                               [3/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ authorization-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ authorization-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ authorization-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/authorization-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ authorization-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ authorization-server ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.authorization.AuthorizationServerTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.603 s -- in cl.duoc.bancoxyz.authorization.AuthorizationServerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:config-server >-------------------
+[INFO] Building config-server 1.0.0                                      [4/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ config-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ config-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ config-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/config-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ config-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ config-server ---
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:eureka-server >-------------------
+[INFO] Building eureka-server 1.0.0                                      [5/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ eureka-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ eureka-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ eureka-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/eureka-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ eureka-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ eureka-server ---
+[INFO] 
+[INFO] ---------------< cl.duoc.bancoxyz:core-banking-service >----------------
+[INFO] Building core-banking-service 1.0.0                               [6/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ core-banking-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ core-banking-service ---
+[INFO] Copying 3 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ core-banking-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 s -- in cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest
+[INFO] Running cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.903 s -- in cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest
+[INFO] Running cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest
+[INFO] Running cl.duoc.bancoxyz.core.CoreHealthSecurityIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.16 s -- in cl.duoc.bancoxyz.core.CoreHealthSecurityIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.OperationalBatchIsolationIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.08 s -- in cl.duoc.bancoxyz.core.OperationalBatchIsolationIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.AccountManagementIntegrationTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.182 s -- in cl.duoc.bancoxyz.core.AccountManagementIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.429 s -- in cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.146 s -- in cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.CoreSecurityTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.732 s -- in cl.duoc.bancoxyz.core.CoreSecurityTest
+[INFO] Running cl.duoc.bancoxyz.core.OperationalAccountsSchemaIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.602 s -- in cl.duoc.bancoxyz.core.OperationalAccountsSchemaIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.939 s -- in cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.735 s -- in cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.867 s -- in cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.core.kafka.AsyncWithdrawalServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in cl.duoc.bancoxyz.core.kafka.AsyncWithdrawalServiceTest
+[INFO] Running cl.duoc.bancoxyz.config.BankDataSkipPolicyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in cl.duoc.bancoxyz.config.BankDataSkipPolicyTest
+[INFO] Running cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.807 s -- in cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.618 s -- in cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.batch.MonthlyInterestDeterminismIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.922 s -- in cl.duoc.bancoxyz.batch.MonthlyInterestDeterminismIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.237 s -- in cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 137, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:bff-web-service >------------------
+[INFO] Building bff-web-service 1.0.0                                    [7/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-web-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-web-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-web-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-web-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-web-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-web-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.web.WebServicesClientTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.585 s -- in cl.duoc.bancoxyz.web.WebServicesClientTest
+[INFO] Running cl.duoc.bancoxyz.web.WebResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.478 s -- in cl.duoc.bancoxyz.web.WebResilience4jTest
+[INFO] Running cl.duoc.bancoxyz.web.WebBearerPropagationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in cl.duoc.bancoxyz.web.WebBearerPropagationTest
+[INFO] Running cl.duoc.bancoxyz.web.WebServicesResilienceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 s -- in cl.duoc.bancoxyz.web.WebServicesResilienceTest
+[INFO] Running cl.duoc.bancoxyz.web.WebSecurityTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.621 s -- in cl.duoc.bancoxyz.web.WebSecurityTest
+[INFO] Running cl.duoc.bancoxyz.web.WebServicesSecurityTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.714 s -- in cl.duoc.bancoxyz.web.WebServicesSecurityTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------< cl.duoc.bancoxyz:bff-mobile-service >-----------------
+[INFO] Building bff-mobile-service 1.0.0                                 [8/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-mobile-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-mobile-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-mobile-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-mobile-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-mobile-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-mobile-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileSecurityTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.692 s -- in cl.duoc.bancoxyz.mobile.MobileSecurityTest
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileServicesResilienceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.640 s -- in cl.duoc.bancoxyz.mobile.MobileServicesResilienceTest
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileServicesClientTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 s -- in cl.duoc.bancoxyz.mobile.MobileServicesClientTest
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileBearerPropagationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s -- in cl.duoc.bancoxyz.mobile.MobileBearerPropagationTest
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.592 s -- in cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.163 s -- in cl.duoc.bancoxyz.mobile.MobileResilience4jTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:bff-atm-service >------------------
+[INFO] Building bff-atm-service 1.0.0                                    [9/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-atm-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-atm-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-atm-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-atm-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-atm-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-atm-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.atm.AtmSecurityTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.334 s -- in cl.duoc.bancoxyz.atm.AtmSecurityTest
+[INFO] Running cl.duoc.bancoxyz.atm.AtmBffControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in cl.duoc.bancoxyz.atm.AtmBffControllerTest
+[INFO] Running cl.duoc.bancoxyz.atm.AtmResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.492 s -- in cl.duoc.bancoxyz.atm.AtmResilience4jTest
+[INFO] Running cl.duoc.bancoxyz.atm.AtmBearerPropagationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s -- in cl.duoc.bancoxyz.atm.AtmBearerPropagationTest
+[INFO] Running cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 s -- in cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:payment-service >------------------
+[INFO] Building payment-service 1.0.0                                   [10/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ payment-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ payment-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/payment-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ payment-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.105 s -- in cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest
+[INFO] Running cl.duoc.bancoxyz.payment.CoreOperationClientTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.314 s -- in cl.duoc.bancoxyz.payment.CoreOperationClientTest
+[INFO] Running cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.645 s -- in cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest
+[INFO] Running cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.10 s -- in cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 52.39 s -- in cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.payment.PaymentControllerTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.002 s -- in cl.duoc.bancoxyz.payment.PaymentControllerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 70, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -----------------< cl.duoc.bancoxyz:customer-service >------------------
+[INFO] Building customer-service 1.0.0                                  [11/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ customer-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ customer-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ customer-service ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ customer-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ customer-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.customer.CustomerServiceTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.570 s -- in cl.duoc.bancoxyz.customer.CustomerServiceTest
+[INFO] Running cl.duoc.bancoxyz.customer.CustomerIntegrationTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.40 s -- in cl.duoc.bancoxyz.customer.CustomerIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.customer.CustomerSecurityTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.948 s -- in cl.duoc.bancoxyz.customer.CustomerSecurityTest
+[INFO] Running cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.10 s -- in cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 44, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Banco XYZ - Semana 8 1.0.0:
+[INFO] 
+[INFO] Banco XYZ - Semana 8 ............................... SUCCESS [  0.003 s]
+[INFO] shared-events ...................................... SUCCESS [  0.607 s]
+[INFO] authorization-server ............................... SUCCESS [  8.753 s]
+[INFO] config-server ...................................... SUCCESS [  0.241 s]
+[INFO] eureka-server ...................................... SUCCESS [  0.201 s]
+[INFO] core-banking-service ............................... SUCCESS [01:51 min]
+[INFO] bff-web-service .................................... SUCCESS [  8.883 s]
+[INFO] bff-mobile-service ................................. SUCCESS [  8.306 s]
+[INFO] bff-atm-service .................................... SUCCESS [  8.808 s]
+[INFO] payment-service .................................... SUCCESS [01:29 min]
+[INFO] customer-service ................................... SUCCESS [ 29.285 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:26 min
+[INFO] Finished at: 2026-10-12T18:13:46-03:00
+[INFO] ------------------------------------------------------------------------
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest internalClientCannotObtainChannelScopes PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest channelClientsCannotObtainInternalScope PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest tokenEndpointRejectsScopeNotRegisteredForClient PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest resourceServerRejectsWrongIssuerAndTamperedSignature PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest internalTokenWithoutRequestedScopeDoesNotGainPermissions PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest registersChannelClientsWithExclusiveScopes PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest internalClientIsDisabledWhenCredentialIsNotConfigured PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest publishedJwkValidatesAccessTokenForResourceServer PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest contextLoads PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest registersInternalClientWithExclusiveScopeAndEncodedCredential PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest clientCredentialsIssuesSignedJwtForPayments PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest internalClientRejectsIncorrectCredential PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest jwksEndpointExposesOnlyPublicRsaKey PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest clientCredentialsIssuesSignedJwtAccessToken PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest tokenEndpointRejectsInvalidClientSecret PASS
+cl.duoc.bancoxyz.atm.AtmBearerPropagationTest propagatesAuthenticatedBearerTokenToCore PASS
+cl.duoc.bancoxyz.atm.AtmBffControllerTest withdrawReturnsServiceUnavailableWhenKafkaPublicationTimesOut PASS
+cl.duoc.bancoxyz.atm.AtmBffControllerTest withdrawReturnsServiceUnavailableWhenKafkaPublicationFails PASS
+cl.duoc.bancoxyz.atm.AtmBffControllerTest withdrawPublishesKafkaEventAndAcceptsPendingTransaction PASS
+cl.duoc.bancoxyz.atm.AtmResilience4jTest circuitBreakerStartsClosedAndAllowsSuccessfulCall PASS
+cl.duoc.bancoxyz.atm.AtmResilience4jTest circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed PASS
+cl.duoc.bancoxyz.atm.AtmResilience4jTest circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest authorizedWithdrawalKeepsKafkaTimeoutResponse PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest rejectsOtherChannelScopes PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest allowsMatchingScope PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest authorizedWithdrawalKeepsAcceptedPendingResponse PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest authorizedWithdrawalKeepsKafkaFailureResponse PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest rejectsInvalidBearerToken PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest rejectsRequestsWithoutToken PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest rejectsInternalPaymentScope PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest convertsBearerTokenScopeUsingResourceServer PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest legacyLoginEndpointIsRemoved PASS
+cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest publishRestoresInterruptFlagWhenInterrupted PASS
+cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest publishFailsWhenKafkaDoesNotAcknowledgeWithinTimeout PASS
+cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest publishFailsWhenKafkaSendThrowsImmediately PASS
+cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest publishSucceedsWhenKafkaAcknowledgesMessage PASS
+cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest publishFailsWhenKafkaRejectsMessage PASS
+cl.duoc.bancoxyz.mobile.MobileBearerPropagationTest propagatesAuthenticatedBearerTokenToCore PASS
+cl.duoc.bancoxyz.mobile.MobileResilience4jTest circuitBreakerStartsClosedAndAllowsSuccessfulCall PASS
+cl.duoc.bancoxyz.mobile.MobileResilience4jTest circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed PASS
+cl.duoc.bancoxyz.mobile.MobileResilience4jTest circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest rejectsOtherChannelScopes PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest allowsMatchingScope PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest rejectsInvalidBearerToken PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest rejectsRequestsWithoutToken PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest rejectsInternalPaymentScope PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest convertsBearerTokenScopeUsingResourceServer PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest legacyLoginEndpointIsRemoved PASS
+cl.duoc.bancoxyz.mobile.MobileServicesClientTest projectsCompletedAndRejectedOperationsWithoutBalancesOrPersonalData PASS
+cl.duoc.bancoxyz.mobile.MobileServicesClientTest lostOrUnconfirmedMonetaryResultRemainsUnknown PASS
+cl.duoc.bancoxyz.mobile.MobileServicesClientTest preservesFunctionalAndAuthorizationStatuses PASS
+cl.duoc.bancoxyz.mobile.MobileServicesClientTest projectsCustomerIntoThreeEssentialFields PASS
+cl.duoc.bancoxyz.mobile.MobileServicesClientTest malformedOrWrongCustomerIdentityProduces503 PASS
+cl.duoc.bancoxyz.mobile.MobileServicesResilienceTest existingQueriesPreserve404WithoutRecordingInfrastructureFailures PASS
+cl.duoc.bancoxyz.mobile.MobileServicesResilienceTest customerFunctionalErrorsDoNotOpenCircuitOrAffectCore PASS
+cl.duoc.bancoxyz.mobile.MobileServicesResilienceTest customerOutageOpensOnlyItsCircuitAndStopsRemoteCalls PASS
+cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest mobileScopeReceivesReducedCustomerAndOperationJson PASS
+cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest absentOrInvalidBearerCannotReachServices PASS
+cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest mobileDoesNotExposeAdministrationOrAccounting PASS
+cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest webAtmInternalAndMissingScopesCannotUseMobileRoutes PASS
+cl.duoc.bancoxyz.web.WebBearerPropagationTest propagatesAuthenticatedBearerTokenToCore PASS
+cl.duoc.bancoxyz.web.WebResilience4jTest circuitBreakerStartsClosedAndAllowsSuccessfulCall PASS
+cl.duoc.bancoxyz.web.WebResilience4jTest circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed PASS
+cl.duoc.bancoxyz.web.WebResilience4jTest circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits PASS
+cl.duoc.bancoxyz.web.WebSecurityTest rejectsOtherChannelScopes PASS
+cl.duoc.bancoxyz.web.WebSecurityTest allowsMatchingScope PASS
+cl.duoc.bancoxyz.web.WebSecurityTest rejectsInvalidBearerToken PASS
+cl.duoc.bancoxyz.web.WebSecurityTest rejectsRequestsWithoutToken PASS
+cl.duoc.bancoxyz.web.WebSecurityTest rejectsInternalPaymentScope PASS
+cl.duoc.bancoxyz.web.WebSecurityTest convertsBearerTokenScopeUsingResourceServer PASS
+cl.duoc.bancoxyz.web.WebSecurityTest legacyLoginEndpointIsRemoved PASS
+cl.duoc.bancoxyz.web.WebServicesClientTest unavailableUnexpectedOrUnconfirmedResultsNeverReportCompletion PASS
+cl.duoc.bancoxyz.web.WebServicesClientTest forwardsAdministrativeRequestsAndRebuildsPublicLocation PASS
+cl.duoc.bancoxyz.web.WebServicesClientTest missingOrInvalidOperationUuidNeverSendsARequest PASS
+cl.duoc.bancoxyz.web.WebServicesClientTest timeoutKeepsUnknownAndUuidWithoutRepeatingTheCommand PASS
+cl.duoc.bancoxyz.web.WebServicesClientTest forwardsPaymentsWithoutChangingUuidAmountsOrResults PASS
+cl.duoc.bancoxyz.web.WebServicesClientTest forwardsAllFiveCustomerContractsWithoutDuplicatingTheirModels PASS
+cl.duoc.bancoxyz.web.WebServicesClientTest functionalAndAuthorizationErrorsRetainTheirStatusAcrossServices PASS
+cl.duoc.bancoxyz.web.WebServicesResilienceTest paymentFailureKeepsUuidUnknownAndStopsRepeatedRemoteCalls PASS
+cl.duoc.bancoxyz.web.WebServicesResilienceTest existingQueriesPreserve404WithoutRecordingInfrastructureFailures PASS
+cl.duoc.bancoxyz.web.WebServicesResilienceTest customerFunctionalErrorsDoNotOpenCircuitOrAffectCore PASS
+cl.duoc.bancoxyz.web.WebServicesResilienceTest customerOutageOpensOnlyItsCircuitAndStopsRemoteCalls PASS
+cl.duoc.bancoxyz.web.WebServicesSecurityTest otherChannelsInternalAndAbsentScopesCannotUseNewEndpoints PASS
+cl.duoc.bancoxyz.web.WebServicesSecurityTest matchingWebScopeReachesEveryNewEndpoint PASS
+cl.duoc.bancoxyz.web.WebServicesSecurityTest missingAndInvalidBearerAreUnauthorizedForEveryNewRoute PASS
+cl.duoc.bancoxyz.web.WebServicesSecurityTest malformedInputsAndAccountingPathsDoNotInvokeBusinessClients PASS
+cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest debeProcesarStepAnualSinGenerarArchivoDeSalida PASS
+cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest debeProcesarDatasetDailyHistorico PASS
+cl.duoc.bancoxyz.batch.MonthlyInterestDeterminismIntegrationTest debeConservarUltimoRegistroValidoYSaldosEnDosEjecuciones PASS
+cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest debeProcesarDatasetMonthlyHistorico PASS
+cl.duoc.bancoxyz.config.BankDataSkipPolicyTest debePermitirInvalidDataException PASS
+cl.duoc.bancoxyz.config.BankDataSkipPolicyTest noDebePermitirExcepcionGenerica PASS
+cl.duoc.bancoxyz.config.BankDataSkipPolicyTest debePermitirFlatFileParseException PASS
+cl.duoc.bancoxyz.config.BankDataSkipPolicyTest noDebePermitirSkipAlAlcanzarLimite PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[1] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[2] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[3] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[4] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[1] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[2] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[3] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[4] PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest closedAccountRejectsEveryNewMonetaryDirectionWithoutPartialTransfers PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest exhaustedIntegerIdentifiersRejectOpeningWithoutChangingExistingData PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest maintenancePreservesClientCreationBalancesLedgerAndBatch PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest webAndMobileCanOpenMaintainAndCloseWithZeroInitialFunds PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest operativeQueriesTakePriorityAndLegacyFallbackNeverImportsAccounts PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest newAccountsExposeThePreviousQueryContractsAndEmptyHistory PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest positiveBalanceCannotCloseAndInvalidMaintenanceCannotChangeTheRow PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest failedInsertRollsBackOpeningAndDoesNotReuseTheReservedIdentifier PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest customerFailuresLeaveNeitherPartialAccountsNorSequenceReservations PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest immutableAndBalanceFieldsAreRejectedInOpeningAndMaintenance PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest invalidOrMissingAdministrativeTargetsReturnClearErrors PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest closingPreservesOriginalMonetaryResultsAndTheirIdempotency PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest administrativeEndpointsRejectAtmInternalAndInsufficientScopesWithoutWrites PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest schemaReinitializationPreservesAccountsLedgerAndSequence PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest concurrentOpeningsAvoidBothOperativeAndHistoricalIdentifiers PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest logicalClosePreservesAssociationAndHistoryAndRepeatedCloseConflicts PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest administrativeEndpointsRequireAValidBearerToken PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest invalidOpeningDataNeverCallsCustomersOrWritesAccounts PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest concurrentDebitsCannotSpendTheSameFunds PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest closedSourceRejectsDebitAndTransfer PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest nonPositiveAmountsPersistRejections PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest operationWaitsForAccountLockAndReadsCommittedState PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest failureAfterSourceUpdateRollsBackBothBalancesAndOperationReservation PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest repeatedRequestReturnsOriginalResultAfterLaterOperations PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest repeatedIdentifierWithDifferentAmountTypeOrAccountsReturnsConflict PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest concurrentIdenticalRequestsChargeOnceAndReturnIdenticalResults PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest transferPreservesTotalBalance PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest debitAndCreditPersistFinalBalances PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest concurrentIdentifierCollisionDoesNotApplyBothRequests PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest queryValidatesIdentifierAndMissingOperation PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest oppositeConcurrentTransfersCompleteWithoutDeadlock PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest overflowingTargetRejectsCreditAndTransfer PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest missingAccountsLeaveAnAuditableRejection PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest invalidRequestsAreRejectedBeforeAnyWrite PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest closedTargetRejectsCreditAndTransfer PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest insufficientFundsRejectWithoutUpdatingEitherAccount PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest repeatedRejectionRemainsRejectedAfterAccountReceivesFunds PASS
+cl.duoc.bancoxyz.core.CoreHealthSecurityIntegrationTest healthRemainsPublicWithoutBearerToken PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest acceptsBearerTokenPropagatedByBff PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest allowsAuthenticatedOAuth2Token PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest asyncWithdrawalPrefixCannotFallThroughToAccountPermissions PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest configurationOriginRemainsAvailableToExistingChannels PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest atmCanReadAsyncWithdrawalStatus PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest tokenWithoutScopeCannotReadExistingQueries PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest rejectsInvalidBearerToken PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest rejectsDirectBankingAccessWithoutToken PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest internalScopeDoesNotAuthorizeChannelQueries PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest mobileCanReadLatestMovements PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest unlistedPathsAreDeniedEvenWithValidScopes PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest webCanReadAnnualStatement PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest existingQueriesRejectEveryInsufficientScope PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest webAndMobileCanReadTheSharedAccountQuery PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest queryPermissionsDoNotAuthorizeOtherHttpMethods PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest brokenHttpConnectionProducesTemporaryFailureWithoutWrites PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest aRealReadTimeoutDoesNotConfirmCustomerExistence PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest wrongIdentityIncompleteOrMalformedBodiesFailClosed PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest upstreamAuthenticationRejectionsPreventAccountCreation PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest unexpectedStatusesAndRedirectsDoNotCreateAccountsOrForwardTokens PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest loadBalancerResolvesCustomersAndPropagatesOnlyTheIncomingBearer PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest missingCustomerIsNotConfusedWithTemporaryFailure PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest repeatedHttpCommandReturnsOriginalResultAndDifferentDataConflicts PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest creditUsesRealTransactionalService PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest transferUpdatesBothAccountsAndPersistsResult PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest accountAndAmountBusinessRejectionsArePersisted PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest channelAndMissingScopesCannotExecuteOrReadInternalOperations PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest requestsWithoutTokenAndInvalidTokenAreUnauthorized PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest debitUsesRealTransactionalService PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest internalScopeCannotUseOtherMethodsOrUnlistedPaths PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest queriesReturnNotFoundOrBadRequest PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest malformedAndIncompleteCommandsDoNotWriteOperations PASS
+cl.duoc.bancoxyz.core.OperationalAccountsSchemaIntegrationTest repeatedSchemaInitializationNeverCopiesOrResetsBalances PASS
+cl.duoc.bancoxyz.core.OperationalBatchIsolationIntegrationTest allThreeJobsAndApplicationRestartsPreserveOperationalData PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest invalidAtmAmountsReserveTheMonetaryIdentifierWithoutCharging(String)[1] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest invalidAtmAmountsReserveTheMonetaryIdentifierWithoutCharging(String)[2] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest invalidAtmAmountsReserveTheMonetaryIdentifierWithoutCharging(String)[3] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest missingOrIncompletePersistentResultRequiresReview PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest concurrentRequestsCreateOnlyOneOriginalResult PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest duplicateWithNewEnvelopeKeepsEventIdentifierDateAndOriginalBalance PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest differentAmountOrAccountWithSameTransactionIdConflicts PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest persistenceFailureAfterDebitRollsBackAllEffectsAndRetryKeepsTheIdentifier(String)[1] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest persistenceFailureAfterDebitRollsBackAllEffectsAndRetryKeepsTheIdentifier(String)[2] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest historicalResultCanBeRecoveredWithoutChargingTheOperationalAccount PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest insufficientFundsPersistRejectionWithoutChangingEitherBalanceModel PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest legacyListenerCannotStartThroughTheGenericKafkaProperty PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest closedAccountIsRejected PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest malformedMonetaryValuesRollBackWithoutPersistentWithdrawal PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest completesAndAtomicallyStoresMonetaryOperationStatusAndOriginalEvent PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest internalHttpScopeAndAtmStatusContractRemainSeparate PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest missingAccountIsRejectedAndAuditable PASS
+cl.duoc.bancoxyz.core.kafka.AsyncWithdrawalServiceTest ignoresAnEventAlreadyProcessed PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeRechazarSignosOtiposInvalidos(String, String)[1] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeRechazarSignosOtiposInvalidos(String, String)[2] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeRechazarSignosOtiposInvalidos(String, String)[3] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeRechazarSignosOtiposInvalidos(String, String)[4] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeRechazarSignosOtiposInvalidos(String, String)[5] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeAceptarMovimientosYformatosLegacy(String, String, String)[1] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeAceptarMovimientosYformatosLegacy(String, String, String)[2] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeAceptarMovimientosYformatosLegacy(String, String, String)[3] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeAceptarMovimientosYformatosLegacy(String, String, String)[4] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeRechazarFechaInvalida(String)[1] PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest debeRechazarFechaInvalida(String)[2] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeRechazarDuplicadoPersistido PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeRechazarMontoOtipoNoPermitido(String, String)[1] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeRechazarMontoOtipoNoPermitido(String, String)[2] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeRechazarMontoOtipoNoPermitido(String, String)[3] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeTransformarTransaccionValidaConFormatosLegacy(String)[1] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeTransformarTransaccionValidaConFormatosLegacy(String)[2] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeTransformarTransaccionValidaConFormatosLegacy(String)[3] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeTransformarTransaccionValidaConFormatosLegacy(String)[4] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debePropagarErrorTemporalParaRetry PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeRechazarDuplicadoEnMismaEjecucion PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeRechazarFechaInvalida(String)[1] PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest debeRechazarFechaInvalida(String)[2] PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest debeCalcularInteresParaCuentaPrestamo PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest debeCalcularInteresParaCuentaAhorro PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest debeRechazarDatosNoPermitidos(String, String, String)[1] PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest debeRechazarDatosNoPermitidos(String, String, String)[2] PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest debeRechazarDatosNoPermitidos(String, String, String)[3] PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest debeRechazarDatosNoPermitidos(String, String, String)[4] PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest debeRechazarDatosNoPermitidos(String, String, String)[5] PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest debeRechazarDatosNoPermitidos(String, String, String)[6] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest personalUpdateChangesOnlyAuthorizedFieldsAndKeepsCreationDateAndProfile PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest concurrentPersonalAndProfileUpdatesPreserveBothChanges PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[3] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[4] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[5] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest duplicateEmailIgnoresCaseAndReturnsASafe409 PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest registersAndReadsThePersistedCustomerWithGeneratedIdentityAndNormalizedData PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest httpValidationRejectsInvalidPersonalInformationWithoutChangingTheCustomer PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest immutableAndUnrelatedFieldsCannotBeAssignedThroughJson PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest healthIsPublicWithTheRealDatasource PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest initializationAndCustomerWritesPreserveExistingDataAndForeignTables PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest malformedJsonIdentifiersAndMissingNamesReturn400 PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest duplicateEmailDuringUpdateLeavesAllOriginalFieldsUnchanged PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unknownCustomersReturn404ForEveryReadAndUpdate PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest profileReadAndUpdatePreservePersonalInformation PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest concurrentRegistrationsWithTheSameEmailCreateOnlyOneCustomer PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest realSchemaConstraintsProtectTheTableAndCaseInsensitiveUniqueness PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest realAtmAndPaymentTokensAreForbiddenAndCannotAlterCustomers PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest realWebAndMobileTokensCanUseAllFiveCustomerEndpoints PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest missingMalformedAndInvalidSignaturesAreUnauthorizedAndHealthIsPublic PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[3] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[4] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest absentOrInvalidSimulatedTokensAreUnauthorized(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest absentOrInvalidSimulatedTokensAreUnauthorized(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest undefinedEndpointsAndMethodsAreDenied PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest allowedScopesCanUseAllFiveEndpoints(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest allowedScopesCanUseAllFiveEndpoints(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest databaseErrorsDoNotExposeInternalDetails PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidIdentifiersCannotReadOrUpdateCustomers PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest profileUpdateRequiresAProfile PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest registrationRequiresABusinessProfile PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest missingInformationCannotCreateOrUpdateACustomer PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[3] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[4] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[5] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[6] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[7] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[8] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest serverErrorLeavesTheOperationUnknown PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest businessRejectionIsReturnedWithoutRetry PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest preservesKnownHttpErrors(int, String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest preservesKnownHttpErrors(int, String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest preservesKnownHttpErrors(int, String)[3] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest connectionFailureKeepsTheIdentifier PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest missingOrMalformedResponseNeverReportsSuccess(String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest missingOrMalformedResponseNeverReportsSuccess(String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest missingOrMalformedResponseNeverReportsSuccess(String)[3] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest missingOrMalformedResponseNeverReportsSuccess(String)[4] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest wrongIdentifierWrongTypeAndPendingResultsAreUnknown PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest timeoutDoesNotRetryOrReportRejection PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest internalAuthorizationErrorsNeverLookLikeCallerAuthenticationErrors(int)[1] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest internalAuthorizationErrorsNeverLookLikeCallerAuthenticationErrors(int)[2] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest unavailableTokenDoesNotCallCore PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest queryRetrievesTheResultUsingTheSameIdentifier PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest sendsMatchingInternalRouteAndInternalCredential(String, String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest sendsMatchingInternalRouteAndInternalCredential(String, String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest sendsMatchingInternalRouteAndInternalCredential(String, String)[3] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest recoveryQueryUsesTheOriginalTransactionId PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest incompatibleOrNonFinalResponseIsUnknown(String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest incompatibleOrNonFinalResponseIsUnknown(String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest incompatibleOrNonFinalResponseIsUnknown(String)[3] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest incompatibleOrNonFinalResponseIsUnknown(String)[4] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest lostHttpResponsePreservesIdentityAndDoesNotRetryTheCommand PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest rejectedCredentialIsEvictedAndCommandIsNotAutomaticallyRepeated(int)[1] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest rejectedCredentialIsEvictedAndCommandIsNotAutomaticallyRepeated(int)[2] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest identifierConflictRemainsAConflictAndDoesNotDiscardCredential PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest returnsOriginalFinalEventUsingItsOwnInternalIdentity(String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest returnsOriginalFinalEventUsingItsOwnInternalIdentity(String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest unavailableTokenCannotSendAnUnauthenticatedRequest PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest sqlFailureRollsBackBothAccountsAndSameIdentifierCanBeRetried PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest invalidPrecisionAndIncompleteRequestsWriteNothing PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest internalHttpAuthenticationFailuresAreUnknownAndNeverAlterAccounts PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest paymentsDepositsAndTransfersUseRealHttpOauthAndPostgres PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest accountAndAmountErrorsAreDecidedAndPersistedByCore PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest realSignedTokensEnforceTheInternalAndPublicScopeMatrix PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest lostResponseAfterCommitIsUnknownAndSameIdentifierRecoversWithoutChargingAgain PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest duplicateKeepsOriginalResultAfterLaterDepositAndConflictingDataCannotCharge PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest conflictAndUnknownResultsKeepTheirIdentifierAndHttpStatus PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest transferSelectsTransferAndPreservesBothAccounts PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest unlistedMethodsAndPathsAreDenied PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest businessRejectionRemainsARejectedResult PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest noTokenAndInvalidTokenAreUnauthorizedOnEveryPublicRoute PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest atmInternalAndMissingScopesCannotUseAnyPublicOperation PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest mobileDepositSelectsCredit PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest paymentSelectsDebitAndPreservesIdentifier PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest retriesSendTheSameIdentifierAndData PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest queryReturnsPersistedOperation PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest missingRequiredDataAndMalformedJsonNeverCallCore PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest defaultConsumerIsInactiveAndExplicitIsolatedActivationCommitsOnlyAfterPublication PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest insufficientClosedMissingAndInvalidAtmAmountsPublishStableRejections PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest differentRequestEventIdRepublishesTheSameOriginalResultWithoutAnotherCharge PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest lostHttpResponseAfterPostgresCommitIsRecoveredByOneQuery PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest producerCannotPublishAndRestartRedeliversInputWithSamePersistedResult PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest resultConfirmedButInputAcknowledgmentFailsAndRedeliveryPublishesSameEvent PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest coreNetworkFailureStopsWithoutAcknowledgmentAndCanBeRecovered PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest unavailableInternalTokenStopsAndCorrectCredentialRecoversTheSameInput PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest rejectedInternalScopeDoesNotChargeAndAtmStatusStillUsesItsExistingContract PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest conflictingTransactionStopsWithoutAnotherChargeOrContradictoryResult PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest publicationTimeoutDoesNotAcknowledge PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest acknowledgmentWaitsUntilThePublicationFutureCompletes PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest coreUnavailableAfterOneRecoveryQueryDoesNotAcknowledgeOrPublish PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest conflictingRequestIsNotConvertedIntoAnotherBankingResult PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest immediateSendFailureDoesNotAcknowledge PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest lostHttpResponseQueriesSameIdentifierAndPublishesStoredEvent PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest failedPublicationDoesNotAcknowledge PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest publishesCompletedOriginalEventBeforeAcknowledging PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest inputAcknowledgmentFailureCanOnlyRepublishTheOriginalEventOnRedelivery PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest publishesRejectedOriginalEventBeforeAcknowledging PASS
+Tests run: 337 Failures: 0 Errors: 0 Skipped: 0
+RESULTADO: PASS; casos distintos de la seleccion, no adicionales al reactor.

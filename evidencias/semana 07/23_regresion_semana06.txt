@@ -1,0 +1,92 @@
+=== HEALTHCHECKS ===
+http://localhost:8888/actuator/health
+{"status":"UP"}http://localhost:8761/actuator/health
+{"status":"UP"}http://localhost:8081/actuator/health
+{"status":"UP"}http://localhost:8082/actuator/health
+{"status":"UP"}http://localhost:8083/actuator/health
+{"status":"UP"}http://localhost:8084/actuator/health
+{"status":"UP"}
+=== CONFIG SERVER ===
+core-banking-service file:config-repo/core-banking-service.yml
+
+=== EUREKA ===
+    <name>BFF-WEB-SERVICE</name>
+      <status>UP</status>
+        <name>MyOwn</name>
+    <name>CORE-BANKING-SERVICE</name>
+      <status>DOWN</status>
+        <name>MyOwn</name>
+    <name>BFF-MOBILE-SERVICE</name>
+      <status>UP</status>
+        <name>MyOwn</name>
+    <name>BFF-ATM-SERVICE</name>
+      <status>UP</status>
+        <name>MyOwn</name>
+
+=== CONSULTAS BFF ===
+BFF Web intento 1: HTTP 503
+BFF Web intento 2: HTTP 503
+BFF Web intento 3: HTTP 503
+BFF Web intento 4: HTTP 503
+BFF Web intento 5: HTTP 200
+WEB HTTP FINAL: 200
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:09:49 GMT
+
+{"accountId":104,"accountName":"Bob Johnson","accountType":"prestamo","initialBalance":10000.00,"interestRate":0.0200,"calculatedInterest":200.00,"finalBalance":200.00}BFF Mobile intento 1: HTTP 200
+MOBILE HTTP FINAL: 200
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:09:49 GMT
+
+{"accountId":104,"accountName":"Bob Johnson","finalBalance":200.00,"accountType":"prestamo"}BFF ATM intento 1: HTTP 200
+ATM HTTP FINAL: 200
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:09:49 GMT
+
+{"accountId":104,"balance":200.00}
+=== SEGURIDAD ===
+SIN JWT HTTP FINAL: 401
+HTTP/1.1 401 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 80
+Date: Tue, 29 Sep 2026 01:09:49 GMT
+
+{"error":"UNAUTHORIZED","message":"Token JWT requerido o invalido","status":401}
+=== BATCH INIT ===
+batch-init-1  | dailyTransactionsJob COMPLETED
+batch-init-1  | 2026-09-29T01:04:20.698Z  INFO 8 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=dailyTransactionsJob]] completed with the following parameters: [{'ejecucion':'{value=1790643849601, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s316ms
+batch-init-1  | monthlyInterestJob COMPLETED
+batch-init-1  | 2026-09-29T01:04:32.975Z  INFO 97 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=monthlyInterestJob]] completed with the following parameters: [{'ejecucion':'{value=1790643862602, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 1s757ms
+batch-init-1  | annualStatementsJob COMPLETED
+batch-init-1  | 2026-09-29T01:04:43.214Z  INFO 182 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=annualStatementsJob]] completed with the following parameters: [{'ejecucion':'{value=1790643873603, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s44ms
+batch-init-1  | BATCH INIT COMPLETED

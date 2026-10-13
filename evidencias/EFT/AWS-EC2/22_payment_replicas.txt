@@ -1,0 +1,20 @@
+ Container etf_s9-payment-service-1 Running 
+ Container etf_s9-payment-service-2 Creating 
+ Container etf_s9-payment-service-2 Created 
+ Container etf_s9-payment-service-2 Starting 
+ Container etf_s9-payment-service-2 Started 
+=== VERIFICACION DE REPLICAS PAYMENT ===
+Verificacion 1: 2 replicas, 1 saludables
+Verificacion 2: 2 replicas, 1 saludables
+Verificacion 3: 2 replicas, 2 saludables
+=== ESTADO DE REPLICAS PAYMENT ===
+NAME                       IMAGE                    COMMAND                  SERVICE           CREATED          STATUS                    PORTS
+etf_s9-payment-service-1   etf_s9-payment-service   "java -jar /app/app.…"   payment-service   7 minutes ago    Up 7 minutes (healthy)    8085/tcp
+etf_s9-payment-service-2   etf_s9-payment-service   "java -jar /app/app.…"   payment-service   21 seconds ago   Up 21 seconds (healthy)   8085/tcp
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       3.8Gi       240Mi        21Mi       3.9Gi       3.8Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /
+PAYMENT SERVICE: 2 REPLICAS SALUDABLES

@@ -1,0 +1,4 @@
+=== ESTADO TX_OK ===
+{"transactionId":"e1f51bbc-3167-4973-bbfc-a083e5b4f56a","accountId":104,"amount":10000.00,"status":"COMPLETED","finalBalance":200.00,"rejectionReason":null,"updatedAt":"2026-09-29T01:06:46.837616Z"}
+=== ESTADO TX_REJECT ===
+{"transactionId":"a8a4b2af-edfb-402f-af6b-c2238b4ed5ec","accountId":104,"amount":10000.00,"status":"REJECTED","finalBalance":null,"rejectionReason":"Saldo insuficiente","updatedAt":"2026-09-29T01:07:13.848231Z"}

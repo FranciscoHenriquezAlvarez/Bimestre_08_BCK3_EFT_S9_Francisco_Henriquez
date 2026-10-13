@@ -1,0 +1,20 @@
+=== SERVICIOS DOCKER COMPOSE ===
+NAME                              IMAGE                           COMMAND                  SERVICE                CREATED              STATUS                             PORTS
+banco-xyz-kafka                   apache/kafka:3.9.1              "/__cacert_entrypoin…"   kafka                  5 minutes ago        Up 5 minutes (healthy)             0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp
+banco-xyz-postgres                postgres:16                     "docker-entrypoint.s…"   postgres               5 minutes ago        Up 5 minutes (healthy)             0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+proyecto-batch-init-1             proyecto-batch-init             "/usr/local/bin/batc…"   batch-init             About a minute ago   Exited (0) 28 seconds ago          
+proyecto-bff-atm-service-1        proyecto-bff-atm-service        "java -jar /app/app.…"   bff-atm-service        About a minute ago   Up 15 seconds (health: starting)   0.0.0.0:8084->8084/tcp, [::]:8084->8084/tcp
+proyecto-bff-mobile-service-1     proyecto-bff-mobile-service     "java -jar /app/app.…"   bff-mobile-service     About a minute ago   Up 16 seconds (healthy)            0.0.0.0:8083->8083/tcp, [::]:8083->8083/tcp
+proyecto-bff-web-service-1        proyecto-bff-web-service        "java -jar /app/app.…"   bff-web-service        About a minute ago   Up 16 seconds (health: starting)   0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+proyecto-config-server-1          proyecto-config-server          "java -jar /app/app.…"   config-server          About a minute ago   Up About a minute (healthy)        0.0.0.0:8888->8888/tcp, [::]:8888->8888/tcp
+proyecto-core-banking-service-1   proyecto-core-banking-service   "java -jar /app/app.…"   core-banking-service   About a minute ago   Up 28 seconds (healthy)            0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+proyecto-eureka-server-1          proyecto-eureka-server          "java -jar /app/app.…"   eureka-server          About a minute ago   Up About a minute (healthy)        0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+
+=== BATCH INIT ===
+batch-init-1  | dailyTransactionsJob COMPLETED
+batch-init-1  | 2026-09-29T01:04:20.698Z  INFO 8 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=dailyTransactionsJob]] completed with the following parameters: [{'ejecucion':'{value=1790643849601, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s316ms
+batch-init-1  | monthlyInterestJob COMPLETED
+batch-init-1  | 2026-09-29T01:04:32.975Z  INFO 97 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=monthlyInterestJob]] completed with the following parameters: [{'ejecucion':'{value=1790643862602, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 1s757ms
+batch-init-1  | annualStatementsJob COMPLETED
+batch-init-1  | 2026-09-29T01:04:43.214Z  INFO 182 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=annualStatementsJob]] completed with the following parameters: [{'ejecucion':'{value=1790643873603, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s44ms
+batch-init-1  | BATCH INIT COMPLETED

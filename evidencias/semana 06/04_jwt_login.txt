@@ -1,0 +1,7 @@
+Usuario: atmuser
+Endpoint: POST /auth/login
+HTTP: 200
+Comando: curl -X POST -H 'Content-Type: application/json' -d '{"username":"atmuser","password":"atm123"}' http://localhost:8084/auth/login
+
+Body real (JWT oculto):
+{"accessToken": "[JWT emitido]", "tokenType": "Bearer", "role": "ATM"}

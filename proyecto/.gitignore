@@ -1,0 +1,6 @@
+target/
+.idea/
+.vscode/
+*.class
+*.log
+src/main/resources/keystore.p12

@@ -1,0 +1,52 @@
+RETIRO NO MULTIPLO DE 10000
+------------------------------------------------------------
+COMANDO: curl -i -X POST -H "X-Channel-Token: atm-token-xyz" -H "Content-Type: application/json" -d "{\"amount\":5000}" http://127.0.0.1:8080/api/bff/atm/accounts/117/withdraw
+HTTP/1.1 400
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:59 GMT
+Connection: close
+
+{"timestamp":"2026-09-13T03:50:59.900+00:00","status":400,"error":"Bad Request","path":"/api/bff/atm/accounts/117/withdraw"}
+
+RETIRO NEGATIVO
+------------------------------------------------------------
+COMANDO: curl -i -X POST -H "X-Channel-Token: atm-token-xyz" -H "Content-Type: application/json" -d "{\"amount\":-10000}" http://127.0.0.1:8080/api/bff/atm/accounts/117/withdraw
+HTTP/1.1 400
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:59 GMT
+Connection: close
+
+{"timestamp":"2026-09-13T03:50:59.916+00:00","status":400,"error":"Bad Request","path":"/api/bff/atm/accounts/117/withdraw"}
+
+SALDO ACTUAL PARA PRUEBA INSUFICIENTE
+------------------------------------------------------------
+COMANDO: curl -i -H "X-Channel-Token: atm-token-xyz" http://127.0.0.1:8080/api/bff/atm/accounts/117/balance
+HTTP/1.1 200
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:59 GMT
+
+{"accountId":117,"balance":2240.00}
+
+SALDO INSUFICIENTE
+------------------------------------------------------------
+COMANDO: curl -i -X POST -H "X-Channel-Token: atm-token-xyz" -H "Content-Type: application/json" -d "{\"amount\":10000}" http://127.0.0.1:8080/api/bff/atm/accounts/117/withdraw
+HTTP/1.1 400
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:59 GMT
+Connection: close
+
+{"timestamp":"2026-09-13T03:50:59.948+00:00","status":400,"error":"Bad Request","path":"/api/bff/atm/accounts/117/withdraw"}
+
+CUENTA INEXISTENTE
+------------------------------------------------------------
+COMANDO: curl -i -H "X-Channel-Token: web-token-xyz" http://127.0.0.1:8080/api/bff/web/accounts/999
+HTTP/1.1 404
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:59 GMT
+
+{"timestamp":"2026-09-13T03:50:59.968+00:00","status":404,"error":"Not Found","path":"/api/bff/web/accounts/999"}

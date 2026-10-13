@@ -1,0 +1,116 @@
+EVIDENCIA: Regresión Batch
+FECHA: 2026-10-05T16:56:49-03:00
+OBJETIVO: Relacionar tres tests con tres Jobs reales
+COMANDO: mvn -pl core-banking-service -am -Dtest=DailyTransactionsJobIntegrationTest,MonthlyInterestJobIntegrationTest,AnnualMovementsStepIntegrationTest -Dsurefire.failIfNoSpecifiedTests=false test; SELECT y logs batch-init
+
+RESULTADO REAL:
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Banco XYZ - Semana 8                                               [pom]
+[INFO] shared-events                                                      [jar]
+[INFO] core-banking-service                                               [jar]
+[INFO] 
+[INFO] --------------< cl.duoc.bancoxyz:banco-xyz-microservices >--------------
+[INFO] Building Banco XYZ - Semana 8 1.0.0                                [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:shared-events >-------------------
+[INFO] Building shared-events 1.0.0                                       [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ shared-events ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ shared-events ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ shared-events ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] ---------------< cl.duoc.bancoxyz:core-banking-service >----------------
+[INFO] Building core-banking-service 1.0.0                                [3/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ core-banking-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ core-banking-service ---
+[INFO] Copying 3 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ core-banking-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.02 s -- in cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.51 s -- in cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.19 s -- in cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Banco XYZ - Semana 8 1.0.0:
+[INFO] 
+[INFO] Banco XYZ - Semana 8 ............................... SUCCESS [  0.003 s]
+[INFO] shared-events ...................................... SUCCESS [  1.420 s]
+[INFO] core-banking-service ............................... SUCCESS [01:02 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:04 min
+[INFO] Finished at: 2026-10-05T16:57:57-03:00
+[INFO] ------------------------------------------------------------------------
+cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeProcesarStepAnualSinGenerarArchivoDeSalida: PASS
+cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeProcesarDatasetDailyHistorico: PASS
+cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeProcesarDatasetMonthlyHistorico: PASS
+Tests run: 3
+Failures: 0
+Errors: 0
+Skipped: 0
+RESULTADO: PASS
+batch-init-1  | dailyTransactionsJob COMPLETED
+batch-init-1  | 2026-10-05T19:44:45.289Z  INFO 8 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=dailyTransactionsJob]] completed with the following parameters: [{'ejecucion':'{value=1791229470601, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s506ms
+batch-init-1  | monthlyInterestJob COMPLETED
+batch-init-1  | 2026-10-05T19:45:04.895Z  INFO 100 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=monthlyInterestJob]] completed with the following parameters: [{'ejecucion':'{value=1791229486602, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 4s11ms
+batch-init-1  | annualStatementsJob COMPLETED
+batch-init-1  | 2026-10-05T19:45:21.856Z  INFO 207 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=annualStatementsJob]] completed with the following parameters: [{'ejecucion':'{value=1791229506603, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s810ms
+batch-init-1  | dailyTransactionsJob COMPLETED
+batch-init-1  | 2026-10-05T19:44:45.289Z  INFO 8 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=dailyTransactionsJob]] completed with the following parameters: [{'ejecucion':'{value=1791229470601, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s506ms
+batch-init-1  | monthlyInterestJob COMPLETED
+batch-init-1  | 2026-10-05T19:45:04.895Z  INFO 100 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=monthlyInterestJob]] completed with the following parameters: [{'ejecucion':'{value=1791229486602, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 4s11ms
+batch-init-1  | annualStatementsJob COMPLETED
+batch-init-1  | 2026-10-05T19:45:21.856Z  INFO 207 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=annualStatementsJob]] completed with the following parameters: [{'ejecucion':'{value=1791229506603, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s810ms
+batch-init-1  | BATCH INIT COMPLETED
+       job_name       | job_execution_id |  status   
+----------------------+------------------+-----------
+ dailyTransactionsJob |                1 | COMPLETED
+ monthlyInterestJob   |                2 | COMPLETED
+ annualStatementsJob  |                3 | COMPLETED
+(3 rows)
+
+RESULTADO: PASS

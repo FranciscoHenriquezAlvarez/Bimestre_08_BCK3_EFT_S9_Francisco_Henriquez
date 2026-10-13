@@ -1,0 +1,15 @@
+Core Banking detenido.
+
+HTTP/1.1 503 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 27 Sep 2026 19:55:59 GMT
+Connection: close
+
+{"timestamp":"2026-09-27T19:55:59.820+00:00","status":503,"error":"Service Unavailable","path":"/api/bff/atm/accounts/104/balance"}

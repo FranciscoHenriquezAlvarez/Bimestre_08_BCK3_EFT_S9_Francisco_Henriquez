@@ -1,0 +1,37 @@
+=== VALIDACION DOCKER COMPOSE ===
+=== INICIANDO CORE BANKING SERVICE ===
+ Container etf_s9-core-banking-service-1 Creating 
+ Container etf_s9-core-banking-service-1 Created 
+ Container etf_s9-core-banking-service-1 Starting 
+ Container etf_s9-core-banking-service-1 Started 
+=== VERIFICACION DE SALUD ===
+Verificacion 1: starting
+Verificacion 2: starting
+Verificacion 3: starting
+Verificacion 4: healthy
+=== ESTADO DE CONTENEDORES AWS ===
+NAMES                           STATUS
+etf_s9-core-banking-service-1   Up 30 seconds (healthy)
+etf_s9-customer-service-1       Up About a minute (healthy)
+etf_s9-batch-init-1             Exited (0) 3 minutes ago
+etf_s9-authorization-server-1   Up 19 minutes (healthy)
+etf_s9-eureka-server-1          Up 25 minutes (healthy)
+etf_s9-config-server-1          Up 26 minutes (healthy)
+etf_s9-postgres-1               Up 29 minutes (healthy)
+etf_s9-kafka-1                  Up 29 minutes (healthy)
+=== CONSUMO DE RECURSOS ===
+NAME                            MEM USAGE / LIMIT     CPU %
+etf_s9-core-banking-service-1   233.6MiB / 7.632GiB   0.18%
+etf_s9-customer-service-1       222.1MiB / 7.632GiB   0.15%
+etf_s9-authorization-server-1   164MiB / 7.632GiB     0.19%
+etf_s9-eureka-server-1          242.9MiB / 7.632GiB   1.10%
+etf_s9-config-server-1          213.4MiB / 7.632GiB   0.16%
+etf_s9-postgres-1               56.06MiB / 7.632GiB   0.00%
+etf_s9-kafka-1                  393.5MiB / 7.632GiB   1.13%
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       2.2Gi       272Mi        20Mi       5.5Gi       5.4Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /
+CORE BANKING SERVICE OPERATIVO

@@ -1,0 +1,105 @@
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest internalClientCannotObtainChannelScopes PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest channelClientsCannotObtainInternalScope PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest tokenEndpointRejectsScopeNotRegisteredForClient PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest resourceServerRejectsWrongIssuerAndTamperedSignature PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest internalTokenWithoutRequestedScopeDoesNotGainPermissions PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest registersChannelClientsWithExclusiveScopes PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest internalClientIsDisabledWhenCredentialIsNotConfigured PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest publishedJwkValidatesAccessTokenForResourceServer PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest contextLoads PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest registersInternalClientWithExclusiveScopeAndEncodedCredential PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest clientCredentialsIssuesSignedJwtForPayments PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest internalClientRejectsIncorrectCredential PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest jwksEndpointExposesOnlyPublicRsaKey PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest clientCredentialsIssuesSignedJwtAccessToken PASS
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest tokenEndpointRejectsInvalidClientSecret PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest authorizedWithdrawalKeepsKafkaTimeoutResponse PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest rejectsOtherChannelScopes PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest allowsMatchingScope PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest authorizedWithdrawalKeepsAcceptedPendingResponse PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest authorizedWithdrawalKeepsKafkaFailureResponse PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest rejectsInvalidBearerToken PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest rejectsRequestsWithoutToken PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest rejectsInternalPaymentScope PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest convertsBearerTokenScopeUsingResourceServer PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest legacyLoginEndpointIsRemoved PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest rejectsOtherChannelScopes PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest allowsMatchingScope PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest rejectsInvalidBearerToken PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest rejectsRequestsWithoutToken PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest rejectsInternalPaymentScope PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest convertsBearerTokenScopeUsingResourceServer PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest legacyLoginEndpointIsRemoved PASS
+cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest mobileScopeReceivesReducedCustomerAndOperationJson PASS
+cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest absentOrInvalidBearerCannotReachServices PASS
+cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest mobileDoesNotExposeAdministrationOrAccounting PASS
+cl.duoc.bancoxyz.mobile.MobileServicesSecurityTest webAtmInternalAndMissingScopesCannotUseMobileRoutes PASS
+cl.duoc.bancoxyz.web.BffApplicationsOAuth2IT signedTokensEnforceChannelSeparationAndRejectMissingOrInvalidSignatures PASS
+cl.duoc.bancoxyz.web.WebSecurityTest rejectsOtherChannelScopes PASS
+cl.duoc.bancoxyz.web.WebSecurityTest allowsMatchingScope PASS
+cl.duoc.bancoxyz.web.WebSecurityTest rejectsInvalidBearerToken PASS
+cl.duoc.bancoxyz.web.WebSecurityTest rejectsRequestsWithoutToken PASS
+cl.duoc.bancoxyz.web.WebSecurityTest rejectsInternalPaymentScope PASS
+cl.duoc.bancoxyz.web.WebSecurityTest convertsBearerTokenScopeUsingResourceServer PASS
+cl.duoc.bancoxyz.web.WebSecurityTest legacyLoginEndpointIsRemoved PASS
+cl.duoc.bancoxyz.web.WebServicesSecurityTest otherChannelsInternalAndAbsentScopesCannotUseNewEndpoints PASS
+cl.duoc.bancoxyz.web.WebServicesSecurityTest matchingWebScopeReachesEveryNewEndpoint PASS
+cl.duoc.bancoxyz.web.WebServicesSecurityTest missingAndInvalidBearerAreUnauthorizedForEveryNewRoute PASS
+cl.duoc.bancoxyz.web.WebServicesSecurityTest malformedInputsAndAccountingPathsDoNotInvokeBusinessClients PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT realChannelPermissionsInvalidSignaturesAndAbsentCustomersPreventWrites PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT unavailableCustomerApplicationRejectsOpeningAndRecoversWithoutPartialData PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT realWebAndMobileTokensOpenMaintainAndCloseUsingActualCustomers PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT applicationRestartPreservesAccountsBalancesLedgerAndSequence PASS
+cl.duoc.bancoxyz.core.CoreHealthSecurityIntegrationTest healthRemainsPublicWithoutBearerToken PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest acceptsBearerTokenPropagatedByBff PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest allowsAuthenticatedOAuth2Token PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest asyncWithdrawalPrefixCannotFallThroughToAccountPermissions PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest configurationOriginRemainsAvailableToExistingChannels PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest atmCanReadAsyncWithdrawalStatus PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest tokenWithoutScopeCannotReadExistingQueries PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest rejectsInvalidBearerToken PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest rejectsDirectBankingAccessWithoutToken PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest internalScopeDoesNotAuthorizeChannelQueries PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest mobileCanReadLatestMovements PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest unlistedPathsAreDeniedEvenWithValidScopes PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest webCanReadAnnualStatement PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest existingQueriesRejectEveryInsufficientScope PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest webAndMobileCanReadTheSharedAccountQuery PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest queryPermissionsDoNotAuthorizeOtherHttpMethods PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest realAtmAndPaymentTokensAreForbiddenAndCannotAlterCustomers PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest realWebAndMobileTokensCanUseAllFiveCustomerEndpoints PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest missingMalformedAndInvalidSignaturesAreUnauthorizedAndHealthIsPublic PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[3] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[4] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest absentOrInvalidSimulatedTokensAreUnauthorized(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest absentOrInvalidSimulatedTokensAreUnauthorized(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest undefinedEndpointsAndMethodsAreDenied PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest allowedScopesCanUseAllFiveEndpoints(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest allowedScopesCanUseAllFiveEndpoints(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest databaseErrorsDoNotExposeInternalDetails PASS
+Tests run: 81 Failures: 0 Errors: 0 Skipped: 0
+RESULTADO: PASS; casos distintos de la seleccion, no adicionales al reactor.
+web-client {'token_type': 'Bearer', 'scope': 'web', 'expires_in': 1799}
+mobile-client {'token_type': 'Bearer', 'scope': 'mobile', 'expires_in': 1799}
+atm-client {'token_type': 'Bearer', 'scope': 'atm', 'expires_in': 1799}
+payment-client {'token_type': 'Bearer', 'scope': 'account.operations', 'expires_in': 1799}
+GET http://127.0.0.1:38082/api/bff/web/accounts/101 HTTP=401
+
+GET http://127.0.0.1:38082/api/bff/web/accounts/101 HTTP=403
+
+GET http://127.0.0.1:38082/api/bff/web/accounts/101 HTTP=401
+
+GET http://127.0.0.1:38082/api/bff/web/accounts/101 HTTP=200
+{"accountId":101,"accountName":"Charlie Green","accountType":"prestamo","initialBalance":8000.00,"interestRate":0.0200,"calculatedInterest":160.00,"finalBalance":8160.00}
+GET http://127.0.0.1:38083/api/bff/mobile/accounts/101 HTTP=200
+{"accountId":101,"accountName":"Charlie Green","finalBalance":8160.00,"accountType":"prestamo"}
+Core GET /api/core/internal/operations/ccdf14cd-a9b8-4cfb-abaf-66667bef579e HTTP=403
+
+Core GET /api/core/internal/operations/ccdf14cd-a9b8-4cfb-abaf-66667bef579e HTTP=404
+{"timestamp":"2026-10-12T21:31:42.128+00:00","status":404,"error":"Not Found","path":"/api/core/internal/operations/ccdf14cd-a9b8-4cfb-abaf-66667bef579e"}
+Core GET /api/core/internal/operations/ccdf14cd-a9b8-4cfb-abaf-66667bef579e HTTP=401
+
+Core GET /api/config/origin HTTP=200
+{"configOrigin":"Configuracion cargada desde Spring Cloud Config Server"}

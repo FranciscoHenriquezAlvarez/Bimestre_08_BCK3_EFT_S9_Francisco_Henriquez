@@ -1,0 +1,15 @@
+=== ENDPOINTS DE SALUD ===
+CONFIG_SERVER | HTTP 200
+EUREKA_SERVER | HTTP 200
+AUTHORIZATION_SERVER | HTTP 200
+BFF_WEB | HTTP 200
+BFF_MOBILE | HTTP 200
+BFF_ATM | HTTP 200
+=== METADATOS OAUTH2 ===
+OAUTH2_METADATA | HTTP 200
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       3.8Gi       294Mi        21Mi       3.8Gi       3.8Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /

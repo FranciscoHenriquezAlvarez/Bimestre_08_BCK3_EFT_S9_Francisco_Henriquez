@@ -1,0 +1,57 @@
+EVIDENCIA CERTIFICADO HTTPS - SEMANA 5
+
+RUTA:
+/home/francisco/proyecto/BACKEND III/SEMANA 5/Exp1_S5_Francisco_Henriquez/proyecto
+
+COMANDO: ./scripts/generar-certificado.sh
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 365 days
+	for: CN=localhost, OU=BackendIII, O=DuocUC, L=VinaDelMar, ST=Valparaiso, C=CL
+Certificado de laboratorio generado en src/main/resources/keystore.p12
+
+COMANDO: ls -lh src/main/resources/keystore.p12
+-rw-r--r-- 1 francisco francisco 2.8K Sep 13 21:47 src/main/resources/keystore.p12
+
+COMANDO: keytool -list -v -keystore src/main/resources/keystore.p12 -storetype PKCS12 -storepass changeit
+Keystore type: PKCS12
+Keystore provider: SUN
+
+Your keystore contains 1 entry
+
+Alias name: bff-local
+Creation date: Sep 13, 2026
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=localhost, OU=BackendIII, O=DuocUC, L=VinaDelMar, ST=Valparaiso, C=CL
+Issuer: CN=localhost, OU=BackendIII, O=DuocUC, L=VinaDelMar, ST=Valparaiso, C=CL
+Serial number: 432778cb546890ee
+Valid from: Sun Sep 13 21:47:26 CLST 2026 until: Mon Sep 13 21:47:26 CLST 2027
+Certificate fingerprints:
+	 SHA1: 09:89:8E:1C:55:C6:4F:13:C4:70:02:04:EE:DC:EF:40:79:65:D6:F8
+	 SHA256: 23:F4:AF:86:0F:0A:6D:2A:9D:2C:30:4C:B5:81:85:C5:0B:C1:95:65:03:9E:5A:FB:4B:5A:B9:07:62:19:50:5F
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.17 Criticality=false
+SubjectAlternativeName [
+  DNSName: localhost
+  IPAddress: 127.0.0.1
+]
+
+#2: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 38 14 25 02 FB EE 7A 96   CE A9 85 0F 80 E1 B0 5C  8.%...z........\
+0010: 2B BD B3 8B                                        +...
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+

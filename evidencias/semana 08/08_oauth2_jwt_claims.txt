@@ -1,0 +1,10 @@
+EVIDENCIA: Claims JWT
+FECHA: 2026-10-05T16:49:10-03:00
+OBJETIVO: Comprobar claims públicos sin publicar JWT
+COMANDO: Decodificación local en Python
+
+RESULTADO REAL:
+{"alg": "RS256", "iss": "http://authorization-server:9000", "sub": "web-client", "scope": ["web"], "iat": 1791229650, "exp": 1791231450}
+{"alg": "RS256", "iss": "http://authorization-server:9000", "sub": "mobile-client", "scope": ["mobile"], "iat": 1791229669, "exp": 1791231469}
+{"alg": "RS256", "iss": "http://authorization-server:9000", "sub": "atm-client", "scope": ["atm"], "iat": 1791229690, "exp": 1791231490}
+RESULTADO: PASS

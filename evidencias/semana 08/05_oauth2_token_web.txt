@@ -1,0 +1,9 @@
+EVIDENCIA: Token OAuth2 Web
+FECHA: 2026-10-05T16:47:30-03:00
+OBJETIVO: Obtener Access Token OAuth2 para web-client sin almacenar el JWT completo
+COMANDO: POST http://localhost:9000/oauth2/token - client=web-client - grant_type=client_credentials - scope=web
+
+RESULTADO REAL:
+HTTP status: 200
+{"token_type": "Bearer", "scope": "web", "expires_in": 1799}
+Access Token mantenido exclusivamente en memoria.

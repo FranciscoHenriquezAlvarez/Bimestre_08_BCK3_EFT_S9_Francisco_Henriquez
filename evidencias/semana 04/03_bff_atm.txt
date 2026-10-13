@@ -1,0 +1,76 @@
+BFF ATM - SELECCION DE CUENTA
+------------------------------------------------------------
+COMANDO: docker compose exec -T postgres psql -U banco_user -d banco_xyz -c "SELECT cuenta_id, nombre, tipo, saldo_inicial, tasa, saldo_final FROM intereses_mensuales WHERE saldo_final >= 10000 ORDER BY saldo_final DESC LIMIT 10;"
+ cuenta_id |    nombre     |   tipo   | saldo_inicial |  tasa  | saldo_final
+-----------+---------------+----------+---------------+--------+-------------
+       117 | Diana Prince  | prestamo |      12000.00 | 0.0200 |    12240.00
+       150 | Charlie Green | prestamo |      12000.00 | 0.0200 |    12240.00
+       145 | Steve Rogers  | ahorro   |      12000.00 | 0.0100 |    12120.00
+       118 | Jane Smith    | ahorro   |      12000.00 | 0.0100 |    12120.00
+       148 | Charlie Green | ahorro   |      12000.00 | 0.0100 |    12120.00
+       107 | Steve Rogers  | prestamo |      10000.00 | 0.0200 |    10200.00
+       110 | Charlie Green | prestamo |      10000.00 | 0.0200 |    10200.00
+       126 | John Doe      | prestamo |      10000.00 | 0.0200 |    10200.00
+       104 | Bob Johnson   | prestamo |      10000.00 | 0.0200 |    10200.00
+       102 | Charlie Green | prestamo |      10000.00 | 0.0200 |    10200.00
+(10 rows)
+
+CUENTA SELECCIONADA PARA PRUEBA ATM: 117
+
+ATM - SALDO ANTES DEL RETIRO
+------------------------------------------------------------
+COMANDO: curl -i -H "X-Channel-Token: atm-token-xyz" http://127.0.0.1:8080/api/bff/atm/accounts/117/balance
+HTTP/1.1 200
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:26 GMT
+
+{"accountId":117,"balance":12240.00}
+
+WEB - CUENTA ANTES DEL RETIRO
+------------------------------------------------------------
+COMANDO: curl -i -H "X-Channel-Token: web-token-xyz" http://127.0.0.1:8080/api/bff/web/accounts/117
+HTTP/1.1 200
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:26 GMT
+
+{"accountId":117,"accountName":"Diana Prince","accountType":"prestamo","initialBalance":12000.00,"interestRate":0.0200,"calculatedInterest":240.00,"finalBalance":12240.00}
+
+ATM - RETIRO VALIDO
+------------------------------------------------------------
+COMANDO: curl -i -X POST -H "X-Channel-Token: atm-token-xyz" -H "Content-Type: application/json" -d "{\"amount\":10000}" http://127.0.0.1:8080/api/bff/atm/accounts/117/withdraw
+HTTP/1.1 200
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:26 GMT
+
+{"accountId":117,"withdrawnAmount":10000,"balance":2240.00}
+
+ATM - SALDO DESPUES DEL RETIRO
+------------------------------------------------------------
+COMANDO: curl -i -H "X-Channel-Token: atm-token-xyz" http://127.0.0.1:8080/api/bff/atm/accounts/117/balance
+HTTP/1.1 200
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:26 GMT
+
+{"accountId":117,"balance":2240.00}
+
+WEB - CUENTA DESPUES DEL RETIRO
+------------------------------------------------------------
+COMANDO: curl -i -H "X-Channel-Token: web-token-xyz" http://127.0.0.1:8080/api/bff/web/accounts/117
+HTTP/1.1 200
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:50:26 GMT
+
+{"accountId":117,"accountName":"Diana Prince","accountType":"prestamo","initialBalance":12000.00,"interestRate":0.0200,"calculatedInterest":240.00,"finalBalance":2240.00}
+
+POSTGRESQL - PERSISTENCIA DEL RETIRO
+------------------------------------------------------------
+COMANDO: docker compose exec -T postgres psql -U banco_user -d banco_xyz -c "SELECT cuenta_id, nombre, tipo, saldo_inicial, tasa, saldo_final FROM intereses_mensuales WHERE cuenta_id = 117;"
+ cuenta_id |    nombre    |   tipo   | saldo_inicial |  tasa  | saldo_final
+-----------+--------------+----------+---------------+--------+-------------
+       117 | Diana Prince | prestamo |      12000.00 | 0.0200 |     2240.00
+(1 row)

@@ -1,0 +1,17 @@
+=== EUREKA: SERVICIOS REGISTRADOS ===
+    <name>BFF-WEB-SERVICE</name>
+      <status>UP</status>
+      <port enabled="true">8082</port>
+        <name>MyOwn</name>
+    <name>CORE-BANKING-SERVICE</name>
+      <status>UP</status>
+      <port enabled="true">8081</port>
+        <name>MyOwn</name>
+    <name>BFF-MOBILE-SERVICE</name>
+      <status>UP</status>
+      <port enabled="true">8083</port>
+        <name>MyOwn</name>
+    <name>BFF-ATM-SERVICE</name>
+      <status>UP</status>
+      <port enabled="true">8084</port>
+        <name>MyOwn</name>

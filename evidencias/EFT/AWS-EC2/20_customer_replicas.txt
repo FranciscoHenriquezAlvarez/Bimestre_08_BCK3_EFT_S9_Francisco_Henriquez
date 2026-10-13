@@ -1,0 +1,20 @@
+ Container etf_s9-customer-service-1 Running 
+ Container etf_s9-customer-service-2 Creating 
+ Container etf_s9-customer-service-2 Created 
+ Container etf_s9-customer-service-2 Starting 
+ Container etf_s9-customer-service-2 Started 
+=== VERIFICACION DE LAS DOS REPLICAS ===
+Verificacion 1: 2 replicas, 1 saludables
+Verificacion 2: 2 replicas, 1 saludables
+Verificacion 3: 2 replicas, 2 saludables
+=== ESTADO DE REPLICAS CUSTOMER ===
+NAME                        IMAGE                     COMMAND                  SERVICE            CREATED          STATUS                    PORTS
+etf_s9-customer-service-1   etf_s9-customer-service   "java -jar /app/app.…"   customer-service   8 minutes ago    Up 8 minutes (healthy)    8086/tcp
+etf_s9-customer-service-2   etf_s9-customer-service   "java -jar /app/app.…"   customer-service   21 seconds ago   Up 21 seconds (healthy)   8086/tcp
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       3.4Gi       229Mi        20Mi       4.4Gi       4.3Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /
+CUSTOMER SERVICE: 2 REPLICAS SALUDABLES

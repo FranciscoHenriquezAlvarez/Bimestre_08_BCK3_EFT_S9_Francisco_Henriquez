@@ -1,0 +1,40 @@
+=== VALIDACION DOCKER COMPOSE ===
+ Container etf_s9-bff-web-service-1 Creating 
+ Container etf_s9-bff-web-service-1 Created 
+ Container etf_s9-bff-web-service-1 Starting 
+ Container etf_s9-bff-web-service-1 Started 
+=== VERIFICACION DE SALUD BFF WEB ===
+Verificacion 1: starting
+Verificacion 2: starting
+Verificacion 3: starting
+Verificacion 4: healthy
+=== ESTADO DE CONTENEDORES ===
+NAMES                           STATUS
+etf_s9-bff-web-service-1        Up 30 seconds (healthy)
+etf_s9-payment-service-1        Up About a minute (healthy)
+etf_s9-core-banking-service-1   Up 3 minutes (healthy)
+etf_s9-customer-service-1       Up 4 minutes (healthy)
+etf_s9-batch-init-1             Exited (0) 6 minutes ago
+etf_s9-authorization-server-1   Up 21 minutes (healthy)
+etf_s9-eureka-server-1          Up 28 minutes (healthy)
+etf_s9-config-server-1          Up 28 minutes (healthy)
+etf_s9-postgres-1               Up 32 minutes (healthy)
+etf_s9-kafka-1                  Up 32 minutes (healthy)
+=== CONSUMO DE RECURSOS ===
+NAME                            MEM USAGE / LIMIT     CPU %
+etf_s9-bff-web-service-1        190.3MiB / 7.632GiB   0.14%
+etf_s9-payment-service-1        190.5MiB / 7.632GiB   0.13%
+etf_s9-core-banking-service-1   231.4MiB / 7.632GiB   0.13%
+etf_s9-customer-service-1       224.4MiB / 7.632GiB   0.18%
+etf_s9-authorization-server-1   164.4MiB / 7.632GiB   0.12%
+etf_s9-eureka-server-1          246.6MiB / 7.632GiB   1.00%
+etf_s9-config-server-1          214.3MiB / 7.632GiB   0.11%
+etf_s9-postgres-1               56.16MiB / 7.632GiB   0.00%
+etf_s9-kafka-1                  405.1MiB / 7.632GiB   0.96%
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       2.6Gi       273Mi        20Mi       5.0Gi       5.0Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /
+BFF WEB SERVICE OPERATIVO

@@ -1,0 +1,10 @@
+EVIDENCIA: 13_mobile_autorizado.txt
+FECHA: 2026-10-05T16:53:41-03:00
+OBJETIVO: Comprobar HTTP 200
+COMANDO: GET http://localhost:8083/api/bff/mobile/accounts/102; Bearer en memoria cuando corresponde
+
+RESULTADO REAL:
+Intento: 1
+HTTP status: 200
+{"accountId":102,"accountName":"Charlie Green","finalBalance":10200.00,"accountType":"prestamo"}
+RESULTADO: PASS

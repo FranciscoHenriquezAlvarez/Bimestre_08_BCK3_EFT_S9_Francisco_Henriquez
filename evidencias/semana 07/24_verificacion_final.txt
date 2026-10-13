@@ -1,0 +1,76 @@
+=== VERIFICACIÓN FINAL SEMANA 07 ===
+
+=== ARCHIVOS DE EVIDENCIA ===
+01_build.txt
+02_tests.txt
+03_docker_servicios.txt
+04_config_server.txt
+05_eureka_servicios.txt
+06_kafka_topics.txt
+07_kafka_particiones.txt
+08_kafka_consumer_group.txt
+09_jwt_atm.txt
+10_saldo_inicial.txt
+11_retiro_oficial_solicitud.txt
+12_logs_kafka.txt
+13_retiro_rechazado.txt
+14_saldo_final.txt
+15_event_store.txt
+16_estado_transaccion.txt
+17_idempotencia.txt
+18_escalabilidad_kafka.txt
+19_resilience4j_normal.txt
+20_resilience4j_fallo_open.txt
+21_resilience4j_recuperacion.txt
+22_seguridad_y_rutas_retiradas.txt
+23_regresion_semana06.txt
+24_verificacion_final.txt
+
+=== CANTIDAD DE EVIDENCIAS ===
+24
+
+=== SERVICIOS ===
+NAME                              IMAGE                           COMMAND                  SERVICE                CREATED         STATUS                     PORTS
+banco-xyz-kafka                   apache/kafka:3.9.1              "/__cacert_entrypoin…"   kafka                  9 minutes ago   Up 9 minutes (healthy)     0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp
+banco-xyz-postgres                postgres:16                     "docker-entrypoint.s…"   postgres               9 minutes ago   Up 9 minutes (healthy)     0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+proyecto-batch-init-1             proyecto-batch-init             "/usr/local/bin/batc…"   batch-init             6 minutes ago   Exited (0) 5 minutes ago   
+proyecto-bff-atm-service-1        proyecto-bff-atm-service        "java -jar /app/app.…"   bff-atm-service        6 minutes ago   Up 5 minutes (healthy)     0.0.0.0:8084->8084/tcp, [::]:8084->8084/tcp
+proyecto-bff-mobile-service-1     proyecto-bff-mobile-service     "java -jar /app/app.…"   bff-mobile-service     6 minutes ago   Up 5 minutes (healthy)     0.0.0.0:8083->8083/tcp, [::]:8083->8083/tcp
+proyecto-bff-web-service-1        proyecto-bff-web-service        "java -jar /app/app.…"   bff-web-service        6 minutes ago   Up 5 minutes (healthy)     0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+proyecto-config-server-1          proyecto-config-server          "java -jar /app/app.…"   config-server          6 minutes ago   Up 6 minutes (healthy)     0.0.0.0:8888->8888/tcp, [::]:8888->8888/tcp
+proyecto-core-banking-service-1   proyecto-core-banking-service   "java -jar /app/app.…"   core-banking-service   6 minutes ago   Up 58 seconds (healthy)    0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+proyecto-eureka-server-1          proyecto-eureka-server          "java -jar /app/app.…"   eureka-server          6 minutes ago   Up 6 minutes (healthy)     0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+
+=== BUILD ===
+[INFO] Reactor Summary for Banco XYZ - Semana 7 1.0.0:
+[INFO] BUILD SUCCESS
+
+=== HTTP PRINCIPALES ===
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/10_saldo_inicial.txt:HTTP/1.1 200 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/11_retiro_oficial_solicitud.txt:HTTP/1.1 202 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/14_saldo_final.txt:HTTP/1.1 200 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/19_resilience4j_normal.txt:HTTP/1.1 200 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/20_resilience4j_fallo_open.txt:HTTP/1.1 503 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/20_resilience4j_fallo_open.txt:HTTP/1.1 503 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/20_resilience4j_fallo_open.txt:HTTP/1.1 503 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/20_resilience4j_fallo_open.txt:HTTP/1.1 503 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/20_resilience4j_fallo_open.txt:HTTP/1.1 503 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/22_seguridad_y_rutas_retiradas.txt:HTTP/1.1 401 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/22_seguridad_y_rutas_retiradas.txt:HTTP/1.1 403 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/22_seguridad_y_rutas_retiradas.txt:HTTP/1.1 404 
+/home/francisco/proyecto/BACKEND III/SEMANA 7/Exp3_S7_Grupo11/evidencias/semana 07/22_seguridad_y_rutas_retiradas.txt:HTTP/1.1 404 
+
+=== PASO 21 RECUPERACION ===
+PASO 21 RECUPERACION: OK
+
+=== PASO 23 REGRESION ===
+PASO 23 REGRESION: OK
+=== KAFKA ===
+
+GROUP                         TOPIC                     PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                                   HOST            CLIENT-ID
+core-banking-withdrawal-group bank.withdrawal.requested 2          5               5               0               consumer-core-banking-withdrawal-group-3-e94e6873-2cfa-41f4-b56a-62412c4f1db4 /172.22.0.6     consumer-core-banking-withdrawal-group-3
+core-banking-withdrawal-group bank.withdrawal.requested 1          1               1               0               consumer-core-banking-withdrawal-group-2-fd480a33-4f98-40ba-9c8f-c529f78011bd /172.22.0.6     consumer-core-banking-withdrawal-group-2
+core-banking-withdrawal-group bank.withdrawal.requested 0          3               3               0               consumer-core-banking-withdrawal-group-1-6e11a14d-1105-41db-96f9-e942e629ac45 /172.22.0.6     consumer-core-banking-withdrawal-group-1
+=== ESTADOS DE TRANSACCIONES ===
+{"transactionId":"e1f51bbc-3167-4973-bbfc-a083e5b4f56a","accountId":104,"amount":10000.00,"status":"COMPLETED","finalBalance":200.00,"rejectionReason":null,"updatedAt":"2026-09-29T01:06:46.837616Z"}
+{"transactionId":"a8a4b2af-edfb-402f-af6b-c2238b4ed5ec","accountId":104,"amount":10000.00,"status":"REJECTED","finalBalance":null,"rejectionReason":"Saldo insuficiente","updatedAt":"2026-09-29T01:07:13.848231Z"}

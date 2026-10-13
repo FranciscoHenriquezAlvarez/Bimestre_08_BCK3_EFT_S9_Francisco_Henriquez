@@ -1,0 +1,58 @@
+=== SIN JWT: 401 ===
+HTTP/1.1 401 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 80
+Date: Tue, 29 Sep 2026 01:09:19 GMT
+
+{"error":"UNAUTHORIZED","message":"Token JWT requerido o invalido","status":401}
+=== JWT WEB CONTRA ATM: 403 ===
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 95
+Date: Tue, 29 Sep 2026 01:09:19 GMT
+
+{"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal","status":403}
+=== RUTA /withdraw/async RETIRADA: 404 ===
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:09:19 GMT
+
+{"timestamp":"2026-09-29T01:09:19.260+00:00","status":404,"error":"Not Found","path":"/api/bff/atm/accounts/104/withdraw/async"}
+=== RETIRO HTTP SINCRÓNICO CORE RETIRADO: 404 ===
+HTTP/1.1 404 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:09:19 GMT
+
+{"timestamp":"2026-09-29T01:09:19.301+00:00","status":404,"error":"Not Found","path":"/api/core/accounts/104/withdraw"}

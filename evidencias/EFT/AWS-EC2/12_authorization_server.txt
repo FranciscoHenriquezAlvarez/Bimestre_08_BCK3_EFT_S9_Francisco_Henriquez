@@ -1,0 +1,22 @@
+ Container etf_s9-authorization-server-1 Creating 
+ Container etf_s9-authorization-server-1 Created 
+ Container etf_s9-authorization-server-1 Starting 
+ Container etf_s9-authorization-server-1 Started 
+=== VERIFICACION DE SALUD AUTHORIZATION SERVER ===
+Verificacion 1: starting
+Verificacion 2: starting
+Verificacion 3: healthy
+=== ESTADO DE CONTENEDORES ===
+NAMES                           STATUS
+etf_s9-authorization-server-1   Up 20 seconds (healthy)
+etf_s9-eureka-server-1          Up 7 minutes (healthy)
+etf_s9-config-server-1          Up 7 minutes (healthy)
+etf_s9-postgres-1               Up 11 minutes (healthy)
+etf_s9-kafka-1                  Up 11 minutes (healthy)
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       1.7Gi       190Mi        17Mi       6.1Gi       6.0Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /
+AUTHORIZATION SERVER OPERATIVO

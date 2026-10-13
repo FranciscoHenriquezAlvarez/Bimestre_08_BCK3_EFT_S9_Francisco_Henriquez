@@ -1,0 +1,1095 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Banco XYZ - Semana 8                                               [pom]
+[INFO] shared-events                                                      [jar]
+[INFO] authorization-server                                               [jar]
+[INFO] config-server                                                      [jar]
+[INFO] eureka-server                                                      [jar]
+[INFO] core-banking-service                                               [jar]
+[INFO] bff-web-service                                                    [jar]
+[INFO] bff-mobile-service                                                 [jar]
+[INFO] bff-atm-service                                                    [jar]
+[INFO] payment-service                                                    [jar]
+[INFO] customer-service                                                   [jar]
+[INFO] 
+[INFO] --------------< cl.duoc.bancoxyz:banco-xyz-microservices >--------------
+[INFO] Building Banco XYZ - Semana 8 1.0.0                               [1/11]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:shared-events >-------------------
+[INFO] Building shared-events 1.0.0                                      [2/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ shared-events ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/shared-events/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ shared-events ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ shared-events ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ shared-events ---
+[INFO] 
+[INFO] ---------------< cl.duoc.bancoxyz:authorization-server >----------------
+[INFO] Building authorization-server 1.0.0                               [3/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ authorization-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ authorization-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ authorization-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/authorization-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ authorization-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ authorization-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ authorization-server ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ authorization-server ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/authorization-server/target/authorization-server-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/authorization-server/target/authorization-server-1.0.0.jar.original
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:config-server >-------------------
+[INFO] Building config-server 1.0.0                                      [4/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ config-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ config-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ config-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/config-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ config-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ config-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ config-server ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ config-server ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/config-server/target/config-server-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/config-server/target/config-server-1.0.0.jar.original
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:eureka-server >-------------------
+[INFO] Building eureka-server 1.0.0                                      [5/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ eureka-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ eureka-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ eureka-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/eureka-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ eureka-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ eureka-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ eureka-server ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ eureka-server ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/eureka-server/target/eureka-server-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/eureka-server/target/eureka-server-1.0.0.jar.original
+[INFO] 
+[INFO] ---------------< cl.duoc.bancoxyz:core-banking-service >----------------
+[INFO] Building core-banking-service 1.0.0                               [6/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ core-banking-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ core-banking-service ---
+[INFO] Copying 3 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ core-banking-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ core-banking-service ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ core-banking-service ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/core-banking-service/target/core-banking-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/core-banking-service/target/core-banking-service-1.0.0.jar.original
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:bff-web-service >------------------
+[INFO] Building bff-web-service 1.0.0                                    [7/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-web-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-web-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-web-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-web-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-web-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-web-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ bff-web-service ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ bff-web-service ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-web-service/target/bff-web-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-web-service/target/bff-web-service-1.0.0.jar.original
+[INFO] 
+[INFO] ----------------< cl.duoc.bancoxyz:bff-mobile-service >-----------------
+[INFO] Building bff-mobile-service 1.0.0                                 [8/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-mobile-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-mobile-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-mobile-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-mobile-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-mobile-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-mobile-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ bff-mobile-service ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ bff-mobile-service ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-mobile-service/target/bff-mobile-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-mobile-service/target/bff-mobile-service-1.0.0.jar.original
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:bff-atm-service >------------------
+[INFO] Building bff-atm-service 1.0.0                                    [9/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-atm-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-atm-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-atm-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-atm-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-atm-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-atm-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ bff-atm-service ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ bff-atm-service ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-atm-service/target/bff-atm-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/bff-atm-service/target/bff-atm-service-1.0.0.jar.original
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:payment-service >------------------
+[INFO] Building payment-service 1.0.0                                   [10/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ payment-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ payment-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/payment-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ payment-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ payment-service ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ payment-service ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/payment-service/target/payment-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/payment-service/target/payment-service-1.0.0.jar.original
+[INFO] 
+[INFO] -----------------< cl.duoc.bancoxyz:customer-service >------------------
+[INFO] Building customer-service 1.0.0                                  [11/11]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ customer-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ customer-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ customer-service ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ customer-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ customer-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ customer-service ---
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.12:repackage (repackage) @ customer-service ---
+[INFO] Replacing main artifact /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/customer-service/target/customer-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto/customer-service/target/customer-service-1.0.0.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Banco XYZ - Semana 8 1.0.0:
+[INFO] 
+[INFO] Banco XYZ - Semana 8 ............................... SUCCESS [  0.002 s]
+[INFO] shared-events ...................................... SUCCESS [  0.867 s]
+[INFO] authorization-server ............................... SUCCESS [  0.517 s]
+[INFO] config-server ...................................... SUCCESS [  0.180 s]
+[INFO] eureka-server ...................................... SUCCESS [  0.202 s]
+[INFO] core-banking-service ............................... SUCCESS [  0.139 s]
+[INFO] bff-web-service .................................... SUCCESS [  0.113 s]
+[INFO] bff-mobile-service ................................. SUCCESS [  0.076 s]
+[INFO] bff-atm-service .................................... SUCCESS [  0.074 s]
+[INFO] payment-service .................................... SUCCESS [  0.070 s]
+[INFO] customer-service ................................... SUCCESS [  0.116 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.748 s
+[INFO] Finished at: 2026-10-12T18:19:06-03:00
+[INFO] ------------------------------------------------------------------------
+authorization-server MODULE=authorization-server
+batch-init MODULE=core-banking-service
+bff-atm-service MODULE=bff-atm-service
+bff-mobile-service MODULE=bff-mobile-service
+bff-web-service MODULE=bff-web-service
+config-server MODULE=config-server
+core-banking-service MODULE=core-banking-service
+customer-service MODULE=customer-service
+eureka-server MODULE=eureka-server
+kafka MODULE=infraestructura
+payment-service MODULE=payment-service
+postgres MODULE=infraestructura
+networks default etf_s9_default
+volumes kafka_data etf_s9_kafka_data
+volumes postgres_data etf_s9_postgres_data
+ Image etf_s9-authorization-server Building 
+ Image etf_s9-bff-mobile-service Building 
+ Image etf_s9-customer-service Building 
+ Image etf_s9-payment-service Building 
+ Image etf_s9-config-server Building 
+ Image etf_s9-batch-init Building 
+ Image etf_s9-bff-web-service Building 
+ Image etf_s9-core-banking-service Building 
+ Image etf_s9-bff-atm-service Building 
+ Image etf_s9-eureka-server Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 6.33kB done
+#1 DONE 0.0s
+
+#2 [core-banking-service internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [authorization-server internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#3 DONE 0.1s
+
+#4 [core-banking-service internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#4 DONE 0.1s
+
+#5 [core-banking-service internal] load .dockerignore
+#5 transferring context: 32B
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [batch-init build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:b64592d40959b4d13b218f6b06b9ab219ff8aa3dad61efd3b5f519ba4d72ef92
+#6 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:b64592d40959b4d13b218f6b06b9ab219ff8aa3dad61efd3b5f519ba4d72ef92 0.0s done
+#6 DONE 0.1s
+
+#7 [bff-atm-service stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:34d6aaf0fa4ef553c470234ec23c32c7d5c0f370c2bd4b0bf8a16838052d85f0
+#7 resolve docker.io/library/eclipse-temurin:17-jre@sha256:34d6aaf0fa4ef553c470234ec23c32c7d5c0f370c2bd4b0bf8a16838052d85f0 0.0s done
+#7 DONE 0.1s
+
+#8 [bff-mobile-service internal] load build context
+#8 transferring context: 25.25kB 0.0s done
+#8 transferring context: 25.25kB 0.0s done
+#8 DONE 0.0s
+
+#9 [bff-web-service stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#9 CACHED
+
+#10 [bff-web-service stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#10 CACHED
+
+#11 [bff-web-service stage-1 4/6] COPY --from=build /workspace/bff-web-service/target/bff-web-service-1.0.0.jar /app/app.jar
+#11 CACHED
+
+#12 [bff-atm-service stage-1 4/6] COPY --from=build /workspace/bff-atm-service/target/bff-atm-service-1.0.0.jar /app/app.jar
+#12 CACHED
+
+#13 [bff-atm-service stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#13 CACHED
+
+#14 [bff-atm-service stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#14 CACHED
+
+#15 [eureka-server stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#15 CACHED
+
+#16 [eureka-server stage-1 4/6] COPY --from=build /workspace/eureka-server/target/eureka-server-1.0.0.jar /app/app.jar
+#16 CACHED
+
+#17 [eureka-server stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#17 CACHED
+
+#18 [customer-service stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#18 CACHED
+
+#19 [customer-service stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#19 CACHED
+
+#20 [customer-service stage-1 4/6] COPY --from=build /workspace/customer-service/target/customer-service-1.0.0.jar /app/app.jar
+#20 CACHED
+
+#21 [customer-service stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#21 CACHED
+
+#22 [bff-web-service stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#22 CACHED
+
+#23 [eureka-server stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#23 CACHED
+
+#24 [bff-atm-service stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#24 CACHED
+
+#25 [bff-mobile-service stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#25 CACHED
+
+#26 [bff-mobile-service stage-1 4/6] COPY --from=build /workspace/bff-mobile-service/target/bff-mobile-service-1.0.0.jar /app/app.jar
+#26 CACHED
+
+#27 [bff-mobile-service stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#27 CACHED
+
+#28 [bff-mobile-service stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#28 CACHED
+
+#29 [payment-service stage-1 4/6] COPY --from=build /workspace/payment-service/target/payment-service-1.0.0.jar /app/app.jar
+#29 CACHED
+
+#30 [payment-service stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#30 CACHED
+
+#31 [payment-service stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#31 CACHED
+
+#32 [authorization-server stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#32 CACHED
+
+#33 [authorization-server stage-1 4/6] COPY --from=build /workspace/authorization-server/target/authorization-server-1.0.0.jar /app/app.jar
+#33 CACHED
+
+#34 [authorization-server stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#34 CACHED
+
+#35 [config-server stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#35 CACHED
+
+#36 [config-server stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#36 CACHED
+
+#37 [config-server stage-1 4/6] COPY --from=build /workspace/config-server/target/config-server-1.0.0.jar /app/app.jar
+#37 CACHED
+
+#38 [config-server build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#38 CACHED
+
+#39 [config-server build  5/15] COPY shared-events shared-events
+#39 CACHED
+
+#40 [batch-init stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#40 CACHED
+
+#41 [config-server build  7/15] COPY config-server config-server
+#41 CACHED
+
+#42 [batch-init stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#42 CACHED
+
+#43 [config-server build  8/15] COPY eureka-server eureka-server
+#43 CACHED
+
+#44 [config-server build 14/15] COPY customer-service customer-service
+#44 CACHED
+
+#45 [config-server stage-1 2/6] WORKDIR /app
+#45 CACHED
+
+#46 [config-server build 12/15] COPY bff-atm-service bff-atm-service
+#46 CACHED
+
+#47 [config-server build 10/15] COPY bff-web-service bff-web-service
+#47 CACHED
+
+#48 [config-server build  3/15] COPY .mvn .mvn
+#48 CACHED
+
+#49 [batch-init stage-1 4/6] COPY --from=build /workspace/core-banking-service/target/core-banking-service-1.0.0.jar /app/app.jar
+#49 CACHED
+
+#50 [config-server build  2/15] WORKDIR /workspace
+#50 CACHED
+
+#51 [config-server build 11/15] COPY bff-mobile-service bff-mobile-service
+#51 CACHED
+
+#52 [config-server build  4/15] COPY mvnw pom.xml ./
+#52 CACHED
+
+#53 [config-server build  6/15] COPY authorization-server authorization-server
+#53 CACHED
+
+#54 [config-server build 13/15] COPY payment-service payment-service
+#54 CACHED
+
+#55 [config-server build  9/15] COPY core-banking-service core-banking-service
+#55 CACHED
+
+#56 [config-server stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#56 CACHED
+
+#57 [payment-service stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#57 CACHED
+
+#58 [batch-init stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#58 CACHED
+
+#59 [authorization-server stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#59 CACHED
+
+#60 [customer-service] exporting to image
+#60 exporting layers 0.0s done
+#60 exporting manifest sha256:5395353b5ea8181a3887608da0f74e22cc5fabc5584d9669953b4e3caded5863 0.0s done
+#60 exporting config sha256:14aaa2882d55d70e2b6e06f534d1537ab2c05aa626974a1d73f04a5c91cfb05f
+#60 exporting config sha256:14aaa2882d55d70e2b6e06f534d1537ab2c05aa626974a1d73f04a5c91cfb05f 0.0s done
+#60 exporting attestation manifest sha256:cdc731d3dfbcf667350df120b3203a37e7baaa0093bdcc44cfa6a3b8cc11d557
+#60 exporting attestation manifest sha256:cdc731d3dfbcf667350df120b3203a37e7baaa0093bdcc44cfa6a3b8cc11d557 0.2s done
+#60 exporting manifest list sha256:125eb8b3ebf498246c3de4c2adb532abd3071bfb2a79453b1aa5b603d91fcec5
+#60 exporting manifest list sha256:125eb8b3ebf498246c3de4c2adb532abd3071bfb2a79453b1aa5b603d91fcec5 0.2s done
+#60 naming to docker.io/library/etf_s9-customer-service:latest
+#60 ...
+
+#61 [bff-web-service] exporting to image
+#61 exporting layers done
+#61 exporting manifest sha256:0f3f589f7f8cfb3499988ed1914e1af6bebb3bb1d04e17be152b42a99e105ba1 0.0s done
+#61 exporting config sha256:7705a2621f54bbbc6985d9e5fbf7f599442d970560805e14da9ae8cbdc8334d1 0.0s done
+#61 exporting attestation manifest sha256:1ff013eb4921e3aad4cb7bd1ff7d36e193de41d33e00fda388743d4e9916e9e9 0.2s done
+#61 exporting manifest list sha256:db2ad94ac8cd3520319eb2feca7bd20013c5ec4f3ea2adb9f8b10521d4f17871 0.1s done
+#61 naming to docker.io/library/etf_s9-bff-web-service:latest 0.1s done
+#61 unpacking to docker.io/library/etf_s9-bff-web-service:latest 0.1s done
+#61 DONE 0.8s
+
+#60 [customer-service] exporting to image
+#60 naming to docker.io/library/etf_s9-customer-service:latest 0.1s done
+#60 unpacking to docker.io/library/etf_s9-customer-service:latest 0.1s done
+#60 DONE 0.8s
+
+#62 [bff-mobile-service] exporting to image
+#62 exporting layers done
+#62 exporting manifest sha256:3b08148153fa1060a9c697926e4b2750e4f4714542fb8c59553d8703534a6b87 0.0s done
+#62 exporting config sha256:70d7f3346af9642dff9a8f050e8f777d4b17f83361eb6618587cbadd180de9c6 0.0s done
+#62 exporting attestation manifest sha256:c482ce2c480806702fa1abd25ddd3255d080d23d6d66bca4bfb51101694aec05 0.2s done
+#62 exporting manifest list sha256:d8f40b22f35641af6118814d82b879773a10adf72d3d4616ae6c58422a91b9ea 0.1s done
+#62 naming to docker.io/library/etf_s9-bff-mobile-service:latest 0.1s done
+#62 unpacking to docker.io/library/etf_s9-bff-mobile-service:latest 0.1s done
+#62 DONE 0.8s
+
+#63 [authorization-server] exporting to image
+#63 exporting layers done
+#63 exporting manifest sha256:461870cb5271bd503f42fdd391e3747e319f0839c36b1366f6c4c3b28e3b36ca 0.0s done
+#63 exporting config sha256:206d4f71b7f534e5f29741e8d574f425694400a74e35e38ce289799d5e70df26 0.0s done
+#63 exporting attestation manifest sha256:ff68c2e3f797d59ec1cb3475a2f64cd7f529529e995d3e839db2e7b87c9d8c97 0.2s done
+#63 exporting manifest list sha256:3c64f43e661891478fe7610533b7138544f74ea2a5cb68b1430a71d741ee57cb 0.2s done
+#63 naming to docker.io/library/etf_s9-authorization-server:latest 0.1s done
+#63 unpacking to docker.io/library/etf_s9-authorization-server:latest 0.1s done
+#63 DONE 0.8s
+
+#64 [bff-atm-service] exporting to image
+#64 exporting layers done
+#64 exporting manifest sha256:03fd8a5c4f1d0ef996d8ea0a3093cefb609f7193ad5209ca1cd82c9b506855ba 0.0s done
+#64 exporting config sha256:dd80f57e9c72ad0d1b3bb78e82ab6f2d44ec6fe79905b13b1f2bebf91b4c5661 0.0s done
+#64 exporting attestation manifest sha256:6cd5c05223a3817acb6f7c2b6493883d925dff6e73a266ed1480aeffc5603057 0.2s done
+#64 exporting manifest list sha256:5ed4567813b38764b226b3b058906b2fb2f0adf213a7e299520091fbbf83fd5e 0.2s done
+#64 naming to docker.io/library/etf_s9-bff-atm-service:latest 0.1s done
+#64 unpacking to docker.io/library/etf_s9-bff-atm-service:latest 0.1s done
+#64 DONE 0.8s
+
+#65 [batch-init] exporting to image
+#65 exporting layers done
+#65 exporting manifest sha256:cd8e983c594282f2a2431622444a0f935a873492da647c2345d60c38cefb5e83 0.0s done
+#65 exporting config sha256:531dedda1983399b44791ab9df7032dcf70ed90da9044a26de24a64a5a3fca99 0.0s done
+#65 exporting attestation manifest sha256:c1c4c0c0274540f4da4845fbf661150e272cc079f0b9cd06842a0af14c057c7f 0.2s done
+#65 exporting manifest list sha256:c39fd14e0f5ba5f0e2be13598a89e2bef573526cec560ce98de140b3b49602cd 0.2s done
+#65 naming to docker.io/library/etf_s9-batch-init:latest 0.1s done
+#65 unpacking to docker.io/library/etf_s9-batch-init:latest 0.1s done
+#65 DONE 0.8s
+
+#66 [eureka-server] exporting to image
+#66 exporting layers done
+#66 exporting manifest sha256:f30c6269626ba4a23d887baf51aa889f7a00df7ee9097ca60492f127b677fc89 0.0s done
+#66 exporting config sha256:6e7dbefd88cf954f49953ff4764042e8fcc18c5950c1c966e10e7ba34effbe68 0.0s done
+#66 exporting attestation manifest sha256:ab960ef7925171608a4a29cb327f1c204d8449d27570e8618c2f800ff5ad5383 0.2s done
+#66 exporting manifest list sha256:fda023da0735b954188b30ba428b155345727b365becebe738dec348115a0a61 0.2s done
+#66 naming to docker.io/library/etf_s9-eureka-server:latest 0.1s done
+#66 unpacking to docker.io/library/etf_s9-eureka-server:latest 0.1s done
+#66 DONE 0.8s
+
+#67 [config-server] exporting to image
+#67 exporting layers done
+#67 exporting manifest sha256:b5880f5e4302dd78ef24a9d2a9a753f85f8258c2d467018f4571f90c9c3797b9 0.0s done
+#67 exporting config sha256:eb11796a1aeadd174f840635fd9acaf9bbeec46e67dce732c108969dd6899483 0.0s done
+#67 exporting attestation manifest sha256:41d36c169b211c68c9a4bc62ca009fc9cab9a61136c4f5dc41fc2cd73fb13fd3 0.2s done
+#67 exporting manifest list sha256:399c5871bdaedb813f9274a55f5865d6d85b6adfd9c5383a839ff9584973f4c5 0.2s done
+#67 naming to docker.io/library/etf_s9-config-server:latest 0.1s done
+#67 unpacking to docker.io/library/etf_s9-config-server:latest 0.1s done
+#67 DONE 0.8s
+
+#68 [core-banking-service] exporting to image
+#68 exporting layers done
+#68 exporting manifest sha256:08c3c7b358c1ffea6f32d54c8bc08938af4bd973983cab5c7a9850c6af454e2f 0.0s done
+#68 exporting config sha256:b05201c2326621dbdb06198dd09efa68c2000ae035a877ecae9ba84795c00bc3 0.0s done
+#68 exporting attestation manifest sha256:e2e4da1274005f6315892766810707570e6c5ebc61a8fe5f1cae464a1c993cd2 0.2s done
+#68 exporting manifest list sha256:9012f9f9ef220cb40d5c374636f3472932c82cc3e058b8a61bcecf17f4a5ca6c 0.2s done
+#68 naming to docker.io/library/etf_s9-core-banking-service:latest 0.1s done
+#68 unpacking to docker.io/library/etf_s9-core-banking-service:latest 0.1s done
+#68 DONE 0.8s
+
+#69 [payment-service] exporting to image
+#69 exporting layers done
+#69 exporting manifest sha256:e2b55703d9cb380c5483fb97d7cbbd434b5700f77f34fd4e5868d7919210aecc 0.0s done
+#69 exporting config sha256:ac45c4702292ec8127c17e366415775284b5790fd48ae2c3ef6a3266d50bb4f4 0.0s done
+#69 exporting attestation manifest sha256:0e80ed11361f666feef6919ad0a90d59ceb289b169f2e35294b9abc63a2f54d5 0.2s done
+#69 exporting manifest list sha256:fd6258dc6978c9ffb2b7c607babf76313db0f2eaa447342f4445522982722e65 0.2s done
+#69 naming to docker.io/library/etf_s9-payment-service:latest 0.1s done
+#69 unpacking to docker.io/library/etf_s9-payment-service:latest 0.1s done
+#69 DONE 0.8s
+
+#70 [batch-init] resolving provenance for metadata file
+#70 DONE 0.6s
+
+#71 [authorization-server] resolving provenance for metadata file
+#71 DONE 0.4s
+
+#72 [bff-mobile-service] resolving provenance for metadata file
+#72 DONE 0.2s
+
+#73 [config-server] resolving provenance for metadata file
+#73 DONE 0.5s
+
+#74 [bff-web-service] resolving provenance for metadata file
+#74 DONE 0.5s
+
+#75 [eureka-server] resolving provenance for metadata file
+#75 DONE 0.6s
+
+#76 [bff-atm-service] resolving provenance for metadata file
+#76 DONE 0.1s
+
+#77 [payment-service] resolving provenance for metadata file
+#77 DONE 0.6s
+
+#78 [core-banking-service] resolving provenance for metadata file
+#78 DONE 0.3s
+
+#79 [customer-service] resolving provenance for metadata file
+#79 DONE 0.0s
+ Image etf_s9-eureka-server Built 
+ Image etf_s9-batch-init Built 
+ Image etf_s9-bff-mobile-service Built 
+ Image etf_s9-payment-service Built 
+ Image etf_s9-core-banking-service Built 
+ Image etf_s9-config-server Built 
+ Image etf_s9-customer-service Built 
+ Image etf_s9-bff-atm-service Built 
+ Image etf_s9-authorization-server Built 
+ Image etf_s9-bff-web-service Built 
+sha256:399c5871bdaedb813f9274a55f5865d6d85b6adfd9c5383a839ff9584973f4c5 [etf_s9-config-server:latest]
+sha256:fda023da0735b954188b30ba428b155345727b365becebe738dec348115a0a61 [etf_s9-eureka-server:latest]
+sha256:3c64f43e661891478fe7610533b7138544f74ea2a5cb68b1430a71d741ee57cb [etf_s9-authorization-server:latest]
+sha256:c39fd14e0f5ba5f0e2be13598a89e2bef573526cec560ce98de140b3b49602cd [etf_s9-batch-init:latest]
+sha256:9012f9f9ef220cb40d5c374636f3472932c82cc3e058b8a61bcecf17f4a5ca6c [etf_s9-core-banking-service:latest]
+sha256:fd6258dc6978c9ffb2b7c607babf76313db0f2eaa447342f4445522982722e65 [etf_s9-payment-service:latest]
+sha256:125eb8b3ebf498246c3de4c2adb532abd3071bfb2a79453b1aa5b603d91fcec5 [etf_s9-customer-service:latest]
+sha256:db2ad94ac8cd3520319eb2feca7bd20013c5ec4f3ea2adb9f8b10521d4f17871 [etf_s9-bff-web-service:latest]
+sha256:d8f40b22f35641af6118814d82b879773a10adf72d3d4616ae6c58422a91b9ea [etf_s9-bff-mobile-service:latest]
+sha256:5ed4567813b38764b226b3b058906b2fb2f0adf213a7e299520091fbbf83fd5e [etf_s9-bff-atm-service:latest]
+core-banking-service/src/main/java/cl/duoc/bancoxyz/config/AnnualStatementsJobConfig.java:101:                .taskExecutor(batchTaskExecutor)
+core-banking-service/src/main/java/cl/duoc/bancoxyz/config/DailyTransactionsJobConfig.java:94:                .taskExecutor(batchTaskExecutor)
+healthy b63f16e6fceac443519b804f1120ebdff1dec07e8e80970dbfc89ec7b596d964
+healthy f7d7211b225d05728060f0e015fce37d4dc6ba325d58b8b1bd2ecb61034c391d
+{"status":"UP"}
+{"status":"UP"}
+{"status":"UP"}
+JWK RSA publico disponible
+healthy 6c5a4fecf4f17a2489dd2b44aa48061a15a11629d8e969db9223a4b12bf56c01
+healthy d356ac9a0d712d7a6e6f100d776fbba37e40a429bb880c59bc6bc62f4e15b4a1
+/etf_s9-core-banking-service-1 sha256:9012f9f9ef220cb40d5c374636f3472932c82cc3e058b8a61bcecf17f4a5ca6c
+/etf_s9-payment-service-1 sha256:fd6258dc6978c9ffb2b7c607babf76313db0f2eaa447342f4445522982722e65
+/etf_s9-customer-service-1 sha256:125eb8b3ebf498246c3de4c2adb532abd3071bfb2a79453b1aa5b603d91fcec5
+/etf_s9-batch-init sha256:c39fd14e0f5ba5f0e2be13598a89e2bef573526cec560ce98de140b3b49602cd
+73bab949417a16e8aeeefc0ffad10b7a8e0bdc3b581999382659ef4437001b93  /app/app.jar
+MonthlyInterestJobConfig actual, sin taskExecutor; SHA256=c9ea1c86b793ae9391e2370b915eba818c1d41063994bcc9032c12c246daeb1b
+SPRING_BATCH_JOB_ENABLED=false
+SPRING_BATCH_JDBC_INITIALIZE_SCHEMA=never
+SPRING_KAFKA_LISTENER_AUTO_STARTUP=false
+SPRING_SQL_INIT_MODE=never
+SPRING_KAFKA_LISTENER_AUTO_STARTUP=false
+PAYMENT_KAFKA_WITHDRAWALS_ENABLED=false
+25:    @KafkaListener(topics = TopicNames.WITHDRAWAL_REQUESTED, autoStartup = "false")
+healthy 0062d5d3bdae1998fd83971215dde62b7b29dbc3794793b52c75838df629427b
+healthy ec10e1fc505c27dcd62b9547fae654c827183a0f1961c52fba3ff030523f4a83
+healthy 3475e55c670ddd91e0c6721079a4f9728b694c652b61283f25c5251b40388bf3
+{"status":"UP","components":{"clientConfigServer":{"status":"UP","details":{"propertySources":["configserver:file:config-repo/application-validacion.yml","configserver:file:config-repo/bff-web-service.yml","configserver:file:config-repo/application.yml","configClient"]}},"discoveryComposite":{"status":"UP","components":{"discoveryClient":{"status":"UP","details":{"services":["customer-service","payment-service","core-banking-service","bff-web-service","bff-mobile-service"]}},"eureka":{"description":"Remote status from Eureka server","status":"UP","details":{"applications":{"BFF-WEB-SERVICE":1,"CUSTOMER-SERVICE":1,"PAYMENT-SERVICE":1,"CORE-BANKING-SERVICE":1,"BFF-MOBILE-SERVICE":1}}}}},"diskSpace":{"status":"UP","details":{"total":1081101176832,"free":888760561664,"threshold":10485760,"path":"/app/.","exists":true}},"ping":{"status":"UP"},"refreshScope":{"status":"UP"}}}
+{"status":"UP","components":{"clientConfigServer":{"status":"UP","details":{"propertySources":["configserver:file:config-repo/application-validacion.yml","configserver:file:config-repo/bff-mobile-service.yml","configserver:file:config-repo/application.yml","configClient"]}},"discoveryComposite":{"status":"UP","components":{"discoveryClient":{"status":"UP","details":{"services":["customer-service","payment-service","core-banking-service","bff-web-service","bff-mobile-service"]}},"eureka":{"description":"Remote status from Eureka server","status":"UP","details":{"applications":{"BFF-WEB-SERVICE":1,"CUSTOMER-SERVICE":1,"PAYMENT-SERVICE":1,"CORE-BANKING-SERVICE":1,"BFF-MOBILE-SERVICE":1}}}}},"diskSpace":{"status":"UP","details":{"total":1081101176832,"free":888760561664,"threshold":10485760,"path":"/app/.","exists":true}},"ping":{"status":"UP"},"refreshScope":{"status":"UP"}}}
+{"status":"UP","components":{"clientConfigServer":{"status":"UP","details":{"propertySources":["configserver:file:config-repo/application-validacion.yml","configserver:file:config-repo/bff-atm-service.yml","configserver:file:config-repo/application.yml","configClient"]}},"discoveryComposite":{"status":"UP","components":{"discoveryClient":{"status":"UP","details":{"services":["bff-web-service","customer-service","payment-service","core-banking-service","bff-mobile-service"]}},"eureka":{"description":"Remote status from Eureka server","status":"UNKNOWN","details":{"applications":{"BFF-WEB-SERVICE":1,"CUSTOMER-SERVICE":1,"PAYMENT-SERVICE":1,"CORE-BANKING-SERVICE":1,"BFF-MOBILE-SERVICE":1}}}}},"diskSpace":{"status":"UP","details":{"total":1081101176832,"free":888760594432,"threshold":10485760,"path":"/app/.","exists":true}},"ping":{"status":"UP"},"refreshScope":{"status":"UP"}}}
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+BFF-ATM-SERVICE [('bff-atm-service:3475e55c670d:8084', 'UP')]
+file:config-repo/application-validacion.yml {'server.tomcat.accesslog.enabled': True, 'server.tomcat.accesslog.directory': '/tmp/eft9-access', 'server.tomcat.accesslog.prefix': 'central-${spring.application.name}', 'server.tomcat.accesslog.pattern': '%t %a "%r" %s', 'spring.cloud.loadbalancer.cache.ttl': '5s'}
+file:config-repo/core-banking-service.yml {'server.port': 8081, 'spring.sql.init.mode': 'always'}
+file:config-repo/application.yml {'eureka.instance.prefer-ip-address': '${EUREKA_PREFER_IP_ADDRESS:true}'}
+file:config-repo/application-validacion.yml {'server.tomcat.accesslog.enabled': True, 'server.tomcat.accesslog.directory': '/tmp/eft9-access', 'server.tomcat.accesslog.prefix': 'central-${spring.application.name}', 'server.tomcat.accesslog.pattern': '%t %a "%r" %s', 'spring.cloud.loadbalancer.cache.ttl': '5s'}
+file:config-repo/payment-service.yml {'server.port': 8085, 'payment.kafka.withdrawals.enabled': False}
+file:config-repo/application.yml {'eureka.instance.prefer-ip-address': '${EUREKA_PREFER_IP_ADDRESS:true}'}
+file:config-repo/application-validacion.yml {'server.tomcat.accesslog.enabled': True, 'server.tomcat.accesslog.directory': '/tmp/eft9-access', 'server.tomcat.accesslog.prefix': 'central-${spring.application.name}', 'server.tomcat.accesslog.pattern': '%t %a "%r" %s', 'spring.cloud.loadbalancer.cache.ttl': '5s'}
+file:config-repo/customer-service.yml {'server.port': 8086, 'spring.sql.init.mode': '${CUSTOMER_SQL_INIT_MODE:never}'}
+file:config-repo/application.yml {'eureka.instance.prefer-ip-address': '${EUREKA_PREFER_IP_ADDRESS:true}'}
+file:config-repo/application-validacion.yml {'server.tomcat.accesslog.enabled': True, 'server.tomcat.accesslog.directory': '/tmp/eft9-access', 'server.tomcat.accesslog.prefix': 'central-${spring.application.name}', 'server.tomcat.accesslog.pattern': '%t %a "%r" %s', 'spring.cloud.loadbalancer.cache.ttl': '5s'}
+file:config-repo/bff-web-service.yml {'server.port': 8082, 'resilience4j.circuitbreaker.instances.coreWeb.ignore-exceptions[0]': 'org.springframework.web.client.HttpClientErrorException', 'resilience4j.circuitbreaker.instances.coreWeb.sliding-window-size': 5, 'resilience4j.circuitbreaker.instances.coreWeb.minimum-number-of-calls': 5, 'resilience4j.circuitbreaker.instances.coreWeb.failure-rate-threshold': 50, 'resilience4j.circuitbreaker.instances.coreWeb.wait-duration-in-open-state': '5s', 'resilience4j.circuitbreaker.instances.coreWeb.permitted-number-of-calls-in-half-open-state': 2, 'resilience4j.circuitbreaker.instances.customerWeb.sliding-window-size': 5, 'resilience4j.circuitbreaker.instances.customerWeb.minimum-number-of-calls': 5, 'resilience4j.circuitbreaker.instances.customerWeb.failure-rate-threshold': 50, 'resilience4j.circuitbreaker.instances.customerWeb.wait-duration-in-open-state': '5s', 'resilience4j.circuitbreaker.instances.customerWeb.permitted-number-of-calls-in-half-open-state': 2, 'resilience4j.circuitbreaker.instances.paymentWeb.sliding-window-size': 5, 'resilience4j.circuitbreaker.instances.paymentWeb.minimum-number-of-calls': 5, 'resilience4j.circuitbreaker.instances.paymentWeb.failure-rate-threshold': 50, 'resilience4j.circuitbreaker.instances.paymentWeb.wait-duration-in-open-state': '5s', 'resilience4j.circuitbreaker.instances.paymentWeb.permitted-number-of-calls-in-half-open-state': 2}
+file:config-repo/application.yml {'eureka.instance.prefer-ip-address': '${EUREKA_PREFER_IP_ADDRESS:true}'}
+file:config-repo/application-validacion.yml {'server.tomcat.accesslog.enabled': True, 'server.tomcat.accesslog.directory': '/tmp/eft9-access', 'server.tomcat.accesslog.prefix': 'central-${spring.application.name}', 'server.tomcat.accesslog.pattern': '%t %a "%r" %s', 'spring.cloud.loadbalancer.cache.ttl': '5s'}
+file:config-repo/bff-mobile-service.yml {'server.port': 8083, 'resilience4j.circuitbreaker.instances.coreMobile.ignore-exceptions[0]': 'org.springframework.web.client.HttpClientErrorException', 'resilience4j.circuitbreaker.instances.coreMobile.sliding-window-size': 5, 'resilience4j.circuitbreaker.instances.coreMobile.minimum-number-of-calls': 5, 'resilience4j.circuitbreaker.instances.coreMobile.failure-rate-threshold': 50, 'resilience4j.circuitbreaker.instances.coreMobile.wait-duration-in-open-state': '5s', 'resilience4j.circuitbreaker.instances.coreMobile.permitted-number-of-calls-in-half-open-state': 2, 'resilience4j.circuitbreaker.instances.customerMobile.sliding-window-size': 5, 'resilience4j.circuitbreaker.instances.customerMobile.minimum-number-of-calls': 5, 'resilience4j.circuitbreaker.instances.customerMobile.failure-rate-threshold': 50, 'resilience4j.circuitbreaker.instances.customerMobile.wait-duration-in-open-state': '5s', 'resilience4j.circuitbreaker.instances.customerMobile.permitted-number-of-calls-in-half-open-state': 2, 'resilience4j.circuitbreaker.instances.paymentMobile.sliding-window-size': 5, 'resilience4j.circuitbreaker.instances.paymentMobile.minimum-number-of-calls': 5, 'resilience4j.circuitbreaker.instances.paymentMobile.failure-rate-threshold': 50, 'resilience4j.circuitbreaker.instances.paymentMobile.wait-duration-in-open-state': '5s', 'resilience4j.circuitbreaker.instances.paymentMobile.permitted-number-of-calls-in-half-open-state': 2}
+file:config-repo/application.yml {'eureka.instance.prefer-ip-address': '${EUREKA_PREFER_IP_ADDRESS:true}'}
+file:config-repo/application-validacion.yml {'server.tomcat.accesslog.enabled': True, 'server.tomcat.accesslog.directory': '/tmp/eft9-access', 'server.tomcat.accesslog.prefix': 'central-${spring.application.name}', 'server.tomcat.accesslog.pattern': '%t %a "%r" %s', 'spring.cloud.loadbalancer.cache.ttl': '5s'}
+file:config-repo/bff-atm-service.yml {'server.port': 8084, 'resilience4j.circuitbreaker.instances.coreAtm.sliding-window-size': 5, 'resilience4j.circuitbreaker.instances.coreAtm.minimum-number-of-calls': 5, 'resilience4j.circuitbreaker.instances.coreAtm.failure-rate-threshold': 50, 'resilience4j.circuitbreaker.instances.coreAtm.wait-duration-in-open-state': '5s', 'resilience4j.circuitbreaker.instances.coreAtm.permitted-number-of-calls-in-half-open-state': 2}
+file:config-repo/application.yml {'eureka.instance.prefer-ip-address': '${EUREKA_PREFER_IP_ADDRESS:true}'}
+CORE-BANKING-SERVICE [('core-banking-service:6c5a4fecf4f1:8081', 'UP'), ('core-banking-service:9b98a0156a2e:8081', 'UP')]
+PAYMENT-SERVICE [('payment-service:d356ac9a0d71:8085', 'UP'), ('payment-service:08d6cfd31d2d:8085', 'UP')]
+CUSTOMER-SERVICE [('customer-service:002528533a49:8086', 'UP'), ('customer-service:24aadb584f18:8086', 'UP')]
+BFF-WEB-SERVICE [('bff-web-service:0062d5d3bdae:8082', 'UP')]
+BFF-MOBILE-SERVICE [('bff-mobile-service:ec10e1fc505c:8083', 'UP')]
+BFF-ATM-SERVICE [('bff-atm-service:3475e55c670d:8084', 'UP')]
+healthy 6c5a4fecf4f17a2489dd2b44aa48061a15a11629d8e969db9223a4b12bf56c01
+healthy 9b98a0156a2e83ed558875d8161c159d3a9fbc6f25e02ee7fc11b4acdb875645
+healthy d356ac9a0d712d7a6e6f100d776fbba37e40a429bb880c59bc6bc62f4e15b4a1
+healthy 08d6cfd31d2d945330f2234a77914ec6af0bbd3c90a3e5d7e66f4a00e2cbfeab
+healthy 002528533a49ad078feb12154f4b39b3b604bcd072279f3770fa311e9a70bb76
+healthy 24aadb584f18b89a13d31267aeed957bf399bf30abdc5ecc5336cd50c47719e2
+PAYMENT_KAFKA_WITHDRAWALS_ENABLED=false
+PAYMENT_KAFKA_WITHDRAWALS_ENABLED=false
+
+GROUP           CONSUMER-ID     HOST            CLIENT-ID       #PARTITIONS     ASSIGNMENT
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0200,"calculatedInterest":0.00,"finalBalance":60000.00}
+core-banking-service instancia=6c5a4fecf4f17a2489dd2b44aa48061a15a11629d8e969db9223a4b12bf56c01 accesos=0
+core-banking-service instancia=9b98a0156a2e83ed558875d8161c159d3a9fbc6f25e02ee7fc11b4acdb875645 accesos=0
+core-banking-service instancia=6c5a4fecf4f17a2489dd2b44aa48061a15a11629d8e969db9223a4b12bf56c01 accesos=0
+core-banking-service instancia=9b98a0156a2e83ed558875d8161c159d3a9fbc6f25e02ee7fc11b4acdb875645 accesos=0
+core-banking-service instancia=6c5a4fecf4f17a2489dd2b44aa48061a15a11629d8e969db9223a4b12bf56c01 accesos=0
+core-banking-service instancia=9b98a0156a2e83ed558875d8161c159d3a9fbc6f25e02ee7fc11b4acdb875645 accesos=24
+core-banking-service instancia=6c5a4fecf4f17a2489dd2b44aa48061a15a11629d8e969db9223a4b12bf56c01 accesos=24
+core-banking-service instancia=9b98a0156a2e83ed558875d8161c159d3a9fbc6f25e02ee7fc11b4acdb875645 accesos=24
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"PREFERENTE","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.585080Z"}
+customer-service instancia=002528533a49ad078feb12154f4b39b3b604bcd072279f3770fa311e9a70bb76 accesos=0
+customer-service instancia=24aadb584f18b89a13d31267aeed957bf399bf30abdc5ecc5336cd50c47719e2 accesos=0
+customer-service instancia=002528533a49ad078feb12154f4b39b3b604bcd072279f3770fa311e9a70bb76 accesos=24
+customer-service instancia=24aadb584f18b89a13d31267aeed957bf399bf30abdc5ecc5336cd50c47719e2 accesos=24
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+payment-service instancia=d356ac9a0d712d7a6e6f100d776fbba37e40a429bb880c59bc6bc62f4e15b4a1 accesos=11
+payment-service instancia=08d6cfd31d2d945330f2234a77914ec6af0bbd3c90a3e5d7e66f4a00e2cbfeab accesos=0
+payment-service instancia=d356ac9a0d712d7a6e6f100d776fbba37e40a429bb880c59bc6bc62f4e15b4a1 accesos=11
+payment-service instancia=08d6cfd31d2d945330f2234a77914ec6af0bbd3c90a3e5d7e66f4a00e2cbfeab accesos=0
+payment-service instancia=d356ac9a0d712d7a6e6f100d776fbba37e40a429bb880c59bc6bc62f4e15b4a1 accesos=11
+payment-service instancia=08d6cfd31d2d945330f2234a77914ec6af0bbd3c90a3e5d7e66f4a00e2cbfeab accesos=0
+payment-service instancia=d356ac9a0d712d7a6e6f100d776fbba37e40a429bb880c59bc6bc62f4e15b4a1 accesos=11
+payment-service instancia=08d6cfd31d2d945330f2234a77914ec6af0bbd3c90a3e5d7e66f4a00e2cbfeab accesos=24
+payment-service instancia=d356ac9a0d712d7a6e6f100d776fbba37e40a429bb880c59bc6bc62f4e15b4a1 accesos=24
+payment-service instancia=08d6cfd31d2d945330f2234a77914ec6af0bbd3c90a3e5d7e66f4a00e2cbfeab accesos=24

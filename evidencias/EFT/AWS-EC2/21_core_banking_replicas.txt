@@ -1,0 +1,20 @@
+ Container etf_s9-core-banking-service-1 Running 
+ Container etf_s9-core-banking-service-2 Creating 
+ Container etf_s9-core-banking-service-2 Created 
+ Container etf_s9-core-banking-service-2 Starting 
+ Container etf_s9-core-banking-service-2 Started 
+=== VERIFICACION DE REPLICAS CORE BANKING ===
+Verificacion 1: 2 replicas, 1 saludables
+Verificacion 2: 2 replicas, 1 saludables
+Verificacion 3: 2 replicas, 2 saludables
+=== ESTADO DE REPLICAS CORE BANKING ===
+NAME                            IMAGE                         COMMAND                  SERVICE                CREATED          STATUS                    PORTS
+etf_s9-core-banking-service-1   etf_s9-core-banking-service   "java -jar /app/app.…"   core-banking-service   8 minutes ago    Up 8 minutes (healthy)    8081/tcp
+etf_s9-core-banking-service-2   etf_s9-core-banking-service   "java -jar /app/app.…"   core-banking-service   22 seconds ago   Up 21 seconds (healthy)   8081/tcp
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       3.6Gi       234Mi        21Mi       4.2Gi       4.1Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /
+CORE BANKING: 2 REPLICAS SALUDABLES

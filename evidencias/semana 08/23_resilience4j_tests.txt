@@ -1,0 +1,163 @@
+EVIDENCIA: Resilience4j JUnit
+FECHA: 2026-10-05T16:56:10-03:00
+OBJETIVO: Comprobar estados, fallback y short-circuit
+COMANDO: mvn -pl bff-web-service,bff-mobile-service,bff-atm-service -am -Dtest=WebResilience4jTest,MobileResilience4jTest,AtmResilience4jTest -Dsurefire.failIfNoSpecifiedTests=false test
+
+RESULTADO REAL:
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Banco XYZ - Semana 8                                               [pom]
+[INFO] shared-events                                                      [jar]
+[INFO] bff-web-service                                                    [jar]
+[INFO] bff-mobile-service                                                 [jar]
+[INFO] bff-atm-service                                                    [jar]
+[INFO] 
+[INFO] --------------< cl.duoc.bancoxyz:banco-xyz-microservices >--------------
+[INFO] Building Banco XYZ - Semana 8 1.0.0                                [1/5]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:shared-events >-------------------
+[INFO] Building shared-events 1.0.0                                       [2/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ shared-events ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ shared-events ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ shared-events ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:bff-web-service >------------------
+[INFO] Building bff-web-service 1.0.0                                     [3/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-web-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-web-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-web-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/bff-web-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-web-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-web-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.web.WebResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.963 s -- in cl.duoc.bancoxyz.web.WebResilience4jTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------< cl.duoc.bancoxyz:bff-mobile-service >-----------------
+[INFO] Building bff-mobile-service 1.0.0                                  [4/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-mobile-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-mobile-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-mobile-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/bff-mobile-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-mobile-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-mobile-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.321 s -- in cl.duoc.bancoxyz.mobile.MobileResilience4jTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:bff-atm-service >------------------
+[INFO] Building bff-atm-service 1.0.0                                     [5/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-atm-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-atm-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-atm-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/bff-atm-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-atm-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-atm-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.atm.AtmResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.305 s -- in cl.duoc.bancoxyz.atm.AtmResilience4jTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Banco XYZ - Semana 8 1.0.0:
+[INFO] 
+[INFO] Banco XYZ - Semana 8 ............................... SUCCESS [  0.004 s]
+[INFO] shared-events ...................................... SUCCESS [  1.833 s]
+[INFO] bff-web-service .................................... SUCCESS [ 12.258 s]
+[INFO] bff-mobile-service ................................. SUCCESS [  9.717 s]
+[INFO] bff-atm-service .................................... SUCCESS [  8.975 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  33.549 s
+[INFO] Finished at: 2026-10-05T16:56:46-03:00
+[INFO] ------------------------------------------------------------------------
+cl.duoc.bancoxyz.atm.AtmResilience4jTest {'tests': 3, 'failures': 0, 'errors': 0, 'skipped': 0}
+  circuitBreakerStartsClosedAndAllowsSuccessfulCall: PASS
+  circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed: PASS
+  circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits: PASS
+cl.duoc.bancoxyz.mobile.MobileResilience4jTest {'tests': 3, 'failures': 0, 'errors': 0, 'skipped': 0}
+  circuitBreakerStartsClosedAndAllowsSuccessfulCall: PASS
+  circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed: PASS
+  circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits: PASS
+cl.duoc.bancoxyz.web.WebResilience4jTest {'tests': 3, 'failures': 0, 'errors': 0, 'skipped': 0}
+  circuitBreakerStartsClosedAndAllowsSuccessfulCall: PASS
+  circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed: PASS
+  circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits: PASS
+Tests run: 9
+Failures: 0
+Errors: 0
+Skipped: 0
+RESULTADO: PASS

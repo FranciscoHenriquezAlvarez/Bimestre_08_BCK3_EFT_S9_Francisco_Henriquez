@@ -1,0 +1,25 @@
+=== SOLICITUDES PARA ESCALABILIDAD ===
+accountId=102 response={"transactionId":"4b34451b-55a4-456a-a86f-55e0468a11a9","status":"PENDING"}
+accountId=105 response={"transactionId":"0f7136b1-3e1b-40d6-8c35-898a806ab4f3","status":"PENDING"}
+accountId=106 response={"transactionId":"bb91622a-31dd-4645-bea5-eb0c3e3f5bb6","status":"PENDING"}
+accountId=108 response={"transactionId":"748d72ba-ee8c-41f5-8d11-0db10b80e73c","status":"PENDING"}
+accountId=110 response={"transactionId":"2d2abc5b-7228-41f5-9292-b8bbd72dc5d7","status":"PENDING"}
+accountId=111 response={"transactionId":"8016b049-d699-4151-9082-0bded652a3cc","status":"PENDING"}
+
+=== LOGS DE CONSUMO ===
+core-banking-service-1  | 2026-09-29T01:06:46.813Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=2 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 eventId=dd2f7cc5-a068-40b9-bbe9-051d264fd44f transactionId=e1f51bbc-3167-4973-bbfc-a083e5b4f56a
+core-banking-service-1  | 2026-09-29T01:07:13.841Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=2 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 eventId=2a82ea3f-a906-4f09-b495-f310f29ccdbb transactionId=a8a4b2af-edfb-402f-af6b-c2238b4ed5ec
+core-banking-service-1  | 2026-09-29T01:08:15.666Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=2 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 eventId=dd2f7cc5-a068-40b9-bbe9-051d264fd44f transactionId=e1f51bbc-3167-4973-bbfc-a083e5b4f56a
+core-banking-service-1  | 2026-09-29T01:08:23.824Z  INFO 1 --- [core-banking-service] [ntainer#0-0-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=0 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 eventId=3a0c3bd7-563b-4528-a3d0-150ab65d14dc transactionId=4b34451b-55a4-456a-a86f-55e0468a11a9
+core-banking-service-1  | 2026-09-29T01:08:23.838Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=2 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 eventId=a49ce975-1ab5-460b-8dfe-56a38f0d6046 transactionId=0f7136b1-3e1b-40d6-8c35-898a806ab4f3
+core-banking-service-1  | 2026-09-29T01:08:23.852Z  INFO 1 --- [core-banking-service] [ntainer#0-0-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=0 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 eventId=834059b5-067b-4f92-9afd-ffbd25e558cd transactionId=bb91622a-31dd-4645-bea5-eb0c3e3f5bb6
+core-banking-service-1  | 2026-09-29T01:08:23.871Z  INFO 1 --- [core-banking-service] [ntainer#0-0-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=0 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 eventId=dcc6951f-104e-497b-b034-9a843caaf254 transactionId=748d72ba-ee8c-41f5-8d11-0db10b80e73c
+core-banking-service-1  | 2026-09-29T01:08:23.893Z  INFO 1 --- [core-banking-service] [ntainer#0-1-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=1 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 eventId=05e4e371-b536-43b4-878d-75494d4ec76d transactionId=2d2abc5b-7228-41f5-9292-b8bbd72dc5d7
+core-banking-service-1  | 2026-09-29T01:08:23.906Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=2 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 eventId=cd2727bc-d6b2-4164-9b71-0962f827702c transactionId=8016b049-d699-4151-9082-0bded652a3cc
+
+=== CONSUMER GROUP ===
+
+GROUP                         TOPIC                     PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                                   HOST            CLIENT-ID
+core-banking-withdrawal-group bank.withdrawal.requested 1          1               1               0               consumer-core-banking-withdrawal-group-2-c81e2cff-9a0c-49ca-b942-015a29769abe /172.22.0.6     consumer-core-banking-withdrawal-group-2
+core-banking-withdrawal-group bank.withdrawal.requested 0          3               3               0               consumer-core-banking-withdrawal-group-1-a7034f2d-4057-4546-8a0a-112634c51360 /172.22.0.6     consumer-core-banking-withdrawal-group-1
+core-banking-withdrawal-group bank.withdrawal.requested 2          5               5               0               consumer-core-banking-withdrawal-group-3-f379e1eb-19b9-4151-bd58-b4f56b5d64ef /172.22.0.6     consumer-core-banking-withdrawal-group-3

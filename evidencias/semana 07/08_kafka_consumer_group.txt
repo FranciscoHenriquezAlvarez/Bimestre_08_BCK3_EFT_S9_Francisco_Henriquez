@@ -1,0 +1,6 @@
+=== CONSUMER GROUP KAFKA ===
+
+GROUP                         TOPIC                     PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                                   HOST            CLIENT-ID
+core-banking-withdrawal-group bank.withdrawal.requested 1          -               0               -               consumer-core-banking-withdrawal-group-2-c81e2cff-9a0c-49ca-b942-015a29769abe /172.22.0.6     consumer-core-banking-withdrawal-group-2
+core-banking-withdrawal-group bank.withdrawal.requested 0          -               0               -               consumer-core-banking-withdrawal-group-1-a7034f2d-4057-4546-8a0a-112634c51360 /172.22.0.6     consumer-core-banking-withdrawal-group-1
+core-banking-withdrawal-group bank.withdrawal.requested 2          -               0               -               consumer-core-banking-withdrawal-group-3-f379e1eb-19b9-4151-bd58-b4f56b5d64ef /172.22.0.6     consumer-core-banking-withdrawal-group-3

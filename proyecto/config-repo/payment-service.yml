@@ -1,0 +1,13 @@
+server:
+  port: 8085
+payment:
+  kafka:
+    withdrawals:
+      enabled: false
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${OAUTH2_ISSUER:http://localhost:9000}
+          jwk-set-uri: ${OAUTH2_JWK_SET_URI:http://localhost:9000/oauth2/jwks}

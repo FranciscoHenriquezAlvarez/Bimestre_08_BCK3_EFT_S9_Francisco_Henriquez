@@ -1,0 +1,1149 @@
+=== CONSTRUYENDO: eureka-server ===
+ Image etf_s9-eureka-server Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.22kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#3 ...
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#4 DONE 0.2s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#3 DONE 0.2s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#6 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 2/6] WORKDIR /app
+#7 CACHED
+
+#8 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#8 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 25.25kB 0.0s done
+#9 DONE 0.1s
+
+#10 [build 14/15] COPY customer-service customer-service
+#10 CACHED
+
+#11 [build 10/15] COPY bff-web-service bff-web-service
+#11 CACHED
+
+#12 [build 13/15] COPY payment-service payment-service
+#12 CACHED
+
+#13 [build  8/15] COPY eureka-server eureka-server
+#13 CACHED
+
+#14 [build  7/15] COPY config-server config-server
+#14 CACHED
+
+#15 [build  9/15] COPY core-banking-service core-banking-service
+#15 CACHED
+
+#16 [build  5/15] COPY shared-events shared-events
+#16 CACHED
+
+#17 [build 12/15] COPY bff-atm-service bff-atm-service
+#17 CACHED
+
+#18 [build  2/15] WORKDIR /workspace
+#18 CACHED
+
+#19 [build  3/15] COPY .mvn .mvn
+#19 CACHED
+
+#20 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#20 CACHED
+
+#21 [build  4/15] COPY mvnw pom.xml ./
+#21 CACHED
+
+#22 [build  6/15] COPY authorization-server authorization-server
+#22 CACHED
+
+#23 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#23 CACHED
+
+#24 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#24 0.465 Get:1 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+#24 0.467 Get:2 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+#24 0.836 Get:3 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+#24 0.877 Get:4 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [24.6 kB]
+#24 0.978 Get:5 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [252 kB]
+#24 0.980 Get:6 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+#24 1.090 Get:7 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [739 kB]
+#24 1.112 Get:8 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [352 kB]
+#24 1.228 Get:9 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [20.1 MB]
+#24 1.239 Get:10 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [609 kB]
+#24 1.727 Get:11 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,874 kB]
+#24 1.750 Get:12 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [189 kB]
+#24 1.750 Get:13 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [907 kB]
+#24 1.761 Get:14 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [625 kB]
+#24 1.768 Get:15 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [26.1 kB]
+#24 1.769 Get:16 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [409 kB]
+#24 1.774 Get:17 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3,308 B]
+#24 2.887 Fetched 26.7 MB in 3s (10.3 MB/s)
+#24 2.887 Reading package lists...
+#24 3.878 Reading package lists...
+#24 4.847 Building dependency tree...
+#24 5.086 Reading state information...
+#24 5.148 curl is already the newest version (8.18.0-1ubuntu2.7).
+#24 5.148 Solving dependencies...
+#24 5.479 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+#24 DONE 5.5s
+
+#25 [stage-1 4/6] COPY --from=build /workspace/eureka-server/target/eureka-server-1.0.0.jar /app/app.jar
+#25 DONE 0.2s
+
+#26 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#26 DONE 0.0s
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 2.5s done
+#28 exporting manifest sha256:7f884a89396eb6a873c9de0b47773d67fec0c56fc13220a0327466ffc8a6a9c4 0.0s done
+#28 exporting config sha256:b82e300ac6a58458987037f3ebdc57ebb2c31ecb1a4289001ad797967bf885d0 0.0s done
+#28 exporting attestation manifest sha256:fa01e271e35e9160a45d262b93051a9e04f847fc713b4ba9aae837e13ae1e442 0.0s done
+#28 exporting manifest list sha256:57d347acb83f2df236397785dad6286985b6822cff7afcc82c9987f00753912a 0.0s done
+#28 naming to docker.io/library/etf_s9-eureka-server:latest
+#28 naming to docker.io/library/etf_s9-eureka-server:latest done
+#28 unpacking to docker.io/library/etf_s9-eureka-server:latest
+#28 unpacking to docker.io/library/etf_s9-eureka-server:latest 0.5s done
+#28 DONE 3.1s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-eureka-server Built 
+IMAGEN CONSTRUIDA: eureka-server
+=== CONSTRUYENDO: authorization-server ===
+ Image etf_s9-authorization-server Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 699B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#6 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 2/6] WORKDIR /app
+#7 CACHED
+
+#8 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#8 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 25.25kB 0.1s done
+#9 DONE 0.1s
+
+#10 [build  6/15] COPY authorization-server authorization-server
+#10 CACHED
+
+#11 [build  3/15] COPY .mvn .mvn
+#11 CACHED
+
+#12 [build  5/15] COPY shared-events shared-events
+#12 CACHED
+
+#13 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#13 CACHED
+
+#14 [build  9/15] COPY core-banking-service core-banking-service
+#14 CACHED
+
+#15 [build 13/15] COPY payment-service payment-service
+#15 CACHED
+
+#16 [build  4/15] COPY mvnw pom.xml ./
+#16 CACHED
+
+#17 [build 14/15] COPY customer-service customer-service
+#17 CACHED
+
+#18 [build  8/15] COPY eureka-server eureka-server
+#18 CACHED
+
+#19 [build 10/15] COPY bff-web-service bff-web-service
+#19 CACHED
+
+#20 [build 12/15] COPY bff-atm-service bff-atm-service
+#20 CACHED
+
+#21 [build  2/15] WORKDIR /workspace
+#21 CACHED
+
+#22 [build  7/15] COPY config-server config-server
+#22 CACHED
+
+#23 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#23 CACHED
+
+#24 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#24 0.309 Get:1 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+#24 0.385 Get:2 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [609 kB]
+#24 0.440 Get:3 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [24.6 kB]
+#24 0.440 Get:4 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [252 kB]
+#24 0.443 Get:5 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [739 kB]
+#24 0.462 Get:6 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+#24 0.860 Get:7 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+#24 1.016 Get:8 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+#24 1.158 Get:9 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [189 kB]
+#24 1.225 Get:10 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [20.1 MB]
+#24 1.817 Get:11 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,874 kB]
+#24 1.837 Get:12 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [352 kB]
+#24 1.841 Get:13 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [409 kB]
+#24 1.845 Get:14 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [625 kB]
+#24 1.852 Get:15 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [26.1 kB]
+#24 1.853 Get:16 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [907 kB]
+#24 1.863 Get:17 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3,308 B]
+#24 2.996 Fetched 26.7 MB in 3s (9,823 kB/s)
+#24 2.996 Reading package lists...
+#24 3.980 Reading package lists...
+#24 4.941 Building dependency tree...
+#24 5.180 Reading state information...
+#24 5.242 curl is already the newest version (8.18.0-1ubuntu2.7).
+#24 5.242 Solving dependencies...
+#24 5.581 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+#24 DONE 5.7s
+
+#25 [stage-1 4/6] COPY --from=build /workspace/authorization-server/target/authorization-server-1.0.0.jar /app/app.jar
+#25 DONE 0.1s
+
+#26 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#26 DONE 0.0s
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 1.3s done
+#28 exporting manifest sha256:04045d4c26607710b356dc9dfe5d71fcea5d91eff43f0c528983d4199c9dbb02 0.0s done
+#28 exporting config sha256:b29b4e098f64dc48ff3e9598621e7f62dfbdefdd8988d8d7d3db7c4ea2732ab3 0.0s done
+#28 exporting attestation manifest sha256:5997d4d5e8ea7abebc2ebc214fc50d73610796ee354797f180cf4f8f63b9a13a 0.0s done
+#28 exporting manifest list sha256:44814be625068defc2defdfcba8be18049f52068980102ce1587442a8e174bbe 0.0s done
+#28 naming to docker.io/library/etf_s9-authorization-server:latest done
+#28 unpacking to docker.io/library/etf_s9-authorization-server:latest
+#28 unpacking to docker.io/library/etf_s9-authorization-server:latest 0.3s done
+#28 DONE 1.7s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-authorization-server Built 
+IMAGEN CONSTRUIDA: authorization-server
+=== CONSTRUYENDO: batch-init ===
+ Image etf_s9-batch-init Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 2.34kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#6 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 2/6] WORKDIR /app
+#7 CACHED
+
+#8 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#8 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 25.25kB 0.0s done
+#9 DONE 0.1s
+
+#10 [build  3/15] COPY .mvn .mvn
+#10 CACHED
+
+#11 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#11 CACHED
+
+#12 [build  5/15] COPY shared-events shared-events
+#12 CACHED
+
+#13 [build 10/15] COPY bff-web-service bff-web-service
+#13 CACHED
+
+#14 [build 13/15] COPY payment-service payment-service
+#14 CACHED
+
+#15 [build  2/15] WORKDIR /workspace
+#15 CACHED
+
+#16 [build  7/15] COPY config-server config-server
+#16 CACHED
+
+#17 [build 14/15] COPY customer-service customer-service
+#17 CACHED
+
+#18 [build  9/15] COPY core-banking-service core-banking-service
+#18 CACHED
+
+#19 [build  8/15] COPY eureka-server eureka-server
+#19 CACHED
+
+#20 [build 12/15] COPY bff-atm-service bff-atm-service
+#20 CACHED
+
+#21 [build  4/15] COPY mvnw pom.xml ./
+#21 CACHED
+
+#22 [build  6/15] COPY authorization-server authorization-server
+#22 CACHED
+
+#23 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#23 CACHED
+
+#24 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#24 0.432 Get:1 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+#24 0.437 Get:2 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+#24 0.790 Get:3 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+#24 0.827 Get:4 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [252 kB]
+#24 0.929 Get:5 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+#24 1.043 Get:6 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [24.6 kB]
+#24 1.047 Get:7 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [609 kB]
+#24 1.057 Get:8 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [352 kB]
+#24 1.171 Get:9 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [189 kB]
+#24 1.178 Get:10 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [739 kB]
+#24 1.221 Get:11 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [20.1 MB]
+#24 1.659 Get:12 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,874 kB]
+#24 1.681 Get:13 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [907 kB]
+#24 1.689 Get:14 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [625 kB]
+#24 1.696 Get:15 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [26.1 kB]
+#24 1.698 Get:16 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [409 kB]
+#24 1.703 Get:17 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3,308 B]
+#24 2.828 Fetched 26.7 MB in 3s (10.4 MB/s)
+#24 2.828 Reading package lists...
+#24 3.805 Reading package lists...
+#24 4.786 Building dependency tree...
+#24 5.035 Reading state information...
+#24 5.100 curl is already the newest version (8.18.0-1ubuntu2.7).
+#24 5.100 Solving dependencies...
+#24 5.460 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+#24 DONE 5.6s
+
+#25 [stage-1 4/6] COPY --from=build /workspace/core-banking-service/target/core-banking-service-1.0.0.jar /app/app.jar
+#25 DONE 0.2s
+
+#26 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#26 DONE 0.0s
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 3.3s done
+#28 exporting manifest sha256:f0fc22c135d8916298660de7f83bf3feeef01d3ae5692d7a1b6b51bb887aa589 0.0s done
+#28 exporting config sha256:c47d2e32535f825c93032d03f170a72b55d603314d548ae7a3977a4db0a38761 0.0s done
+#28 exporting attestation manifest sha256:a072b2a4fe6e826a65537a318c13ff876285a1c49b2250094c11de57e6e69bb5 0.0s done
+#28 exporting manifest list sha256:899549462d4126d77318465ab2af50a5acedc23e0fc20ca08c518816b2f7abc0 0.0s done
+#28 naming to docker.io/library/etf_s9-batch-init:latest done
+#28 unpacking to docker.io/library/etf_s9-batch-init:latest
+#28 unpacking to docker.io/library/etf_s9-batch-init:latest 0.7s done
+#28 DONE 4.0s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-batch-init Built 
+IMAGEN CONSTRUIDA: batch-init
+=== CONSTRUYENDO: core-banking-service ===
+ Image etf_s9-core-banking-service Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 3.50kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#6 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#6 DONE 0.0s
+
+#7 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#7 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 25.25kB 0.0s done
+#8 DONE 0.0s
+
+#9 [stage-1 4/6] COPY --from=build /workspace/core-banking-service/target/core-banking-service-1.0.0.jar /app/app.jar
+#9 CACHED
+
+#10 [build 10/15] COPY bff-web-service bff-web-service
+#10 CACHED
+
+#11 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#11 CACHED
+
+#12 [stage-1 2/6] WORKDIR /app
+#12 CACHED
+
+#13 [build  3/15] COPY .mvn .mvn
+#13 CACHED
+
+#14 [build  4/15] COPY mvnw pom.xml ./
+#14 CACHED
+
+#15 [build  6/15] COPY authorization-server authorization-server
+#15 CACHED
+
+#16 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#16 CACHED
+
+#17 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#17 CACHED
+
+#18 [build  5/15] COPY shared-events shared-events
+#18 CACHED
+
+#19 [build  2/15] WORKDIR /workspace
+#19 CACHED
+
+#20 [build 12/15] COPY bff-atm-service bff-atm-service
+#20 CACHED
+
+#21 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#21 CACHED
+
+#22 [build  9/15] COPY core-banking-service core-banking-service
+#22 CACHED
+
+#23 [build 13/15] COPY payment-service payment-service
+#23 CACHED
+
+#24 [build  8/15] COPY eureka-server eureka-server
+#24 CACHED
+
+#25 [build  7/15] COPY config-server config-server
+#25 CACHED
+
+#26 [build 14/15] COPY customer-service customer-service
+#26 CACHED
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 CACHED
+
+#28 exporting to image
+#28 exporting layers done
+#28 exporting manifest sha256:ee6f86d0eebc3e65ec473691e7739686ad67b0e8f9a9bc577f132da12e1c33cc 0.0s done
+#28 exporting config sha256:8d8805b7475fd487908b5e376c5504d4470953e507a41a07ed7800f683124353 0.0s done
+#28 exporting attestation manifest sha256:bd2e568ac285eed63312b3cb8fb270d7e402533d236a0247b6d9f053ce4eec5a 0.0s done
+#28 exporting manifest list sha256:5b39e25a5b4956a42cd31c28d7fafa22f340da3be4abec2fd0251e2603e6575d
+#28 exporting manifest list sha256:5b39e25a5b4956a42cd31c28d7fafa22f340da3be4abec2fd0251e2603e6575d 0.0s done
+#28 naming to docker.io/library/etf_s9-core-banking-service:latest done
+#28 unpacking to docker.io/library/etf_s9-core-banking-service:latest done
+#28 DONE 0.1s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-core-banking-service Built 
+IMAGEN CONSTRUIDA: core-banking-service
+=== CONSTRUYENDO: payment-service ===
+ Image etf_s9-payment-service Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 4.05kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#6 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 2/6] WORKDIR /app
+#7 CACHED
+
+#8 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#8 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 25.25kB 0.0s done
+#9 DONE 0.1s
+
+#10 [build 12/15] COPY bff-atm-service bff-atm-service
+#10 CACHED
+
+#11 [build  6/15] COPY authorization-server authorization-server
+#11 CACHED
+
+#12 [build  2/15] WORKDIR /workspace
+#12 CACHED
+
+#13 [build  5/15] COPY shared-events shared-events
+#13 CACHED
+
+#14 [build  7/15] COPY config-server config-server
+#14 CACHED
+
+#15 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#15 CACHED
+
+#16 [build 13/15] COPY payment-service payment-service
+#16 CACHED
+
+#17 [build  9/15] COPY core-banking-service core-banking-service
+#17 CACHED
+
+#18 [build 10/15] COPY bff-web-service bff-web-service
+#18 CACHED
+
+#19 [build 14/15] COPY customer-service customer-service
+#19 CACHED
+
+#20 [build  3/15] COPY .mvn .mvn
+#20 CACHED
+
+#21 [build  4/15] COPY mvnw pom.xml ./
+#21 CACHED
+
+#22 [build  8/15] COPY eureka-server eureka-server
+#22 CACHED
+
+#23 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#23 CACHED
+
+#24 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#24 0.341 Get:1 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+#24 0.406 Get:2 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+#24 0.433 Get:3 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+#24 0.459 Get:4 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,874 kB]
+#24 0.477 Get:5 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+#24 0.528 Get:6 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [20.1 MB]
+#24 0.728 Get:7 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [352 kB]
+#24 0.732 Get:8 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [189 kB]
+#24 0.736 Get:9 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [625 kB]
+#24 0.743 Get:10 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [26.1 kB]
+#24 0.745 Get:11 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [409 kB]
+#24 0.751 Get:12 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [907 kB]
+#24 0.760 Get:13 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3,308 B]
+#24 0.864 Get:14 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [739 kB]
+#24 1.181 Get:15 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [24.6 kB]
+#24 1.398 Get:16 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [252 kB]
+#24 1.988 Get:17 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [609 kB]
+#24 2.238 Fetched 26.7 MB in 2s (13.8 MB/s)
+#24 2.238 Reading package lists...
+#24 3.237 Reading package lists...
+#24 4.243 Building dependency tree...
+#24 4.486 Reading state information...
+#24 4.547 curl is already the newest version (8.18.0-1ubuntu2.7).
+#24 4.547 Solving dependencies...
+#24 4.896 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+#24 DONE 5.0s
+
+#25 [stage-1 4/6] COPY --from=build /workspace/payment-service/target/payment-service-1.0.0.jar /app/app.jar
+#25 DONE 0.2s
+
+#26 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#26 DONE 0.1s
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 3.2s done
+#28 exporting manifest sha256:69a76d77daa8dfeaf309ee4def06f3e0b3b62a0eef9e1f941ebb92088292aa46 0.0s done
+#28 exporting config sha256:1db016d2231cd22b15c1de49e309e552f6b293e0899e9c0dd96dd1a00a9a9d89 0.0s done
+#28 exporting attestation manifest sha256:f4fb992d3bdfec541ba4a8fa5637b28af653f248059b16c15f0cbee413031b46 0.0s done
+#28 exporting manifest list sha256:30c003157e99c21cdb543c867fbc5459b5e369f0a1e7f0cb4864d6b82614d75b 0.0s done
+#28 naming to docker.io/library/etf_s9-payment-service:latest done
+#28 unpacking to docker.io/library/etf_s9-payment-service:latest
+#28 unpacking to docker.io/library/etf_s9-payment-service:latest 0.7s done
+#28 DONE 4.0s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-payment-service Built 
+IMAGEN CONSTRUIDA: payment-service
+=== CONSTRUYENDO: customer-service ===
+ Image etf_s9-customer-service Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 2.36kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#6 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 2/6] WORKDIR /app
+#7 CACHED
+
+#8 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#8 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 25.25kB 0.1s done
+#9 DONE 0.1s
+
+#10 [build  4/15] COPY mvnw pom.xml ./
+#10 CACHED
+
+#11 [build 14/15] COPY customer-service customer-service
+#11 CACHED
+
+#12 [build 12/15] COPY bff-atm-service bff-atm-service
+#12 CACHED
+
+#13 [build  2/15] WORKDIR /workspace
+#13 CACHED
+
+#14 [build 10/15] COPY bff-web-service bff-web-service
+#14 CACHED
+
+#15 [build 13/15] COPY payment-service payment-service
+#15 CACHED
+
+#16 [build  7/15] COPY config-server config-server
+#16 CACHED
+
+#17 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#17 CACHED
+
+#18 [build  5/15] COPY shared-events shared-events
+#18 CACHED
+
+#19 [build  9/15] COPY core-banking-service core-banking-service
+#19 CACHED
+
+#20 [build  8/15] COPY eureka-server eureka-server
+#20 CACHED
+
+#21 [build  6/15] COPY authorization-server authorization-server
+#21 CACHED
+
+#22 [build  3/15] COPY .mvn .mvn
+#22 CACHED
+
+#23 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#23 CACHED
+
+#24 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#24 0.329 Get:1 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+#24 0.417 Get:2 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [609 kB]
+#24 0.478 Get:3 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+#24 0.480 Get:4 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [739 kB]
+#24 0.490 Get:5 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [24.6 kB]
+#24 0.492 Get:6 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [252 kB]
+#24 0.872 Get:7 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+#24 1.026 Get:8 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+#24 1.168 Get:9 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,874 kB]
+#24 1.489 Get:10 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [352 kB]
+#24 1.508 Get:11 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [20.1 MB]
+#24 1.829 Get:12 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [189 kB]
+#24 1.830 Get:13 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [409 kB]
+#24 1.835 Get:14 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [625 kB]
+#24 1.842 Get:15 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [26.1 kB]
+#24 1.843 Get:16 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [907 kB]
+#24 1.853 Get:17 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3,308 B]
+#24 2.928 Fetched 26.7 MB in 3s (10.1 MB/s)
+#24 2.928 Reading package lists...
+#24 3.930 Reading package lists...
+#24 4.904 Building dependency tree...
+#24 5.143 Reading state information...
+#24 5.205 curl is already the newest version (8.18.0-1ubuntu2.7).
+#24 5.205 Solving dependencies...
+#24 5.569 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+#24 DONE 5.7s
+
+#25 [stage-1 4/6] COPY --from=build /workspace/customer-service/target/customer-service-1.0.0.jar /app/app.jar
+#25 DONE 0.2s
+
+#26 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#26 DONE 0.0s
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 2.5s done
+#28 exporting manifest sha256:b1ff0d89bc65189b7adc8deba753f766b65a8ee03e8d248fd04ad80804b0dec4 0.0s done
+#28 exporting config sha256:83070a8f9d52eb8383c1d6d58960562f3fddfbb43a3d1508ded830f8af2fab39 0.0s done
+#28 exporting attestation manifest sha256:4daa747958a4a4878e4ceebac90a4e59f1c7db4cd96c0059fa53f95adb4164bb 0.0s done
+#28 exporting manifest list sha256:3ece2d0d4daa14f5d65e0a60146929689e3f8174e3becaa8f4316dad1b6e5eae 0.0s done
+#28 naming to docker.io/library/etf_s9-customer-service:latest done
+#28 unpacking to docker.io/library/etf_s9-customer-service:latest
+#28 unpacking to docker.io/library/etf_s9-customer-service:latest 0.5s done
+#28 DONE 3.1s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-customer-service Built 
+IMAGEN CONSTRUIDA: customer-service
+=== CONSTRUYENDO: bff-web-service ===
+ Image etf_s9-bff-web-service Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 4.61kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#6 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 2/6] WORKDIR /app
+#7 CACHED
+
+#8 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#8 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 25.25kB 0.0s done
+#9 DONE 0.0s
+
+#10 [build  8/15] COPY eureka-server eureka-server
+#10 CACHED
+
+#11 [build 14/15] COPY customer-service customer-service
+#11 CACHED
+
+#12 [build 13/15] COPY payment-service payment-service
+#12 CACHED
+
+#13 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#13 CACHED
+
+#14 [build  6/15] COPY authorization-server authorization-server
+#14 CACHED
+
+#15 [build  4/15] COPY mvnw pom.xml ./
+#15 CACHED
+
+#16 [build  9/15] COPY core-banking-service core-banking-service
+#16 CACHED
+
+#17 [build  5/15] COPY shared-events shared-events
+#17 CACHED
+
+#18 [build  2/15] WORKDIR /workspace
+#18 CACHED
+
+#19 [build  3/15] COPY .mvn .mvn
+#19 CACHED
+
+#20 [build 10/15] COPY bff-web-service bff-web-service
+#20 CACHED
+
+#21 [build 12/15] COPY bff-atm-service bff-atm-service
+#21 CACHED
+
+#22 [build  7/15] COPY config-server config-server
+#22 CACHED
+
+#23 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#23 CACHED
+
+#24 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#24 0.321 Get:1 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+#24 0.376 Get:2 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+#24 0.401 Get:3 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+#24 0.419 Get:4 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [20.1 MB]
+#24 0.460 Get:5 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+#24 0.629 Get:6 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [352 kB]
+#24 0.631 Get:7 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,874 kB]
+#24 0.642 Get:8 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [189 kB]
+#24 0.645 Get:9 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [907 kB]
+#24 0.655 Get:10 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [625 kB]
+#24 0.663 Get:11 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [26.1 kB]
+#24 0.664 Get:12 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [409 kB]
+#24 0.669 Get:13 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3,308 B]
+#24 0.846 Get:14 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [609 kB]
+#24 1.140 Get:15 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [252 kB]
+#24 1.160 Get:16 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [739 kB]
+#24 1.246 Get:17 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [24.6 kB]
+#24 1.937 Fetched 26.7 MB in 2s (16.2 MB/s)
+#24 1.937 Reading package lists...
+#24 2.939 Reading package lists...
+#24 3.918 Building dependency tree...
+#24 4.167 Reading state information...
+#24 4.234 curl is already the newest version (8.18.0-1ubuntu2.7).
+#24 4.234 Solving dependencies...
+#24 4.584 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+#24 DONE 4.7s
+
+#25 [stage-1 4/6] COPY --from=build /workspace/bff-web-service/target/bff-web-service-1.0.0.jar /app/app.jar
+#25 DONE 0.1s
+
+#26 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#26 DONE 0.0s
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 2.4s done
+#28 exporting manifest sha256:23051e656c07ae6af3281e36fc6071cae7bfaeed3dcf00d8d68172b68f438259
+#28 exporting manifest sha256:23051e656c07ae6af3281e36fc6071cae7bfaeed3dcf00d8d68172b68f438259 0.0s done
+#28 exporting config sha256:f02a968f42736053b225b9f14d4f19337e58e0026dba21ce4e2b9e075b905d97 0.0s done
+#28 exporting attestation manifest sha256:3a3a547cb3f84f1e41ca56e9df77e66414e48067cd9921566dc043e70751b14e 0.0s done
+#28 exporting manifest list sha256:46c8ae3ae9c790cd89ef148b50c8984edc9ac54ac86c7e072bd5b78345a89a37 0.0s done
+#28 naming to docker.io/library/etf_s9-bff-web-service:latest done
+#28 unpacking to docker.io/library/etf_s9-bff-web-service:latest
+#28 unpacking to docker.io/library/etf_s9-bff-web-service:latest 0.5s done
+#28 DONE 3.0s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-bff-web-service Built 
+IMAGEN CONSTRUIDA: bff-web-service
+=== CONSTRUYENDO: bff-mobile-service ===
+ Image etf_s9-bff-mobile-service Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 4.63kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#6 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#7 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#7 DONE 0.0s
+
+#8 [stage-1 2/6] WORKDIR /app
+#8 CACHED
+
+#9 [internal] load build context
+#9 transferring context: 25.25kB 0.0s done
+#9 DONE 0.1s
+
+#10 [build  4/15] COPY mvnw pom.xml ./
+#10 CACHED
+
+#11 [build  6/15] COPY authorization-server authorization-server
+#11 CACHED
+
+#12 [build  5/15] COPY shared-events shared-events
+#12 CACHED
+
+#13 [build  9/15] COPY core-banking-service core-banking-service
+#13 CACHED
+
+#14 [build  8/15] COPY eureka-server eureka-server
+#14 CACHED
+
+#15 [build 12/15] COPY bff-atm-service bff-atm-service
+#15 CACHED
+
+#16 [build 10/15] COPY bff-web-service bff-web-service
+#16 CACHED
+
+#17 [build  7/15] COPY config-server config-server
+#17 CACHED
+
+#18 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#18 CACHED
+
+#19 [build  3/15] COPY .mvn .mvn
+#19 CACHED
+
+#20 [build  2/15] WORKDIR /workspace
+#20 CACHED
+
+#21 [build 13/15] COPY payment-service payment-service
+#21 CACHED
+
+#22 [build 14/15] COPY customer-service customer-service
+#22 CACHED
+
+#23 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#23 CACHED
+
+#24 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#24 0.338 Get:1 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+#24 0.403 Get:2 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+#24 0.429 Get:3 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+#24 0.453 Get:4 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,874 kB]
+#24 0.471 Get:5 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+#24 0.529 Get:6 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [352 kB]
+#24 0.529 Get:7 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [189 kB]
+#24 0.529 Get:8 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [20.1 MB]
+#24 0.736 Get:9 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [907 kB]
+#24 0.746 Get:10 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [409 kB]
+#24 0.752 Get:11 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [625 kB]
+#24 0.760 Get:12 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [26.1 kB]
+#24 0.760 Get:13 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3,308 B]
+#24 0.859 Get:14 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [739 kB]
+#24 1.175 Get:15 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [252 kB]
+#24 1.191 Get:16 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [609 kB]
+#24 1.257 Get:17 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [24.6 kB]
+#24 1.931 Fetched 26.7 MB in 2s (16.4 MB/s)
+#24 1.931 Reading package lists...
+#24 2.958 Reading package lists...
+#24 3.929 Building dependency tree...
+#24 4.169 Reading state information...
+#24 4.229 curl is already the newest version (8.18.0-1ubuntu2.7).
+#24 4.229 Solving dependencies...
+#24 4.592 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+#24 DONE 4.7s
+
+#25 [stage-1 4/6] COPY --from=build /workspace/bff-mobile-service/target/bff-mobile-service-1.0.0.jar /app/app.jar
+#25 DONE 0.1s
+
+#26 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#26 DONE 0.1s
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 2.4s done
+#28 exporting manifest sha256:c042def2aa9f11251a584948a47a8b1c5efbd08a4c6a93ad309903f272167bbd 0.0s done
+#28 exporting config sha256:0a51ed2face045fc2ac10552aaf9cce9a22917ab2a63fd3ea6d3bc0f4650bc2c 0.0s done
+#28 exporting attestation manifest sha256:b63016aacabee6095ee83c2df613b84716bee2a6d89bd42e468fd4761392485b 0.0s done
+#28 exporting manifest list sha256:9ccf42cf0f3b1e0a6ed6d3ea8be36af42fabac4f046df48c62ea885afe9cf435 0.0s done
+#28 naming to docker.io/library/etf_s9-bff-mobile-service:latest done
+#28 unpacking to docker.io/library/etf_s9-bff-mobile-service:latest
+#28 unpacking to docker.io/library/etf_s9-bff-mobile-service:latest 0.5s done
+#28 DONE 3.0s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-bff-mobile-service Built 
+IMAGEN CONSTRUIDA: bff-mobile-service
+=== CONSTRUYENDO: bff-atm-service ===
+ Image etf_s9-bff-atm-service Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 4.05kB done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile.service
+#2 transferring dockerfile: 1.12kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17-jre
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:17-jdk
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 107B done
+#5 DONE 0.0s
+
+#6 [build  1/15] FROM docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824
+#6 resolve docker.io/library/eclipse-temurin:17-jdk@sha256:5d6042fb8cdc14d614e4e421f52e3211fc5aeadddce44cbf9de8ed37c791f824 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 1/6] FROM docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90
+#7 resolve docker.io/library/eclipse-temurin:17-jre@sha256:207ecae0b2b104dfc6dfa763d1e9cd2041cb344800a180e24cb1a28ed533ff90 0.0s done
+#7 DONE 0.0s
+
+#8 [stage-1 2/6] WORKDIR /app
+#8 CACHED
+
+#9 [internal] load build context
+#9 transferring context: 25.25kB 0.0s done
+#9 DONE 0.0s
+
+#10 [build  8/15] COPY eureka-server eureka-server
+#10 CACHED
+
+#11 [build  5/15] COPY shared-events shared-events
+#11 CACHED
+
+#12 [build 12/15] COPY bff-atm-service bff-atm-service
+#12 CACHED
+
+#13 [build  7/15] COPY config-server config-server
+#13 CACHED
+
+#14 [build 11/15] COPY bff-mobile-service bff-mobile-service
+#14 CACHED
+
+#15 [build  2/15] WORKDIR /workspace
+#15 CACHED
+
+#16 [build  3/15] COPY .mvn .mvn
+#16 CACHED
+
+#17 [build  6/15] COPY authorization-server authorization-server
+#17 CACHED
+
+#18 [build 13/15] COPY payment-service payment-service
+#18 CACHED
+
+#19 [build  4/15] COPY mvnw pom.xml ./
+#19 CACHED
+
+#20 [build 14/15] COPY customer-service customer-service
+#20 CACHED
+
+#21 [build 10/15] COPY bff-web-service bff-web-service
+#21 CACHED
+
+#22 [build  9/15] COPY core-banking-service core-banking-service
+#22 CACHED
+
+#23 [build 15/15] RUN chmod +x mvnw && ./mvnw -f pom.xml clean package -DskipTests
+#23 CACHED
+
+#24 [stage-1 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+#24 0.456 Get:1 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+#24 0.480 Get:2 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+#24 0.849 Get:3 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [739 kB]
+#24 0.892 Get:4 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+#24 1.054 Get:5 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+#24 1.168 Get:6 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [609 kB]
+#24 1.202 Get:7 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [189 kB]
+#24 1.210 Get:8 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [24.6 kB]
+#24 1.213 Get:9 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [252 kB]
+#24 1.272 Get:10 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [352 kB]
+#24 1.390 Get:11 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [20.1 MB]
+#24 1.873 Get:12 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1,874 kB]
+#24 1.891 Get:13 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [907 kB]
+#24 1.900 Get:14 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [409 kB]
+#24 1.905 Get:15 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [625 kB]
+#24 1.912 Get:16 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [26.1 kB]
+#24 1.913 Get:17 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3,308 B]
+#24 3.035 Fetched 26.7 MB in 3s (9,706 kB/s)
+#24 3.035 Reading package lists...
+#24 4.012 Reading package lists...
+#24 4.984 Building dependency tree...
+#24 5.222 Reading state information...
+#24 5.285 curl is already the newest version (8.18.0-1ubuntu2.7).
+#24 5.285 Solving dependencies...
+#24 5.644 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+#24 DONE 5.8s
+
+#25 [stage-1 4/6] COPY --from=build /workspace/bff-atm-service/target/bff-atm-service-1.0.0.jar /app/app.jar
+#25 DONE 0.2s
+
+#26 [stage-1 5/6] COPY docker/batch-init.sh /usr/local/bin/batch-init.sh
+#26 DONE 0.1s
+
+#27 [stage-1 6/6] RUN chmod +x /usr/local/bin/batch-init.sh
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 3.1s done
+#28 exporting manifest sha256:133c69de579e1793f4e599b0a5e0411fc641e06de764456ad9fde7b976625977 0.0s done
+#28 exporting config sha256:69fcacc78d8255aca09f4e5bee5c841a6e5c5a7c57f93b7008edaae571c89c3f 0.0s done
+#28 exporting attestation manifest sha256:da9637e1c12bf3634c4984177f2c01b1762a3de9734720c8614b9c8766666c19 0.0s done
+#28 exporting manifest list sha256:af19b0531653ce504a8bbe787124595134e5472c899b1e6c5ace8890925c0bfb 0.0s done
+#28 naming to docker.io/library/etf_s9-bff-atm-service:latest done
+#28 unpacking to docker.io/library/etf_s9-bff-atm-service:latest
+#28 unpacking to docker.io/library/etf_s9-bff-atm-service:latest 0.6s done
+#28 DONE 3.9s
+
+#29 resolving provenance for metadata file
+#29 DONE 0.0s
+ Image etf_s9-bff-atm-service Built 
+IMAGEN CONSTRUIDA: bff-atm-service

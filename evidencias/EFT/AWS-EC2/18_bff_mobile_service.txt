@@ -1,0 +1,42 @@
+=== VALIDACION DOCKER COMPOSE ===
+ Container etf_s9-bff-mobile-service-1 Creating 
+ Container etf_s9-bff-mobile-service-1 Created 
+ Container etf_s9-bff-mobile-service-1 Starting 
+ Container etf_s9-bff-mobile-service-1 Started 
+=== VERIFICACION DE SALUD BFF MOBILE ===
+Verificacion 1: starting
+Verificacion 2: starting
+Verificacion 3: starting
+Verificacion 4: healthy
+=== ESTADO DE CONTENEDORES ===
+NAMES                           STATUS
+etf_s9-bff-mobile-service-1     Up 30 seconds (healthy)
+etf_s9-bff-web-service-1        Up About a minute (healthy)
+etf_s9-payment-service-1        Up 2 minutes (healthy)
+etf_s9-core-banking-service-1   Up 4 minutes (healthy)
+etf_s9-customer-service-1       Up 5 minutes (healthy)
+etf_s9-batch-init-1             Exited (0) 7 minutes ago
+etf_s9-authorization-server-1   Up 22 minutes (healthy)
+etf_s9-eureka-server-1          Up 29 minutes (healthy)
+etf_s9-config-server-1          Up 29 minutes (healthy)
+etf_s9-postgres-1               Up 33 minutes (healthy)
+etf_s9-kafka-1                  Up 33 minutes (healthy)
+=== CONSUMO DE RECURSOS ===
+NAME                            MEM USAGE / LIMIT     CPU %
+etf_s9-bff-mobile-service-1     192.3MiB / 7.632GiB   0.43%
+etf_s9-bff-web-service-1        191.9MiB / 7.632GiB   1.24%
+etf_s9-payment-service-1        194.1MiB / 7.632GiB   0.12%
+etf_s9-core-banking-service-1   232MiB / 7.632GiB     0.12%
+etf_s9-customer-service-1       225.2MiB / 7.632GiB   0.11%
+etf_s9-authorization-server-1   164.5MiB / 7.632GiB   0.12%
+etf_s9-eureka-server-1          247.3MiB / 7.632GiB   1.87%
+etf_s9-config-server-1          214.6MiB / 7.632GiB   6.03%
+etf_s9-postgres-1               55.91MiB / 7.632GiB   0.00%
+etf_s9-kafka-1                  410.3MiB / 7.632GiB   1.01%
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       2.9Gi       173Mi        20Mi       4.9Gi       4.8Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /
+BFF MOBILE SERVICE OPERATIVO

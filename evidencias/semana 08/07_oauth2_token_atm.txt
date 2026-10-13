@@ -1,0 +1,9 @@
+EVIDENCIA: Token OAuth2 ATM
+FECHA: 2026-10-05T16:48:10-03:00
+OBJETIVO: Obtener Access Token OAuth2 para atm-client sin almacenar el JWT completo
+COMANDO: POST http://localhost:9000/oauth2/token - client=atm-client - grant_type=client_credentials - scope=atm
+
+RESULTADO REAL:
+HTTP status: 200
+{"token_type": "Bearer", "scope": "atm", "expires_in": 1799}
+Access Token mantenido exclusivamente en memoria.

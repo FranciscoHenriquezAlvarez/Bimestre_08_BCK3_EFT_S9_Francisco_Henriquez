@@ -1,0 +1,39 @@
+ESTADO DOCKER
+------------------------------------------------------------
+COMANDO: docker compose ps
+NAME                 IMAGE         COMMAND                  SERVICE    CREATED       STATUS                 PORTS
+banco-xyz-postgres   postgres:16   "docker-entrypoint.s…"   postgres   4 hours ago   Up 4 hours (healthy)   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+
+CONTEOS BASE DE DATOS
+------------------------------------------------------------
+COMANDO: docker compose exec -T postgres psql -U banco_user -d banco_xyz -c "SELECT 'transacciones_procesadas' AS tabla, COUNT(*) AS registros FROM transacciones_procesadas UNION ALL SELECT 'intereses_mensuales', COUNT(*) FROM intereses_mensuales UNION ALL SELECT 'movimientos_anuales', COUNT(*) FROM movimientos_anuales;"
+          tabla           | registros
+--------------------------+-----------
+ transacciones_procesadas |       387
+ intereses_mensuales      |        50
+ movimientos_anuales      |       289
+(3 rows)
+
+ARCHIVOS DE EVIDENCIA SEMANA 04
+------------------------------------------------------------
+COMANDO: find "../evidencias" -maxdepth 1 -type f -printf "%f\n" | sort
+01_bff_web.txt
+02_bff_mobile.txt
+03_bff_atm.txt
+04_bff_seguridad.txt
+05_bff_validaciones_atm.txt
+06_bff_verificacion_final.txt
+
+INTEGRIDAD EVIDENCIAS SEMANA 03
+------------------------------------------------------------
+COMANDO: find "../evidencias/semana 03" -maxdepth 1 -type f -printf "%f\n" | sort
+01_transacciones.txt
+02_intereses.txt
+03_estados_anuales.txt
+04_reejecucion_transacciones.txt
+PBY2203_Exp1_S3_Francisco_Henriquez.docx
+escala_A.txt
+escala_B.txt
+escala_C.txt
+
+COMANDO: git diff -- "../evidencias/semana 03"

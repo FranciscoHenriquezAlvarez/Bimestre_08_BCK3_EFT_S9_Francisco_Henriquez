@@ -1,0 +1,60 @@
+cl.duoc.bancoxyz.web.AccountsBffOAuth2IT operativeAccountsRemainReadableAndNewApiAccountsAvoidAllHistoricalIds PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[1] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[2] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[3] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[4] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[1] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[2] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[3] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[4] PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest closedAccountRejectsEveryNewMonetaryDirectionWithoutPartialTransfers PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest exhaustedIntegerIdentifiersRejectOpeningWithoutChangingExistingData PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest maintenancePreservesClientCreationBalancesLedgerAndBatch PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest webAndMobileCanOpenMaintainAndCloseWithZeroInitialFunds PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest operativeQueriesTakePriorityAndLegacyFallbackNeverImportsAccounts PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest newAccountsExposeThePreviousQueryContractsAndEmptyHistory PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest positiveBalanceCannotCloseAndInvalidMaintenanceCannotChangeTheRow PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest failedInsertRollsBackOpeningAndDoesNotReuseTheReservedIdentifier PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest customerFailuresLeaveNeitherPartialAccountsNorSequenceReservations PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest immutableAndBalanceFieldsAreRejectedInOpeningAndMaintenance PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest invalidOrMissingAdministrativeTargetsReturnClearErrors PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest closingPreservesOriginalMonetaryResultsAndTheirIdempotency PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest administrativeEndpointsRejectAtmInternalAndInsufficientScopesWithoutWrites PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest schemaReinitializationPreservesAccountsLedgerAndSequence PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest concurrentOpeningsAvoidBothOperativeAndHistoricalIdentifiers PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest logicalClosePreservesAssociationAndHistoryAndRepeatedCloseConflicts PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest administrativeEndpointsRequireAValidBearerToken PASS
+cl.duoc.bancoxyz.core.AccountManagementIntegrationTest invalidOpeningDataNeverCallsCustomersOrWritesAccounts PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT realChannelPermissionsInvalidSignaturesAndAbsentCustomersPreventWrites PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT unavailableCustomerApplicationRejectsOpeningAndRecoversWithoutPartialData PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT realWebAndMobileTokensOpenMaintainAndCloseUsingActualCustomers PASS
+cl.duoc.bancoxyz.core.CoreCustomerOAuth2IT applicationRestartPreservesAccountsBalancesLedgerAndSequence PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest brokenHttpConnectionProducesTemporaryFailureWithoutWrites PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest aRealReadTimeoutDoesNotConfirmCustomerExistence PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest wrongIdentityIncompleteOrMalformedBodiesFailClosed PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest upstreamAuthenticationRejectionsPreventAccountCreation PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest unexpectedStatusesAndRedirectsDoNotCreateAccountsOrForwardTokens PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest loadBalancerResolvesCustomersAndPropagatesOnlyTheIncomingBearer PASS
+cl.duoc.bancoxyz.core.CustomerAccountHttpIntegrationTest missingCustomerIsNotConfusedWithTemporaryFailure PASS
+cl.duoc.bancoxyz.core.OperationalAccountsSchemaIntegrationTest repeatedSchemaInitializationNeverCopiesOrResetsBalances PASS
+Tests run: 39 Failures: 0 Errors: 0 Skipped: 0
+RESULTADO: PASS; casos distintos de la seleccion, no adicionales al reactor.
+POST http://127.0.0.1:38082/api/bff/web/accounts HTTP=201
+{"accountId":151,"customerId":1,"accountName":"Origen EFT","accountType":"ahorro","initialBalance":0.0,"interestRate":0.01,"finalBalance":0.0,"state":"ACTIVA","createdAt":"2026-10-12T21:33:01.532105Z","updatedAt":"2026-10-12T21:33:01.532105Z"}
+POST http://127.0.0.1:38082/api/bff/web/accounts HTTP=201
+{"accountId":152,"customerId":1,"accountName":"Destino EFT","accountType":"ahorro","initialBalance":0.0,"interestRate":0.01,"finalBalance":0.0,"state":"ACTIVA","createdAt":"2026-10-12T21:33:01.733920Z","updatedAt":"2026-10-12T21:33:01.733920Z"}
+POST http://127.0.0.1:38082/api/bff/web/accounts HTTP=201
+{"accountId":153,"customerId":1,"accountName":"Cierre EFT","accountType":"ahorro","initialBalance":0.0,"interestRate":0.01,"finalBalance":0.0,"state":"ACTIVA","createdAt":"2026-10-12T21:33:01.916743Z","updatedAt":"2026-10-12T21:33:01.916743Z"}
+Cliente=1 Origen=151 Destino=152 Cierre=153
+GET http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen EFT","accountType":"ahorro","initialBalance":0.00,"interestRate":0.0100,"calculatedInterest":0.00,"finalBalance":0.00}
+GET http://127.0.0.1:38083/api/bff/mobile/accounts/151 HTTP=200
+{"accountId":151,"accountName":"Origen EFT","finalBalance":0.00,"accountType":"ahorro"}
+GET http://127.0.0.1:38084/api/bff/atm/accounts/151/balance HTTP=200
+{"accountId":151,"balance":0.00}
+PUT http://127.0.0.1:38082/api/bff/web/accounts/151 HTTP=200
+{"accountId":151,"customerId":1,"accountName":"Origen Actualizado","accountType":"ahorro","initialBalance":0.0,"interestRate":0.02,"finalBalance":0.0,"state":"ACTIVA","createdAt":"2026-10-12T21:33:01.532105Z","updatedAt":"2026-10-12T21:33:28.598973Z"}
+POST http://127.0.0.1:38082/api/bff/web/accounts/153/close HTTP=200
+{"accountId":153,"customerId":1,"accountName":"Cierre EFT","accountType":"ahorro","initialBalance":0.0,"interestRate":0.01,"finalBalance":0.0,"state":"CERRADA","createdAt":"2026-10-12T21:33:01.916743Z","updatedAt":"2026-10-12T21:33:28.647499Z"}
+GET http://127.0.0.1:38084/api/bff/atm/accounts/153/balance HTTP=200
+{"accountId":153,"balance":0.00}

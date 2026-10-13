@@ -1,0 +1,39 @@
+=== ARCHIVOS DE EVIDENCIA ===
+OK | 08_build_servicios_restantes.txt
+OK | 09_postgres_kafka.txt
+OK | 10_config_eureka.txt
+OK | 11_health_infraestructura.txt
+OK | 12_authorization_server.txt
+OK | 13_batch_init_resultado.txt
+OK | 14_customer_service.txt
+OK | 15_core_banking_service.txt
+OK | 16_payment_service.txt
+OK | 17_bff_web_service.txt
+OK | 18_bff_mobile_service.txt
+OK | 19_bff_atm_service.txt
+OK | 20_customer_replicas.txt
+OK | 21_core_banking_replicas.txt
+OK | 22_payment_replicas.txt
+OK | 23_eureka_replicas.txt
+OK | 24_verificacion_http.txt
+OK | 25_rutas_oauth2.txt
+OK | 26_seguridad_oauth2_bff.txt
+OK | 27_clientes_permisos_oauth2.txt
+OK | 28_oauth2_pruebas_autenticadas.txt
+OK | 29_verificacion_final_aws.txt
+
+=== VALIDACION DE RESULTADOS FINALES ===
+VALIDADO | 13_batch_init_resultado.txt
+VALIDADO | 20_customer_replicas.txt
+VALIDADO | 21_core_banking_replicas.txt
+VALIDADO | 22_payment_replicas.txt
+VALIDADO | 23_eureka_replicas.txt
+VALIDADO | 26_seguridad_oauth2_bff.txt
+VALIDADO | 28_oauth2_pruebas_autenticadas.txt
+VALIDADO | 29_verificacion_final_aws.txt
+
+=== RESUMEN FINAL ===
+EVIDENCIAS ESPERADAS: 22
+EVIDENCIAS PRESENTES: 22
+RESULTADOS VALIDADOS: 8/8
+INVENTARIO EVIDENCIAS AWS COMPLETADO

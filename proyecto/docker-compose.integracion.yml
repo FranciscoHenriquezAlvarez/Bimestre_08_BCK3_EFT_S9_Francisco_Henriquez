@@ -1,0 +1,48 @@
+# Usar despues de docker-compose.yml y docker-compose.validacion.yml con -p eft_s9_integracion.
+# Reutiliza las imagenes verificadas; red y volumenes dependen del proyecto nuevo.
+x-imagen-existente: &imagen-existente
+  build: !reset null
+  pull_policy: never
+
+services:
+  config-server:
+    <<: *imagen-existente
+    image: eft_s9_validacion-config-server:latest
+    ports: !override ["127.0.0.1:28888:8888"]
+  eureka-server:
+    <<: *imagen-existente
+    image: eft_s9_validacion-eureka-server:latest
+    ports: !override ["127.0.0.1:28761:8761"]
+  authorization-server:
+    <<: *imagen-existente
+    image: eft_s9_validacion-authorization-server:latest
+    ports: !override ["127.0.0.1:29000:9000"]
+  batch-init:
+    <<: *imagen-existente
+    image: eft_s9_validacion-batch-init:latest
+  core-banking-service:
+    <<: *imagen-existente
+    image: eft_s9_validacion-core-banking-service:latest
+  payment-service:
+    <<: *imagen-existente
+    image: eft_s9_validacion-payment-service:latest
+    environment:
+      # El verificador habilita Pagos despues de preparar y comprobar los offsets propios.
+      PAYMENT_KAFKA_WITHDRAWALS_ENABLED: ${EFT10_WITHDRAWALS_ENABLED:-false}
+      SPRING_KAFKA_LISTENER_AUTO_STARTUP: ${EFT10_WITHDRAWALS_ENABLED:-false}
+      SPRING_KAFKA_CONSUMER_AUTO_OFFSET_RESET: none
+  customer-service:
+    <<: *imagen-existente
+    image: eft_s9_validacion-customer-service:latest
+  bff-web-service:
+    <<: *imagen-existente
+    image: eft_s9_validacion-bff-web-service:latest
+    ports: !override ["127.0.0.1:28082:8082"]
+  bff-mobile-service:
+    <<: *imagen-existente
+    image: eft_s9_validacion-bff-mobile-service:latest
+    ports: !override ["127.0.0.1:28083:8083"]
+  bff-atm-service:
+    <<: *imagen-existente
+    image: eft_s9_validacion-bff-atm-service:latest
+    ports: !override ["127.0.0.1:28084:8084"]

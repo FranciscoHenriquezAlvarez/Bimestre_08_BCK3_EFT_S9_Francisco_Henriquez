@@ -1,0 +1,11 @@
+=== RECUPERACIÓN RESILIENCE4J ===
+CORE-BANKING-SERVICE en Eureka:
+  <name>CORE-BANKING-SERVICE</name>
+    <status>UP</status>
+    <port enabled="true">8081</port>
+      <name>MyOwn</name>
+
+HTTP recuperado: 200
+{"accountId":104,"balance":200.00}
+Saldo recuperado: 200.0
+Saldo operativo conservado: 200.0

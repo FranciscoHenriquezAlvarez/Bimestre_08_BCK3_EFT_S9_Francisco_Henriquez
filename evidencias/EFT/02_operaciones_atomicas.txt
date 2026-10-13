@@ -1,0 +1,76 @@
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[1] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[2] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[3] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest closingFirstBlocksAndRejectsTheConcurrentMonetaryOperation(String)[4] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[1] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[2] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[3] PASS
+cl.duoc.bancoxyz.core.AccountClosingConcurrencyIntegrationTest monetaryOperationFirstMakesClosingReadTheCommittedBalance(String)[4] PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest concurrentDebitsCannotSpendTheSameFunds PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest closedSourceRejectsDebitAndTransfer PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest nonPositiveAmountsPersistRejections PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest operationWaitsForAccountLockAndReadsCommittedState PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest failureAfterSourceUpdateRollsBackBothBalancesAndOperationReservation PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest repeatedRequestReturnsOriginalResultAfterLaterOperations PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest repeatedIdentifierWithDifferentAmountTypeOrAccountsReturnsConflict PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest concurrentIdenticalRequestsChargeOnceAndReturnIdenticalResults PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest transferPreservesTotalBalance PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest debitAndCreditPersistFinalBalances PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest concurrentIdentifierCollisionDoesNotApplyBothRequests PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest queryValidatesIdentifierAndMissingOperation PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest oppositeConcurrentTransfersCompleteWithoutDeadlock PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest overflowingTargetRejectsCreditAndTransfer PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest missingAccountsLeaveAnAuditableRejection PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest invalidRequestsAreRejectedBeforeAnyWrite PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest closedTargetRejectsCreditAndTransfer PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest insufficientFundsRejectWithoutUpdatingEitherAccount PASS
+cl.duoc.bancoxyz.core.AccountOperationServiceIntegrationTest repeatedRejectionRemainsRejectedAfterAccountReceivesFunds PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest repeatedHttpCommandReturnsOriginalResultAndDifferentDataConflicts PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest creditUsesRealTransactionalService PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest transferUpdatesBothAccountsAndPersistsResult PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest accountAndAmountBusinessRejectionsArePersisted PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest channelAndMissingScopesCannotExecuteOrReadInternalOperations PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest requestsWithoutTokenAndInvalidTokenAreUnauthorized PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest debitUsesRealTransactionalService PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest internalScopeCannotUseOtherMethodsOrUnlistedPaths PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest queriesReturnNotFoundOrBadRequest PASS
+cl.duoc.bancoxyz.core.InternalOperationControllerIntegrationTest malformedAndIncompleteCommandsDoNotWriteOperations PASS
+cl.duoc.bancoxyz.core.OperationalAccountsSchemaIntegrationTest repeatedSchemaInitializationNeverCopiesOrResetsBalances PASS
+cl.duoc.bancoxyz.core.OperationalBatchIsolationIntegrationTest allThreeJobsAndApplicationRestartsPreserveOperationalData PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest invalidAtmAmountsReserveTheMonetaryIdentifierWithoutCharging(String)[1] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest invalidAtmAmountsReserveTheMonetaryIdentifierWithoutCharging(String)[2] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest invalidAtmAmountsReserveTheMonetaryIdentifierWithoutCharging(String)[3] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest missingOrIncompletePersistentResultRequiresReview PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest concurrentRequestsCreateOnlyOneOriginalResult PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest duplicateWithNewEnvelopeKeepsEventIdentifierDateAndOriginalBalance PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest differentAmountOrAccountWithSameTransactionIdConflicts PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest persistenceFailureAfterDebitRollsBackAllEffectsAndRetryKeepsTheIdentifier(String)[1] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest persistenceFailureAfterDebitRollsBackAllEffectsAndRetryKeepsTheIdentifier(String)[2] PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest historicalResultCanBeRecoveredWithoutChargingTheOperationalAccount PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest insufficientFundsPersistRejectionWithoutChangingEitherBalanceModel PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest legacyListenerCannotStartThroughTheGenericKafkaProperty PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest closedAccountIsRejected PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest malformedMonetaryValuesRollBackWithoutPersistentWithdrawal PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest completesAndAtomicallyStoresMonetaryOperationStatusAndOriginalEvent PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest internalHttpScopeAndAtmStatusContractRemainSeparate PASS
+cl.duoc.bancoxyz.core.OperationalWithdrawalIntegrationTest missingAccountIsRejectedAndAuditable PASS
+Tests run: 56 Failures: 0 Errors: 0 Skipped: 0
+RESULTADO: PASS; casos distintos de la seleccion, no adicionales al reactor.
+POST http://127.0.0.1:38082/api/bff/web/payments/deposits HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+GET http://127.0.0.1:38084/api/bff/atm/accounts/151/balance HTTP=200
+{"accountId":151,"balance":70000.00}
+             operacion_id             |   tipo   |  estado   |   monto   | saldo_origen | saldo_destino 
+--------------------------------------+----------+-----------+-----------+--------------+---------------
+ 62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d | CREDIT   | COMPLETED | 100000.00 |              |     100000.00
+ 6b480cd8-4284-44c7-bcaf-5de86a6e7ae8 | DEBIT    | COMPLETED |  10000.00 |     90000.00 |              
+ ae881073-0a0d-4952-b182-5a88094f0dac | TRANSFER | COMPLETED |  20000.00 |     70000.00 |      20000.00
+(3 rows)
+
+ cuenta_id | estado  | saldo_operativo 
+-----------+---------+-----------------
+       151 | ACTIVA  |        70000.00
+       152 | ACTIVA  |        20000.00
+       153 | CERRADA |            0.00
+(3 rows)
+

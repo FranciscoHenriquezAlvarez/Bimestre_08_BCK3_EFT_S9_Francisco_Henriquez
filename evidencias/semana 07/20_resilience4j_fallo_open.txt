@@ -1,0 +1,71 @@
+=== RESILIENCE4J FALLO / OPEN ===
+Intento 1
+HTTP/1.1 503 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:08:52 GMT
+Connection: close
+
+{"timestamp":"2026-09-29T01:08:52.753+00:00","status":503,"error":"Service Unavailable","path":"/api/bff/atm/accounts/104/balance"}
+Intento 2
+HTTP/1.1 503 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:08:53 GMT
+Connection: close
+
+{"timestamp":"2026-09-29T01:08:53.781+00:00","status":503,"error":"Service Unavailable","path":"/api/bff/atm/accounts/104/balance"}
+Intento 3
+HTTP/1.1 503 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:08:54 GMT
+Connection: close
+
+{"timestamp":"2026-09-29T01:08:54.312+00:00","status":503,"error":"Service Unavailable","path":"/api/bff/atm/accounts/104/balance"}
+Intento 4
+HTTP/1.1 503 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:08:54 GMT
+Connection: close
+
+{"timestamp":"2026-09-29T01:08:54.330+00:00","status":503,"error":"Service Unavailable","path":"/api/bff/atm/accounts/104/balance"}
+Intento 5
+HTTP/1.1 503 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:08:54 GMT
+Connection: close
+
+{"timestamp":"2026-09-29T01:08:54.345+00:00","status":503,"error":"Service Unavailable","path":"/api/bff/atm/accounts/104/balance"}

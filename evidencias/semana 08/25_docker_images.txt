@@ -1,0 +1,15 @@
+EVIDENCIA: Imágenes Docker
+FECHA: 2026-10-05T16:58:08-03:00
+OBJETIVO: Inspeccionar ocho imágenes propias
+COMANDO: docker image inspect proyecto-<servicio>:latest
+
+RESULTADO REAL:
+[proyecto-authorization-server:latest] sha256:254f5835835df7315d2a595d923ee303969b98a17e239fc3fb68069317524e26 bytes=477555616
+[proyecto-config-server:latest] sha256:88d636f07d6a5f2b48c66f87b4d7ca02943992157b5a3780a1d062bda53e515c bytes=506255086
+[proyecto-eureka-server:latest] sha256:e9917175dfbd0ed53357b118a8a5eab1e8ffc1ae455a32ac29d72459476cd2b5 bytes=532452539
+[proyecto-core-banking-service:latest] sha256:ce0bb87226ad18d7b140e9b88d6aa7e19381a997deebe187fbc12afed131e69a bytes=569876750
+[proyecto-bff-web-service:latest] sha256:541eb07845fd38cfd370c6f97a59f54005504f6c4fdd171c42349370e1a6faff bytes=526643997
+[proyecto-bff-mobile-service:latest] sha256:a3b5cf78c150302a97106fe1796c65a497522b905f2bd6afa1661ca5aaf839d9 bytes=526643698
+[proyecto-bff-atm-service:latest] sha256:99592860ef99e1ef1f5e6eeee0dfe33074c17665b236e538a30610d2695a4839 bytes=565551195
+[proyecto-batch-init:latest] sha256:9179a92ddb01b99315282b813a16bec41689bda8f4001c4486ed19163f389774 bytes=569876740
+RESULTADO: PASS

@@ -1,0 +1,11 @@
+EVIDENCIA: Config Server
+FECHA: 2026-10-05T16:58:31-03:00
+OBJETIVO: Comprobar configuración centralizada y fuentes
+COMANDO: GET /<servicio>/default; selección de propiedades públicas
+
+RESULTADO REAL:
+{"name": "core-banking-service", "profiles": ["default"], "propertySources": [{"name": "file:config-repo/core-banking-service.yml", "source": {"server.port": 8081, "spring.security.oauth2.resourceserver.jwt.issuer-uri": "${OAUTH2_ISSUER:http://localhost:9000}", "spring.security.oauth2.resourceserver.jwt.jwk-set-uri": "${OAUTH2_JWK_SET_URI:http://localhost:9000/oauth2/jwks}", "spring.kafka.producer.value-serializer": "org.springframework.kafka.support.serializer.JsonSerializer", "spring.kafka.consumer.group-id": "core-banking-withdrawal-group", "spring.kafka.listener.concurrency": 3}}, {"name": "file:config-repo/application.yml", "source": {}}]}
+{"name": "bff-web-service", "profiles": ["default"], "propertySources": [{"name": "file:config-repo/bff-web-service.yml", "source": {"server.port": 8082, "spring.security.oauth2.resourceserver.jwt.issuer-uri": "${OAUTH2_ISSUER:http://localhost:9000}", "spring.security.oauth2.resourceserver.jwt.jwk-set-uri": "${OAUTH2_JWK_SET_URI:http://localhost:9000/oauth2/jwks}"}}, {"name": "file:config-repo/application.yml", "source": {}}]}
+{"name": "bff-mobile-service", "profiles": ["default"], "propertySources": [{"name": "file:config-repo/bff-mobile-service.yml", "source": {"server.port": 8083, "spring.security.oauth2.resourceserver.jwt.issuer-uri": "${OAUTH2_ISSUER:http://localhost:9000}", "spring.security.oauth2.resourceserver.jwt.jwk-set-uri": "${OAUTH2_JWK_SET_URI:http://localhost:9000/oauth2/jwks}"}}, {"name": "file:config-repo/application.yml", "source": {}}]}
+{"name": "bff-atm-service", "profiles": ["default"], "propertySources": [{"name": "file:config-repo/bff-atm-service.yml", "source": {"server.port": 8084, "spring.security.oauth2.resourceserver.jwt.issuer-uri": "${OAUTH2_ISSUER:http://localhost:9000}", "spring.security.oauth2.resourceserver.jwt.jwk-set-uri": "${OAUTH2_JWK_SET_URI:http://localhost:9000/oauth2/jwks}"}}, {"name": "file:config-repo/application.yml", "source": {}}]}
+RESULTADO: PASS

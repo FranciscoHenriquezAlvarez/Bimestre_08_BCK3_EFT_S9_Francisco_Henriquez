@@ -1,0 +1,9 @@
+=== CONFIG SERVER ===
+GET /core-banking-service/default
+
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Sep 2026 01:05:15 GMT
+
+{"name":"core-banking-service","profiles":["default"],"label":null,"version":null,"state":null,"propertySources":[{"name":"file:config-repo/core-banking-service.yml","source":{"server.port":8081,"bank.config-origin":"Configuracion cargada desde Spring Cloud Config Server","spring.kafka.bootstrap-servers":"${KAFKA_BOOTSTRAP_SERVERS:localhost:29092}","spring.kafka.consumer.group-id":"core-banking-withdrawal-group","spring.kafka.consumer.auto-offset-reset":"earliest","spring.kafka.consumer.properties.spring.json.trusted.packages":"cl.duoc.bancoxyz.events","spring.kafka.listener.concurrency":3,"spring.datasource.url":"${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/banco_xyz}","spring.datasource.username":"${SPRING_DATASOURCE_USERNAME:banco_user}","spring.datasource.password":"${SPRING_DATASOURCE_PASSWORD:banco_password_local}","spring.batch.job.enabled":false,"spring.batch.jdbc.initialize-schema":"always","spring.sql.init.mode":"always"}},{"name":"file:config-repo/application.yml","source":{"eureka.client.service-url.defaultZone":"${EUREKA_URL:http://localhost:8761/eureka/}","eureka.instance.hostname":"localhost","eureka.instance.prefer-ip-address":false,"management.endpoints.web.exposure.include":"health,info"}}]}

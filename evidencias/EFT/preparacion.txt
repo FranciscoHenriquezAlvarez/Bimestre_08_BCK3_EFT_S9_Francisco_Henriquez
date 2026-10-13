@@ -1,0 +1,201 @@
+Inicio=2026-10-12T18:07:53-03:00
+Proyecto=etf_s9
+Directorio=/home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto
+Evidencias=/home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/evidencias/EFT
+Respaldo=/home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/evidencias/respaldo-evidencias-EFT-20261012_180730-60fad3ff
+Manifiesto SHA256=12afe7ac70b3d6c764818cd2d3ddba4910ce6ddb74eebc8aa22a0a778fa48034
+Respaldo integro verificado; directorio original comprobado vacio antes de esta captura.
+/home/francisco/proyecto/BACKEND III/EFT/EFT_Francisco_Henriquez/proyecto
+Linux Surface9 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+openjdk version "17.0.20.1" 2026-08-18
+OpenJDK Runtime Environment (build 17.0.20.1+1-1-24.04-Ubuntu)
+OpenJDK 64-Bit Server VM (build 17.0.20.1+1-1-24.04-Ubuntu, mixed mode, sharing)
+Apache Maven 3.8.7 (b89d5959fcde851dcb1c8946a785a163f14e1e29)
+Maven home: /home/francisco/.m2/wrapper/dists/apache-maven-3.8.7/94bb59d1
+Java version: 17.0.20.1, vendor: Ubuntu, runtime: /usr/lib/jvm/java-17-openjdk-amd64
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "6.18.33.2-microsoft-standard-wsl2", arch: "amd64", family: "unix"
+Python 3.12.3
+curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+Release-Date: 2023-12-06, security patched: 8.5.0-2ubuntu10.15
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
+Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
+Client:
+ Version:           29.8.0
+ API version:       1.56
+ Go version:        go1.26.8
+ Git commit:        88096ef
+ Built:             Thu Sep  3 21:49:51 2026
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Desktop 4.92.0 (240144)
+ Engine:
+  Version:          29.8.0
+  API version:      1.56 (minimum version 1.40)
+  Go version:       go1.26.8
+  Git commit:       3ce5872
+  Built:            Thu Sep  3 21:51:20 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.3.5
+  GitCommit:        1294c24a7da8e5a793ed378161673abe94118892
+ runc:
+  Version:          1.5.1
+  GitCommit:        v1.5.1-0-g8f2685a4
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+Docker Compose version v5.5.1
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.4Gi       8.3Gi        49Mi       4.1Gi        12Gi
+Swap:          4.0Gi          0B       4.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G   23G  933G   3% /
+/dev/sdd       1007G   23G  933G   3% /
+    <module>shared-events</module>
+    <module>authorization-server</module>
+    <module>config-server</module>
+    <module>eureka-server</module>
+    <module>core-banking-service</module>
+    <module>bff-web-service</module>
+    <module>bff-mobile-service</module>
+    <module>bff-atm-service</module>
+    <module>payment-service</module>
+    <module>customer-service</module>
+ 1001 core-banking-service/src/main/resources/input/cuentas_anuales.csv
+ 1001 core-banking-service/src/main/resources/input/intereses.csv
+ 1001 core-banking-service/src/main/resources/input/transacciones.csv
+ 3003 total
+0690d81fe446affe39857a448ff5590c4f6e6f998150c08934db3aa41683e328  core-banking-service/src/main/resources/input/cuentas_anuales.csv
+69cc39f468db47e4d752657db95ee9caf00ebcaf31581e45e104c4dc4a5e3120  core-banking-service/src/main/resources/input/intereses.csv
+9a209c71d5556380481731f0fe9ac148a586a7c91698b377481b62e96341e836  core-banking-service/src/main/resources/input/transacciones.csv
+a8342d5d4343 eft_s10_correccion-monthly-2 Exited (0) 25 hours ago 
+5ae059961027 eft_s10_correccion-monthly-1 Exited (0) 25 hours ago 
+ef1914837678 eft_s9_integracion-payment-service-1 Exited (255) 2 hours ago 8085/tcp
+af1802a2bb51 eft_s9_integracion-bff-web-service-1 Exited (255) 2 hours ago 127.0.0.1:28082->8082/tcp
+f58212e0c4de eft_s9_integracion-bff-mobile-service-1 Exited (255) 2 hours ago 127.0.0.1:28083->8083/tcp
+ba8da6742dd8 eft_s9_integracion-bff-atm-service-1 Exited (255) 2 hours ago 127.0.0.1:28084->8084/tcp
+caf538a5c3f2 eft_s9_integracion-core-banking-service-1 Exited (255) 2 hours ago 8081/tcp
+6f169a732eb3 eft_s9_integracion-batch-init-1 Exited (0) 26 hours ago 
+b11431b20bd4 eft_s9_integracion-customer-service-1 Exited (255) 2 hours ago 8086/tcp
+8b52c4e3fd09 eft_s9_integracion-eureka-server-1 Exited (255) 2 hours ago 127.0.0.1:28761->8761/tcp
+f84806576300 eft_s9_integracion-postgres-1 Exited (255) 2 hours ago 5432/tcp
+12da82481cea eft_s9_integracion-config-server-1 Exited (255) 2 hours ago 127.0.0.1:28888->8888/tcp
+84922b46bb67 eft_s9_integracion-kafka-1 Exited (255) 2 hours ago 9092/tcp
+c0d0e3a1dca9 eft_s9_integracion-authorization-server-1 Exited (255) 2 hours ago 127.0.0.1:29000->9000/tcp
+03afdea6a3af eft_s9_validacion-payment-service-2 Exited (255) 2 hours ago 8085/tcp
+26f570346ab8 eft_s9_validacion-core-banking-service-2 Exited (255) 2 hours ago 8081/tcp
+af6715681f9e eft_s9_validacion-customer-service-2 Exited (255) 2 hours ago 8086/tcp
+5d4eccb01768 eft_s9_validacion-bff-mobile-service-1 Exited (255) 2 hours ago 127.0.0.1:18083->8083/tcp
+df06a9b1f432 eft_s9_validacion-bff-web-service-1 Exited (255) 2 hours ago 127.0.0.1:18082->8082/tcp
+893be86510ed eft_s9_validacion-bff-atm-service-1 Exited (255) 2 hours ago 127.0.0.1:18084->8084/tcp
+1789c0bf9cd0 eft_s9_validacion-payment-service-1 Exited (255) 2 hours ago 8085/tcp
+f2b4e36dc545 eft_s9_validacion-core-banking-service-1 Exited (255) 2 hours ago 8081/tcp
+98a9557e392c eft_s9_validacion-batch-init-1 Exited (0) 27 hours ago 
+e2e25b863402 eft_s9_validacion-customer-service-1 Exited (255) 2 hours ago 8086/tcp
+bf6db4a60fbd eft_s9_validacion-eureka-server-1 Exited (255) 2 hours ago 127.0.0.1:18761->8761/tcp
+a78f6a721813 eft_s9_validacion-postgres-1 Exited (255) 2 hours ago 5432/tcp
+f9ce477f9376 eft_s9_validacion-kafka-1 Exited (255) 2 hours ago 9092/tcp
+345e26aa9e79 eft_s9_validacion-config-server-1 Exited (255) 2 hours ago 127.0.0.1:18888->8888/tcp
+c8b13b448615 eft_s9_validacion-authorization-server-1 Exited (255) 2 hours ago 127.0.0.1:19000->9000/tcp
+c2376315ea72 proyecto-bff-web-service-1 Exited (255) 41 hours ago 0.0.0.0:8082->8082/tcp
+7f15ab141eb0 proyecto-bff-mobile-service-1 Exited (255) 41 hours ago 0.0.0.0:8083->8083/tcp
+bb1b46bb4dda proyecto-bff-atm-service-1 Exited (255) 41 hours ago 0.0.0.0:8084->8084/tcp
+d293d225256c proyecto-core-banking-service-1 Exited (255) 41 hours ago 0.0.0.0:8081->8081/tcp
+f3b6af2fb7e4 proyecto-customer-service-1 Exited (255) 41 hours ago 0.0.0.0:8086->8086/tcp
+f603caa278a5 proyecto-payment-service-1 Exited (255) 41 hours ago 0.0.0.0:8087->8087/tcp
+57aebd6cbf37 proyecto-batch-init-1 Exited (0) 41 hours ago 
+edcd94d86b2d proyecto-account-service-1 Exited (255) 41 hours ago 0.0.0.0:8085->8085/tcp
+1dfa118845f4 proyecto-eureka-server-1 Exited (255) 41 hours ago 0.0.0.0:8761->8761/tcp
+e6a61cc72fea proyecto-config-server-1 Exited (255) 41 hours ago 0.0.0.0:8888->8888/tcp
+ce027f2a0c38 proyecto-authorization-server-1 Exited (255) 41 hours ago 0.0.0.0:9000->9000/tcp
+7187a63c8479 banco-xyz-postgres Exited (255) 41 hours ago 0.0.0.0:5433->5432/tcp
+502ebe2b187a banco-xyz-kafka Exited (255) 41 hours ago 9092/tcp, 0.0.0.0:29092->29092/tcp
+2f03d456277f backendiii-mysql Exited (255) 6 weeks ago 33060/tcp, 0.0.0.0:3307->3306/tcp
+fe23b857a997 app-epc-postgres Exited (0) 2 weeks ago 
+a280948e744e rabbitmq-local Exited (255) 3 months ago 4369/tcp, 5671/tcp, 0.0.0.0:5672->5672/tcp, 15671/tcp, 15691-15692/tcp, 25672/tcp, 0.0.0.0:15672->15672/tcp
+f6603c486d74 openvas-EFT Exited (137) 5 months ago 
+292a61dc3cfa sonarqube-EFT Exited (137) 5 months ago 
+93462d6954d6 frontend-app Exited (143) 5 months ago 
+7cfc0b8d0f85 backend-app Exited (143) 5 months ago 
+34ec8204fee7 mysql Exited (137) 5 months ago 
+0eed4b81b03c66768888ce5b881abea9bc6836ad359cceb8f0dc1bf0528a2e0d
+5f0fa568218169397bbad2ce3dbc1bed1591b60c69f72baf448b49d1d62c59b1
+5f201c6999687fdb259b337d19be48577d668c0236646a0790a6c82ba0b20853
+6cd15893bb56402a1b7c9795bbe5d941820e3c3344d37f1ee70febefc0a5dc8c
+6ec45e811e7d1465e240a87d519461eac2ff831f35377c3bade4908d510d0fe2
+8cb79c25a0e07f1b9bfdd984769c06445e1f56603902d5211d55f26347e95d65
+16cf7fccec75f3c802248e01edded2c5f4be51e683c49d886b46efbabb4d93a4
+72f07c20a65938d56130ca01e89b25e04241acd067af601ac93ade309dc49a2f
+81a5e07dde1595230b7015d0586ce05b4c139410a79a920451caf636ecc4036b
+497c8428eb9424744b05c927591453d197c19c865032ee8fd6b194e4347f4a5b
+971c135d267b535f4de35f94f01734e404ea85adc4d89de0f7c388f9d4423754
+49131fc097e7e552c4aa30ac49e4b282f997c1610911f6917bfe6d1eaa3d7259
+app-epc_app_epc_postgres_data
+b37efdda1bc6a32254e25b7f8f6d0de18a2b4b175f95277e498d7a5c89840c5e
+backend_jenkins_home
+backend_mysql_data
+backend_sonarqube_data
+backend_sonarqube_extensions
+backend_sonarqube_logs
+backendiii_mysql_data
+be39d14b05bf6fc4f695a67c0e3c2480b56a587e3cccb521410ce793d5048791
+c01cb8a994d86792127938e6e4722b97b6c68925d21e33794e1603265b142496
+c19e52e0aff3a5a9426dac079c1d331a52dc099a1038b678c2f3fdadffda5121
+d85b4cb9ea648d335dea9d584d86a722b1c8c65352c60d7cf9b90eec58d0c6b7
+dbcc2e379cbb92302d4a4408751680c3fc51698fcb5f60fcc9b4f5fde467c1e0
+demo_mysql_data
+df320d70d11c61569c39c8c0b9913f1f750a3d5851c1526c40484b65578d37cf
+eb4c0641eae28cee02787df27edecbf1da57c0ac53a6a777155ea30767727d22
+ed81e55e2bf30ae7c53b64c972e18db9c9e60ebe86b505f9871c76343985654a
+eft_francisco_henriquez_backend_mysql-data
+eft_s9_integracion_kafka_data
+eft_s9_integracion_postgres_data
+eft_s9_validacion_kafka_data
+eft_s9_validacion_postgres_data
+exp2_s6_francisco_henriquez_backend_mysql-data
+exp3_s7_raulzuniga_franciscohenriquez_grupo1_mysql_data
+exp3_s8_francisco_henriquez_backend_mysql-data
+f6b59ccbba6be0f5d73e0856885dea3fad8f93dbc74ec8d13de726e0b1c38d07
+f142037e5c9e57fc89f24380a53eb7be1baa87b9540686110a53eb209ccf9af2
+greenbone-community-edition_cert_data_vol
+greenbone-community-edition_data_objects_vol
+greenbone-community-edition_gpg_data_vol
+greenbone-community-edition_gsa_data_vol
+greenbone-community-edition_gvmd_data_vol
+greenbone-community-edition_gvmd_socket_vol
+greenbone-community-edition_nginx_certificates_vol
+greenbone-community-edition_nginx_config_vol
+greenbone-community-edition_notus_data_vol
+greenbone-community-edition_openvas_data_vol
+greenbone-community-edition_openvas_log_data_vol
+greenbone-community-edition_ospd_openvas_socket_vol
+greenbone-community-edition_psql_data_vol
+greenbone-community-edition_psql_socket_vol
+greenbone-community-edition_redis_socket_vol
+greenbone-community-edition_scap_data_vol
+greenbone-community-edition_vt_data_vol
+mysql_data
+openvas_data
+proyecto_postgres_data
+semana2-cdy2203_mysql_data
+veterinaria_mysql-data
+app-epc_default
+bridge
+eft_francisco_henriquez_backend_default
+eft_francisco_henriquez_frontend_default
+eft_s9_integracion_default
+eft_s9_validacion_default
+host
+mi_red
+none
+proyecto_default
+State  Recv-Q Send-Q  Local Address:Port  Peer Address:PortProcess
+LISTEN 0      4096    127.0.0.53%lo:53         0.0.0.0:*          
+LISTEN 0      4096       127.0.0.54:53         0.0.0.0:*          
+LISTEN 0      1000   10.255.255.254:53         0.0.0.0:*          
+LISTEN 0      511         127.0.0.1:46059      0.0.0.0:*          
+LISTEN 0      511         127.0.0.1:45795      0.0.0.0:*          
+PostgreSQL y cuatro secretos OAuth2 configurados en memoria.

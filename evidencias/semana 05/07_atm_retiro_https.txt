@@ -1,0 +1,58 @@
+EVIDENCIA RETIRO ATM HTTPS - SEMANA 5
+CUENTA SELECCIONADA: 102
+
+SALDO INICIAL POSTGRESQL
+ cuenta_id | saldo_final 
+-----------+-------------
+       102 |    10200.00
+(1 row)
+
+
+SALDO INICIAL ATM
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:26:12 GMT
+
+{"accountId":102,"balance":10200.00}
+RETIRO ATM 10000
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:26:12 GMT
+
+{"accountId":102,"withdrawnAmount":10000,"balance":200.00}
+SALDO FINAL ATM
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:26:12 GMT
+
+{"accountId":102,"balance":200.00}
+SALDO FINAL POSTGRESQL
+ cuenta_id | saldo_final 
+-----------+-------------
+       102 |      200.00
+(1 row)
+

@@ -1,0 +1,22 @@
+EVIDENCIA: Saldo ATM
+FECHA: 2026-10-05T16:51:23-03:00
+OBJETIVO: Seleccionar cuenta real con saldo suficiente
+COMANDO: SELECT cuenta_id,saldo_final FROM intereses_mensuales; GET saldo ATM
+
+RESULTADO REAL:
+ cuenta_id | saldo_final 
+-----------+-------------
+       102 |    10200.00
+       104 |    10200.00
+       105 |    10100.00
+       107 |    10200.00
+       108 |    10100.00
+(5 rows)
+
+Espera ATM intento=1 HTTP=503
+Espera ATM intento=2 HTTP=200
+Cuenta: 102
+Saldo SQL previo: 10200.00
+HTTP status: 200
+{"accountId":102,"balance":10200.00}
+RESULTADO: PASS

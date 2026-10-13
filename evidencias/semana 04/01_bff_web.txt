@@ -1,0 +1,19 @@
+BFF WEB - DETALLE DE CUENTA
+------------------------------------------------------------
+COMANDO: curl -i -H "X-Channel-Token: web-token-xyz" http://127.0.0.1:8080/api/bff/web/accounts/101
+HTTP/1.1 200
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:49:47 GMT
+
+{"accountId":101,"accountName":"Charlie Green","accountType":"prestamo","initialBalance":8000.00,"interestRate":0.0200,"calculatedInterest":160.00,"finalBalance":8160.00}
+
+BFF WEB - ESTADO ANUAL
+------------------------------------------------------------
+COMANDO: curl -i -H "X-Channel-Token: web-token-xyz" http://127.0.0.1:8080/api/bff/web/accounts/101/annual-statement
+HTTP/1.1 200
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 13 Sep 2026 03:49:47 GMT
+
+{"accountId":101,"movementCount":14,"totalDeposits":21000.00,"totalCharges":-1300.00,"netBalance":19700.00}

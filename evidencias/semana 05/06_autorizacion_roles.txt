@@ -1,0 +1,128 @@
+EVIDENCIA AUTORIZACION POR ROLES - SEMANA 5
+
+WEB -> WEB
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:22:51 GMT
+
+{"accountId":101,"accountName":"Charlie Green","accountType":"prestamo","initialBalance":8000.00,"interestRate":0.0200,"calculatedInterest":160.00,"finalBalance":8160.00}
+WEB -> MOBILE
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 95
+Date: Mon, 14 Sep 2026 01:22:51 GMT
+
+{"status":403,"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal"}
+WEB -> ATM
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 95
+Date: Mon, 14 Sep 2026 01:22:51 GMT
+
+{"status":403,"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal"}
+MOBILE -> WEB
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 95
+Date: Mon, 14 Sep 2026 01:22:51 GMT
+
+{"status":403,"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal"}
+MOBILE -> MOBILE
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:22:51 GMT
+
+{"accountId":101,"accountName":"Charlie Green","balance":8160.00,"accountType":"prestamo"}
+MOBILE -> ATM
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 95
+Date: Mon, 14 Sep 2026 01:22:51 GMT
+
+{"status":403,"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal"}
+ATM -> WEB
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 95
+Date: Mon, 14 Sep 2026 01:22:51 GMT
+
+{"status":403,"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal"}
+ATM -> MOBILE
+HTTP/1.1 403 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 95
+Date: Mon, 14 Sep 2026 01:22:51 GMT
+
+{"status":403,"error":"FORBIDDEN","message":"Usuario autenticado sin permisos para este canal"}
+ATM -> ATM
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 14 Sep 2026 01:22:52 GMT
+
+{"accountId":102,"balance":10200.00}

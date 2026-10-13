@@ -1,0 +1,12 @@
+server:
+  port: 8086
+spring:
+  sql:
+    init:
+      mode: ${CUSTOMER_SQL_INIT_MODE:never}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${OAUTH2_ISSUER:http://localhost:9000}
+          jwk-set-uri: ${OAUTH2_JWK_SET_URI:http://localhost:9000/oauth2/jwks}

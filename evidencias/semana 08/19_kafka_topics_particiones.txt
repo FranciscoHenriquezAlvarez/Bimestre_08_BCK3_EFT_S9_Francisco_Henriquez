@@ -1,0 +1,22 @@
+EVIDENCIA: Topics Kafka
+FECHA: 2026-10-05T16:54:51-03:00
+OBJETIVO: Comprobar topics y tres particiones
+COMANDO: kafka-topics.sh --list y --describe
+
+RESULTADO REAL:
+__consumer_offsets
+bank.withdrawal.completed
+bank.withdrawal.rejected
+bank.withdrawal.requested
+Topic: bank.withdrawal.requested	TopicId: nATjh9pXTyO37AilznhSBA	PartitionCount: 3	ReplicationFactor: 1	Configs: 
+	Topic: bank.withdrawal.requested	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+	Topic: bank.withdrawal.requested	Partition: 1	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+	Topic: bank.withdrawal.requested	Partition: 2	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+Topic: bank.withdrawal.completed	TopicId: ZQ1yGFScQTKMUJNVPqSTmA	PartitionCount: 3	ReplicationFactor: 1	Configs: 
+	Topic: bank.withdrawal.completed	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+	Topic: bank.withdrawal.completed	Partition: 1	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+	Topic: bank.withdrawal.completed	Partition: 2	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+Topic: bank.withdrawal.rejected	TopicId: qzGsMrnGSL6CioeaxBEoag	PartitionCount: 3	ReplicationFactor: 1	Configs: 
+	Topic: bank.withdrawal.rejected	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+	Topic: bank.withdrawal.rejected	Partition: 1	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+	Topic: bank.withdrawal.rejected	Partition: 2	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 

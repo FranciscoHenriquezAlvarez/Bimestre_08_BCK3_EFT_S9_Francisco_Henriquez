@@ -1,0 +1,31 @@
+dailyTransactionsJob COMPLETED
+2026-10-12T21:22:40.739Z  INFO 9 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=dailyTransactionsJob]] completed with the following parameters: [{'ejecucion':'{value=1791840146601, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 2s440ms
+monthlyInterestJob COMPLETED
+2026-10-12T21:22:53.368Z  INFO 100 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=monthlyInterestJob]] completed with the following parameters: [{'ejecucion':'{value=1791840162602, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 1s723ms
+annualStatementsJob COMPLETED
+2026-10-12T21:23:08.260Z  INFO 185 --- [core-banking-service] [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=annualStatementsJob]] completed with the following parameters: [{'ejecucion':'{value=1791840175603, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 1s944ms
+BATCH INIT COMPLETED
+       job_name       | job_execution_id |  status   | parameter_name | parameter_value 
+----------------------+------------------+-----------+----------------+-----------------
+ dailyTransactionsJob |                1 | COMPLETED | ejecucion      | 1791840146601
+ monthlyInterestJob   |                2 | COMPLETED | ejecucion      | 1791840162602
+ annualStatementsJob  |                3 | COMPLETED | ejecucion      | 1791840175603
+(3 rows)
+
+         step_name         |  status   | read_count | write_count | read_skip_count | process_skip_count | write_skip_count 
+---------------------------+-----------+------------+-------------+-----------------+--------------------+------------------
+ dailyTransactionsStep     | COMPLETED |       1000 |         387 |               0 |                613 |                0
+ monthlyInterestStep       | COMPLETED |       1000 |         263 |               0 |                737 |                0
+ annualMovementsStep       | COMPLETED |       1000 |         289 |               0 |                711 |                0
+ annualStatementReportStep | COMPLETED |          0 |           0 |               0 |                  0 |                0
+(4 rows)
+
+    tabla    | count 
+-------------+-------
+ daily       |   387
+ monthly     |    50
+ annual      |   289
+ cuentas     |     0
+ operaciones |     0
+(5 rows)
+

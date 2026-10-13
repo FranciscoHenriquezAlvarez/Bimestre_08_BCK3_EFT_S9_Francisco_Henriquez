@@ -1,0 +1,13 @@
+=== ESPERANDO DISPONIBILIDAD DE EUREKA ===
+Verificacion 1: Eureka = healthy
+=== ESTADO FINAL DE SALUD ===
+/etf_s9-postgres-1 | ESTADO=running | SALUD=healthy
+/etf_s9-kafka-1 | ESTADO=running | SALUD=healthy
+/etf_s9-config-server-1 | ESTADO=running | SALUD=healthy
+/etf_s9-eureka-server-1 | ESTADO=running | SALUD=healthy
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       1.5Gi       171Mi        17Mi       6.3Gi       6.1Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /

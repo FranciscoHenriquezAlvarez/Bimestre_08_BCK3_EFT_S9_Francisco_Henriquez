@@ -1,0 +1,11 @@
+=== IDEMPOTENCIA ===
+EVENT_ID_OK=dd2f7cc5-a068-40b9-bbe9-051d264fd44f
+Saldo antes: 200.00
+Saldo después: 200.00
+
+=== LOG DE IDEMPOTENCIA ===
+core-banking-service-1  | 2026-09-29T01:06:46.813Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=2 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 eventId=dd2f7cc5-a068-40b9-bbe9-051d264fd44f transactionId=e1f51bbc-3167-4973-bbfc-a083e5b4f56a
+core-banking-service-1  | 2026-09-29T01:08:15.666Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=2 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 eventId=dd2f7cc5-a068-40b9-bbe9-051d264fd44f transactionId=e1f51bbc-3167-4973-bbfc-a083e5b4f56a
+core-banking-service-1  | 2026-09-29T01:08:15.668Z  WARN 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.core.kafka.AsyncWithdrawalService  : [Idempotency] Evento dd2f7cc5-a068-40b9-bbe9-051d264fd44f ya procesado, ignorando
+
+RESULTADO: OK - El evento duplicado fue ignorado y el saldo no cambió.

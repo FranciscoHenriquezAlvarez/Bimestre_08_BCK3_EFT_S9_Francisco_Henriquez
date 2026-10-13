@@ -1,0 +1,84 @@
+cl.duoc.bancoxyz.payment.CoreOperationClientTest serverErrorLeavesTheOperationUnknown PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest businessRejectionIsReturnedWithoutRetry PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest preservesKnownHttpErrors(int, String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest preservesKnownHttpErrors(int, String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest preservesKnownHttpErrors(int, String)[3] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest connectionFailureKeepsTheIdentifier PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest missingOrMalformedResponseNeverReportsSuccess(String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest missingOrMalformedResponseNeverReportsSuccess(String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest missingOrMalformedResponseNeverReportsSuccess(String)[3] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest missingOrMalformedResponseNeverReportsSuccess(String)[4] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest wrongIdentifierWrongTypeAndPendingResultsAreUnknown PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest timeoutDoesNotRetryOrReportRejection PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest internalAuthorizationErrorsNeverLookLikeCallerAuthenticationErrors(int)[1] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest internalAuthorizationErrorsNeverLookLikeCallerAuthenticationErrors(int)[2] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest unavailableTokenDoesNotCallCore PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest queryRetrievesTheResultUsingTheSameIdentifier PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest sendsMatchingInternalRouteAndInternalCredential(String, String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest sendsMatchingInternalRouteAndInternalCredential(String, String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreOperationClientTest sendsMatchingInternalRouteAndInternalCredential(String, String)[3] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest recoveryQueryUsesTheOriginalTransactionId PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest incompatibleOrNonFinalResponseIsUnknown(String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest incompatibleOrNonFinalResponseIsUnknown(String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest incompatibleOrNonFinalResponseIsUnknown(String)[3] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest incompatibleOrNonFinalResponseIsUnknown(String)[4] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest lostHttpResponsePreservesIdentityAndDoesNotRetryTheCommand PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest rejectedCredentialIsEvictedAndCommandIsNotAutomaticallyRepeated(int)[1] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest rejectedCredentialIsEvictedAndCommandIsNotAutomaticallyRepeated(int)[2] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest identifierConflictRemainsAConflictAndDoesNotDiscardCredential PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest returnsOriginalFinalEventUsingItsOwnInternalIdentity(String)[1] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest returnsOriginalFinalEventUsingItsOwnInternalIdentity(String)[2] PASS
+cl.duoc.bancoxyz.payment.CoreWithdrawalClientTest unavailableTokenCannotSendAnUnauthenticatedRequest PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest sqlFailureRollsBackBothAccountsAndSameIdentifierCanBeRetried PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest invalidPrecisionAndIncompleteRequestsWriteNothing PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest internalHttpAuthenticationFailuresAreUnknownAndNeverAlterAccounts PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest paymentsDepositsAndTransfersUseRealHttpOauthAndPostgres PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest accountAndAmountErrorsAreDecidedAndPersistedByCore PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest realSignedTokensEnforceTheInternalAndPublicScopeMatrix PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest lostResponseAfterCommitIsUnknownAndSameIdentifierRecoversWithoutChargingAgain PASS
+cl.duoc.bancoxyz.payment.PaymentApplicationsIntegrationTest duplicateKeepsOriginalResultAfterLaterDepositAndConflictingDataCannotCharge PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest conflictAndUnknownResultsKeepTheirIdentifierAndHttpStatus PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest transferSelectsTransferAndPreservesBothAccounts PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest unlistedMethodsAndPathsAreDenied PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest businessRejectionRemainsARejectedResult PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest noTokenAndInvalidTokenAreUnauthorizedOnEveryPublicRoute PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest atmInternalAndMissingScopesCannotUseAnyPublicOperation PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest mobileDepositSelectsCredit PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest paymentSelectsDebitAndPreservesIdentifier PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest retriesSendTheSameIdentifierAndData PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest queryReturnsPersistedOperation PASS
+cl.duoc.bancoxyz.payment.PaymentControllerTest missingRequiredDataAndMalformedJsonNeverCallCore PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest defaultConsumerIsInactiveAndExplicitIsolatedActivationCommitsOnlyAfterPublication PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest insufficientClosedMissingAndInvalidAtmAmountsPublishStableRejections PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest differentRequestEventIdRepublishesTheSameOriginalResultWithoutAnotherCharge PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest lostHttpResponseAfterPostgresCommitIsRecoveredByOneQuery PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest producerCannotPublishAndRestartRedeliversInputWithSamePersistedResult PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest resultConfirmedButInputAcknowledgmentFailsAndRedeliveryPublishesSameEvent PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest coreNetworkFailureStopsWithoutAcknowledgmentAndCanBeRecovered PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest unavailableInternalTokenStopsAndCorrectCredentialRecoversTheSameInput PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest rejectedInternalScopeDoesNotChargeAndAtmStatusStillUsesItsExistingContract PASS
+cl.duoc.bancoxyz.payment.WithdrawalKafkaIntegrationTest conflictingTransactionStopsWithoutAnotherChargeOrContradictoryResult PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest publicationTimeoutDoesNotAcknowledge PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest acknowledgmentWaitsUntilThePublicationFutureCompletes PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest coreUnavailableAfterOneRecoveryQueryDoesNotAcknowledgeOrPublish PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest conflictingRequestIsNotConvertedIntoAnotherBankingResult PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest immediateSendFailureDoesNotAcknowledge PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest lostHttpResponseQueriesSameIdentifierAndPublishesStoredEvent PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest failedPublicationDoesNotAcknowledge PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest publishesCompletedOriginalEventBeforeAcknowledging PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest inputAcknowledgmentFailureCanOnlyRepublishTheOriginalEventOnRedelivery PASS
+cl.duoc.bancoxyz.payment.WithdrawalRequestedConsumerTest publishesRejectedOriginalEventBeforeAcknowledging PASS
+Tests run: 70 Failures: 0 Errors: 0 Skipped: 0
+RESULTADO: PASS; casos distintos de la seleccion, no adicionales al reactor.
+POST http://127.0.0.1:38082/api/bff/web/payments/deposits HTTP=200
+{"operationId":"62aee012-8fd3-4ed1-ac5a-f0dc0cf93a3d","type":"CREDIT","status":"COMPLETED","sourceBalance":null,"targetBalance":100000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.621571Z"}
+POST http://127.0.0.1:38082/api/bff/web/payments HTTP=200
+{"operationId":"6b480cd8-4284-44c7-bcaf-5de86a6e7ae8","type":"DEBIT","status":"COMPLETED","sourceBalance":90000.0,"targetBalance":null,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.722466Z"}
+POST http://127.0.0.1:38082/api/bff/web/payments/transfers HTTP=200
+{"operationId":"ae881073-0a0d-4952-b182-5a88094f0dac","type":"TRANSFER","status":"COMPLETED","sourceBalance":70000.0,"targetBalance":20000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.790153Z"}
+GET http://127.0.0.1:38082/api/bff/web/payments/operations/ae881073-0a0d-4952-b182-5a88094f0dac HTTP=200
+{"operationId":"ae881073-0a0d-4952-b182-5a88094f0dac","type":"TRANSFER","status":"COMPLETED","sourceBalance":70000.0,"targetBalance":20000.0,"rejectionReason":null,"completedAt":"2026-10-12T21:33:53.790153Z"}
+GET http://127.0.0.1:38084/api/bff/atm/accounts/151/balance HTTP=200
+{"accountId":151,"balance":70000.00}
+GET http://127.0.0.1:38084/api/bff/atm/accounts/152/balance HTTP=200
+{"accountId":152,"balance":20000.00}

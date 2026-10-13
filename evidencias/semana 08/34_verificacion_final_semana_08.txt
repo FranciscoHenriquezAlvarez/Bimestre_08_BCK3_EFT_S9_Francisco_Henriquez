@@ -1,0 +1,113 @@
+EVIDENCIA: Verificación final Semana 08
+FECHA: 2026-10-05T17:03:51-03:00
+OBJETIVO: Resumir criterios reales de la ejecución manual
+COMANDO: Lectura de las 35 evidencias nuevas; docker compose ps -a; docker inspect; consultas Kafka
+
+RESULTADO REAL:
+=== INVENTARIO Y PROCEDENCIA ===
+00_indice_evidencias.md bytes=3133 mtime=2026-10-05T16:37:34.894967-03:00
+01_maven_test.txt bytes=24630 mtime=2026-10-05T16:40:10.959465-03:00
+02_docker_compose_build.txt bytes=1370333 mtime=2026-10-05T16:43:24.284850-03:00
+03_docker_compose_ps.txt bytes=4407 mtime=2026-10-05T16:46:46.345998-03:00
+04_healthchecks.txt bytes=495 mtime=2026-10-05T16:46:57.553977-03:00
+05_oauth2_token_web.txt bytes=403 mtime=2026-10-05T16:47:30.722020-03:00
+06_oauth2_token_mobile.txt bytes=418 mtime=2026-10-05T16:47:49.854306-03:00
+07_oauth2_token_atm.txt bytes=403 mtime=2026-10-05T16:48:10.830871-03:00
+08_oauth2_jwt_claims.txt bytes=600 mtime=2026-10-05T16:49:10.636786-03:00
+09_web_sin_token_401.txt bytes=258 mtime=2026-10-05T16:53:05.188441-03:00
+10_web_scope_correcto.txt bytes=583 mtime=2026-10-05T16:53:18.357435-03:00
+11_web_scope_incorrecto_403.txt bytes=265 mtime=2026-10-05T16:53:26.978417-03:00
+12_web_token_invalido_401.txt bytes=263 mtime=2026-10-05T16:53:35.084137-03:00
+13_mobile_autorizado.txt bytes=357 mtime=2026-10-05T16:53:43.340544-03:00
+14_atm_saldo_autorizado.txt bytes=560 mtime=2026-10-05T16:52:45.002604-03:00
+15_core_sin_token_401.txt bytes=264 mtime=2026-10-05T16:53:50.962059-03:00
+16_core_token_valido.txt bytes=299 mtime=2026-10-05T16:53:58.014068-03:00
+17_atm_retiro_pending.txt bytes=359 mtime=2026-10-05T16:54:19.986427-03:00
+18_atm_retiro_resultado_final.txt bytes=524 mtime=2026-10-05T16:54:41.396716-03:00
+19_kafka_topics_particiones.txt bytes=1472 mtime=2026-10-05T16:55:18.854806-03:00
+20_kafka_consumer_group.txt bytes=1932 mtime=2026-10-05T16:55:36.352376-03:00
+21_kafka_flujo_retiro.txt bytes=1677 mtime=2026-10-05T16:55:43.149600-03:00
+22_kafka_idempotencia_test.txt bytes=4771 mtime=2026-10-05T16:56:05.857294-03:00
+23_resilience4j_tests.txt bytes=9316 mtime=2026-10-05T16:56:46.918500-03:00
+24_batch_regresion.txt bytes=8416 mtime=2026-10-05T16:57:59.764743-03:00
+25_docker_images.txt bytes=1177 mtime=2026-10-05T16:58:15.960862-03:00
+26_eureka_servicios.txt bytes=255 mtime=2026-10-05T16:58:18.656257-03:00
+27_config_server.txt bytes=2171 mtime=2026-10-05T16:58:31.482912-03:00
+28_resilience4j_runtime.txt bytes=6544 mtime=2026-10-05T17:00:44.997026-03:00
+29_verificacion_documental_alcance.txt bytes=4794 mtime=2026-10-05T16:58:46.520427-03:00
+30_docker_reset_arranque.txt bytes=9196 mtime=2026-10-05T16:46:32.567411-03:00
+31_resilience4j_recuperacion_sin_dependencias.txt bytes=6544 mtime=2026-10-05T17:00:44.997026-03:00
+32_resilience4j_configuracion_productiva.txt bytes=2225 mtime=2026-10-05T17:01:47.288943-03:00
+33_resilience4j_runtime_final.txt bytes=8446 mtime=2026-10-05T17:03:20.254284-03:00
+34_verificacion_final_semana_08.txt bytes=250 mtime=2026-10-05T17:03:51.255660-03:00
+Inventario: PASS - 35 archivos nuevos, no vacíos, posteriores a RUN_STARTED.
+00: índice nuevo de esta reproducción; 28 y 31: runtime seguro generado conjuntamente.
+33: EVIDENCIA RUNTIME DEFINITIVA. El respaldo no interviene en la comprobación.
+Maven 01: 92/92; 0 failures/errors/skipped; BUILD SUCCESS.
+Maven 22: 1/1; 0 failures/errors/skipped; BUILD SUCCESS.
+Maven 23: 9/9; 0 failures/errors/skipped; BUILD SUCCESS.
+Maven 24: 3/3; 0 failures/errors/skipped; BUILD SUCCESS.
+Resilience4j JUnit: CLOSED, OPEN, HALF_OPEN, CLOSED recuperado, fallback y short-circuit PASS.
+HTTP evidencia 09: 401 PASS.
+HTTP evidencia 10: 200 PASS.
+HTTP evidencia 11: 403 PASS.
+HTTP evidencia 12: 401 PASS.
+HTTP evidencia 13: 200 PASS.
+HTTP evidencia 14: 200 PASS.
+HTTP evidencia 15: 401 PASS.
+HTTP evidencia 16: 200 PASS.
+HTTP evidencia 17: 202 PASS.
+HTTP evidencia 18: 200 PASS.
+OAuth2 web: HTTP 200, Bearer, scope y expires_in PASS.
+OAuth2 mobile: HTTP 200, Bearer, scope y expires_in PASS.
+OAuth2 atm: HTTP 200, Bearer, scope y expires_in PASS.
+JWT claims: RS256, issuer Docker, sub, scope y vigencia PASS.
+Retiro: 202/PENDING -> 200/COMPLETED; saldo comprobado. Core protegido: 401/200.
+Kafka: tres topics, tres particiones, consumer group, offsets/lag y trazabilidad PASS.
+Spring Batch: tres tests y tres Jobs COMPLETED PASS.
+Build, health, ocho imágenes, Eureka, Config Server y alcance documental PASS.
+coreWeb {'sliding-window-size': 5, 'minimum-number-of-calls': 5, 'failure-rate-threshold': 50, 'wait-duration-in-open-state': '5s', 'permitted-number-of-calls-in-half-open-state': 2}
+coreMobile {'sliding-window-size': 5, 'minimum-number-of-calls': 5, 'failure-rate-threshold': 50, 'wait-duration-in-open-state': '5s', 'permitted-number-of-calls-in-half-open-state': 2}
+coreAtm {'sliding-window-size': 5, 'minimum-number-of-calls': 5, 'failure-rate-threshold': 50, 'wait-duration-in-open-state': '5s', 'permitted-number-of-calls-in-half-open-state': 2}
+Configuración productiva desde Config Server: PASS.
+Runtime 28: 200 -> 1 respuestas 503 por canal -> 200; Batch y balances conservados PASS.
+Runtime 31: 200 -> 1 respuestas 503 por canal -> 200; Batch y balances conservados PASS.
+Runtime 33: 200 -> 6 respuestas 503 por canal -> 200; Batch y balances conservados PASS.
+Comprobaciones documentales de esta ejecución: PASS.
+=== COMPOSE ACTUAL ===
+NAME                              IMAGE                           COMMAND                  SERVICE                CREATED          STATUS                        PORTS
+banco-xyz-kafka                   apache/kafka:3.9.1              "/__cacert_entrypoin…"   kafka                  20 minutes ago   Up 20 minutes (healthy)       0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp
+banco-xyz-postgres                postgres:16                     "docker-entrypoint.s…"   postgres               20 minutes ago   Up 20 minutes (healthy)       0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+proyecto-authorization-server-1   proyecto-authorization-server   "java -jar /app/app.…"   authorization-server   20 minutes ago   Up 20 minutes (healthy)       0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp
+proyecto-batch-init-1             proyecto-batch-init             "/usr/local/bin/batc…"   batch-init             20 minutes ago   Exited (0) 18 minutes ago     
+proyecto-bff-atm-service-1        proyecto-bff-atm-service        "java -jar /app/app.…"   bff-atm-service        20 minutes ago   Up 18 minutes (healthy)       0.0.0.0:8084->8084/tcp, [::]:8084->8084/tcp
+proyecto-bff-mobile-service-1     proyecto-bff-mobile-service     "java -jar /app/app.…"   bff-mobile-service     20 minutes ago   Up 18 minutes (healthy)       0.0.0.0:8083->8083/tcp, [::]:8083->8083/tcp
+proyecto-bff-web-service-1        proyecto-bff-web-service        "java -jar /app/app.…"   bff-web-service        20 minutes ago   Up 18 minutes (healthy)       0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+proyecto-config-server-1          proyecto-config-server          "java -jar /app/app.…"   config-server          20 minutes ago   Up 19 minutes (healthy)       0.0.0.0:8888->8888/tcp, [::]:8888->8888/tcp
+proyecto-core-banking-service-1   proyecto-core-banking-service   "java -jar /app/app.…"   core-banking-service   20 minutes ago   Up About a minute (healthy)   0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+proyecto-eureka-server-1          proyecto-eureka-server          "java -jar /app/app.…"   eureka-server          20 minutes ago   Up 19 minutes (healthy)       0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+postgres: running healthy
+kafka: running healthy
+config-server: running healthy
+eureka-server: running healthy
+authorization-server: running healthy
+core-banking-service: running healthy
+bff-web-service: running healthy
+bff-mobile-service: running healthy
+bff-atm-service: running healthy
+5a0bbb6d842123e9c7a96712e69f66583064269fd4f2b4abfdcbc4cfa392a9a8 exited 0 2026-10-05T19:44:30.397057718Z 0
+=== KAFKA ACTUAL ===
+Topic: bank.withdrawal.requested	TopicId: nATjh9pXTyO37AilznhSBA	PartitionCount: 3	ReplicationFactor: 1	Configs: 
+	Topic: bank.withdrawal.requested	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+	Topic: bank.withdrawal.requested	Partition: 1	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+	Topic: bank.withdrawal.requested	Partition: 2	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+Topic: bank.withdrawal.requested	TopicId: nATjh9pXTyO37AilznhSBA	PartitionCount: 3	ReplicationFactor: 1	Configs: 
+
+GROUP                         TOPIC                     PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                                   HOST            CLIENT-ID
+core-banking-withdrawal-group bank.withdrawal.requested 2          -               0               -               consumer-core-banking-withdrawal-group-3-74696502-d788-4ada-96d4-1c7fedadf765 /172.22.0.7     consumer-core-banking-withdrawal-group-3
+core-banking-withdrawal-group bank.withdrawal.requested 1          -               0               -               consumer-core-banking-withdrawal-group-2-6e366686-5817-4962-9e01-1c8a4292ae54 /172.22.0.7     consumer-core-banking-withdrawal-group-2
+core-banking-withdrawal-group bank.withdrawal.requested 0          1               1               0               consumer-core-banking-withdrawal-group-1-c5c98ecf-8e10-4c47-856a-9630a8f1edb0 /172.22.0.7     consumer-core-banking-withdrawal-group-1
+core-banking-withdrawal-group bank.withdrawal.requested 2          -               0               -               consumer-core-banking-withdrawal-group-3-74696502-d788-4ada-96d4-1c7fedadf765 /172.22.0.7     consumer-core-banking-withdrawal-group-3
+core-banking-withdrawal-group bank.withdrawal.requested 1          -               0               -               consumer-core-banking-withdrawal-group-2-6e366686-5817-4962-9e01-1c8a4292ae54 /172.22.0.7     consumer-core-banking-withdrawal-group-2
+core-banking-withdrawal-group bank.withdrawal.requested 0          1               1               0               consumer-core-banking-withdrawal-group-1-c5c98ecf-8e10-4c47-856a-9630a8f1edb0 /172.22.0.7     consumer-core-banking-withdrawal-group-1
+RESULTADO FINAL: PASS

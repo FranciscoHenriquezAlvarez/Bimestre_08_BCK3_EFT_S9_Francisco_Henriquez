@@ -1,0 +1,13 @@
+EVIDENCIA: 10_web_scope_correcto.txt
+FECHA: 2026-10-05T16:53:14-03:00
+OBJETIVO: Comprobar HTTP 200
+COMANDO: GET http://localhost:8082/api/bff/web/accounts/102; Bearer en memoria cuando corresponde
+
+RESULTADO REAL:
+Intento: 1
+HTTP status: 503
+{"timestamp":"2026-10-05T19:53:15.983+00:00","status":503,"error":"Service Unavailable","path":"/api/bff/web/accounts/102"}
+Intento: 2
+HTTP status: 200
+{"accountId":102,"accountName":"Charlie Green","accountType":"prestamo","initialBalance":10000.00,"interestRate":0.0200,"calculatedInterest":200.00,"finalBalance":10200.00}
+RESULTADO: PASS

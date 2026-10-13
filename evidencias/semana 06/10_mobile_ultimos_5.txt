@@ -1,0 +1,15 @@
+Usuario: mobileuser / ROLE_MOBILE
+Endpoint: GET /api/bff/mobile/accounts/104/transactions
+
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 27 Sep 2026 19:55:39 GMT
+
+[{"date":"2024-11-01","transaction":"retiro","amount":-500.00},{"date":"2024-09-19","transaction":"deposito","amount":2500.00},{"date":"2024-08-25","transaction":"deposito","amount":1500.00},{"date":"2024-08-13","transaction":"retiro","amount":-500.00},{"date":"2024-08-12","transaction":"deposito","amount":1000.00}]

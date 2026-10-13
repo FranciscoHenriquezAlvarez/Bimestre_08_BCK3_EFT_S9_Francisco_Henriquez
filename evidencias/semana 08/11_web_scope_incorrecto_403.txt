@@ -1,0 +1,10 @@
+EVIDENCIA: 11_web_scope_incorrecto_403.txt
+FECHA: 2026-10-05T16:53:26-03:00
+OBJETIVO: Comprobar HTTP 403
+COMANDO: GET http://localhost:8082/api/bff/web/accounts/102; Bearer en memoria cuando corresponde
+
+RESULTADO REAL:
+Intento: 1
+HTTP status: 403
+
+RESULTADO: PASS

@@ -1,0 +1,101 @@
+EVIDENCIA: Verificación documental
+FECHA: 2026-10-05T16:58:46-03:00
+OBJETIVO: Comprobar tests, migración e inventario
+COMANDO: Lectura de fuentes/POM/evidencias; git status --short
+
+RESULTADO REAL:
+bff-web-service/src/test/java/cl/duoc/bancoxyz/web/WebResilience4jTest.java circuitBreakerStartsClosedAndAllowsSuccessfulCall PRESENTE
+bff-web-service/src/test/java/cl/duoc/bancoxyz/web/WebResilience4jTest.java circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits PRESENTE
+bff-web-service/src/test/java/cl/duoc/bancoxyz/web/WebResilience4jTest.java circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed PRESENTE
+web AuthController AUSENTE
+web JwtService AUSENTE
+web JwtAuthenticationFilter AUSENTE
+bff-mobile-service/src/test/java/cl/duoc/bancoxyz/mobile/MobileResilience4jTest.java circuitBreakerStartsClosedAndAllowsSuccessfulCall PRESENTE
+bff-mobile-service/src/test/java/cl/duoc/bancoxyz/mobile/MobileResilience4jTest.java circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits PRESENTE
+bff-mobile-service/src/test/java/cl/duoc/bancoxyz/mobile/MobileResilience4jTest.java circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed PRESENTE
+mobile AuthController AUSENTE
+mobile JwtService AUSENTE
+mobile JwtAuthenticationFilter AUSENTE
+bff-atm-service/src/test/java/cl/duoc/bancoxyz/atm/AtmResilience4jTest.java circuitBreakerStartsClosedAndAllowsSuccessfulCall PRESENTE
+bff-atm-service/src/test/java/cl/duoc/bancoxyz/atm/AtmResilience4jTest.java circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits PRESENTE
+bff-atm-service/src/test/java/cl/duoc/bancoxyz/atm/AtmResilience4jTest.java circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed PRESENTE
+atm AuthController AUSENTE
+atm JwtService AUSENTE
+atm JwtAuthenticationFilter AUSENTE
+Dependencias jjwt propias: AUSENTES
+Tests run: 92
+Failures: 0
+Errors: 0
+Skipped: 0
+BUILD SUCCESS
+RESULTADO: PASS
+00_indice_evidencias.md
+01_maven_test.txt
+02_docker_compose_build.txt
+03_docker_compose_ps.txt
+04_healthchecks.txt
+05_oauth2_token_web.txt
+06_oauth2_token_mobile.txt
+07_oauth2_token_atm.txt
+08_oauth2_jwt_claims.txt
+09_web_sin_token_401.txt
+10_web_scope_correcto.txt
+11_web_scope_incorrecto_403.txt
+12_web_token_invalido_401.txt
+13_mobile_autorizado.txt
+14_atm_saldo_autorizado.txt
+15_core_sin_token_401.txt
+16_core_token_valido.txt
+17_atm_retiro_pending.txt
+18_atm_retiro_resultado_final.txt
+19_kafka_topics_particiones.txt
+20_kafka_consumer_group.txt
+21_kafka_flujo_retiro.txt
+22_kafka_idempotencia_test.txt
+23_resilience4j_tests.txt
+24_batch_regresion.txt
+25_docker_images.txt
+26_eureka_servicios.txt
+27_config_server.txt
+29_verificacion_documental_alcance.txt
+30_docker_reset_arranque.txt
+00: índice nuevo. 28 y 31: runtime seguro generado en el Paso 30. 33: runtime definitiva.
+ M ../README.md
+ M "../evidencias/semana 08/00_indice_evidencias.md"
+ M "../evidencias/semana 08/01_maven_test.txt"
+ M "../evidencias/semana 08/02_docker_compose_build.txt"
+ M "../evidencias/semana 08/03_docker_compose_ps.txt"
+ M "../evidencias/semana 08/04_healthchecks.txt"
+ M "../evidencias/semana 08/05_oauth2_token_web.txt"
+ M "../evidencias/semana 08/06_oauth2_token_mobile.txt"
+ M "../evidencias/semana 08/07_oauth2_token_atm.txt"
+ M "../evidencias/semana 08/08_oauth2_jwt_claims.txt"
+ M "../evidencias/semana 08/09_web_sin_token_401.txt"
+ M "../evidencias/semana 08/10_web_scope_correcto.txt"
+ M "../evidencias/semana 08/11_web_scope_incorrecto_403.txt"
+ M "../evidencias/semana 08/12_web_token_invalido_401.txt"
+ M "../evidencias/semana 08/13_mobile_autorizado.txt"
+ M "../evidencias/semana 08/14_atm_saldo_autorizado.txt"
+ M "../evidencias/semana 08/15_core_sin_token_401.txt"
+ M "../evidencias/semana 08/16_core_token_valido.txt"
+ M "../evidencias/semana 08/17_atm_retiro_pending.txt"
+ M "../evidencias/semana 08/18_atm_retiro_resultado_final.txt"
+ M "../evidencias/semana 08/19_kafka_topics_particiones.txt"
+ M "../evidencias/semana 08/20_kafka_consumer_group.txt"
+ M "../evidencias/semana 08/21_kafka_flujo_retiro.txt"
+ M "../evidencias/semana 08/22_kafka_idempotencia_test.txt"
+ M "../evidencias/semana 08/23_resilience4j_tests.txt"
+ M "../evidencias/semana 08/24_batch_regresion.txt"
+ M "../evidencias/semana 08/25_docker_images.txt"
+ M "../evidencias/semana 08/26_eureka_servicios.txt"
+ M "../evidencias/semana 08/27_config_server.txt"
+ D "../evidencias/semana 08/28_resilience4j_runtime.txt"
+ M "../evidencias/semana 08/29_verificacion_documental_alcance.txt"
+ M "../evidencias/semana 08/30_docker_reset_arranque.txt"
+ D "../evidencias/semana 08/31_resilience4j_recuperacion_sin_dependencias.txt"
+ M config-repo/bff-atm-service.yml
+ M config-repo/bff-mobile-service.yml
+ M config-repo/bff-web-service.yml
+?? ../evidencias/respaldo-semana-08-20261005-162224/
+?? ../evidencias/respaldo-semana-08-20261005-163734/
+RESULTADO: PASS

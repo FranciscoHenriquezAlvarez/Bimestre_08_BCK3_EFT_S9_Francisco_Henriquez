@@ -1,0 +1,27 @@
+EVIDENCIA: Estado Compose
+FECHA: 2026-10-05T16:46:45-03:00
+OBJETIVO: Inspeccionar servicios e inicializador
+COMANDO: docker compose ps; docker compose ps -a
+
+RESULTADO REAL:
+NAME                              IMAGE                           COMMAND                  SERVICE                CREATED         STATUS                        PORTS
+banco-xyz-kafka                   apache/kafka:3.9.1              "/__cacert_entrypoin…"   kafka                  3 minutes ago   Up 2 minutes (healthy)        0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp
+banco-xyz-postgres                postgres:16                     "docker-entrypoint.s…"   postgres               3 minutes ago   Up 2 minutes (healthy)        0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+proyecto-authorization-server-1   proyecto-authorization-server   "java -jar /app/app.…"   authorization-server   3 minutes ago   Up 2 minutes (healthy)        0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp
+proyecto-bff-atm-service-1        proyecto-bff-atm-service        "java -jar /app/app.…"   bff-atm-service        2 minutes ago   Up About a minute (healthy)   0.0.0.0:8084->8084/tcp, [::]:8084->8084/tcp
+proyecto-bff-mobile-service-1     proyecto-bff-mobile-service     "java -jar /app/app.…"   bff-mobile-service     2 minutes ago   Up 58 seconds (healthy)       0.0.0.0:8083->8083/tcp, [::]:8083->8083/tcp
+proyecto-bff-web-service-1        proyecto-bff-web-service        "java -jar /app/app.…"   bff-web-service        2 minutes ago   Up 59 seconds (healthy)       0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+proyecto-config-server-1          proyecto-config-server          "java -jar /app/app.…"   config-server          3 minutes ago   Up 2 minutes (healthy)        0.0.0.0:8888->8888/tcp, [::]:8888->8888/tcp
+proyecto-core-banking-service-1   proyecto-core-banking-service   "java -jar /app/app.…"   core-banking-service   2 minutes ago   Up About a minute (healthy)   0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+proyecto-eureka-server-1          proyecto-eureka-server          "java -jar /app/app.…"   eureka-server          2 minutes ago   Up 2 minutes (healthy)        0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+NAME                              IMAGE                           COMMAND                  SERVICE                CREATED         STATUS                          PORTS
+banco-xyz-kafka                   apache/kafka:3.9.1              "/__cacert_entrypoin…"   kafka                  3 minutes ago   Up 2 minutes (healthy)          0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp
+banco-xyz-postgres                postgres:16                     "docker-entrypoint.s…"   postgres               3 minutes ago   Up 2 minutes (healthy)          0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+proyecto-authorization-server-1   proyecto-authorization-server   "java -jar /app/app.…"   authorization-server   3 minutes ago   Up 2 minutes (healthy)          0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp
+proyecto-batch-init-1             proyecto-batch-init             "/usr/local/bin/batc…"   batch-init             3 minutes ago   Exited (0) About a minute ago   
+proyecto-bff-atm-service-1        proyecto-bff-atm-service        "java -jar /app/app.…"   bff-atm-service        3 minutes ago   Up About a minute (healthy)     0.0.0.0:8084->8084/tcp, [::]:8084->8084/tcp
+proyecto-bff-mobile-service-1     proyecto-bff-mobile-service     "java -jar /app/app.…"   bff-mobile-service     3 minutes ago   Up 59 seconds (healthy)         0.0.0.0:8083->8083/tcp, [::]:8083->8083/tcp
+proyecto-bff-web-service-1        proyecto-bff-web-service        "java -jar /app/app.…"   bff-web-service        3 minutes ago   Up About a minute (healthy)     0.0.0.0:8082->8082/tcp, [::]:8082->8082/tcp
+proyecto-config-server-1          proyecto-config-server          "java -jar /app/app.…"   config-server          3 minutes ago   Up 2 minutes (healthy)          0.0.0.0:8888->8888/tcp, [::]:8888->8888/tcp
+proyecto-core-banking-service-1   proyecto-core-banking-service   "java -jar /app/app.…"   core-banking-service   3 minutes ago   Up About a minute (healthy)     0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+proyecto-eureka-server-1          proyecto-eureka-server          "java -jar /app/app.…"   eureka-server          3 minutes ago   Up 2 minutes (healthy)          0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp

@@ -1,0 +1,54 @@
+# Complemento exclusivo de prueba: Compose asigna red y volumenes al nombre del proyecto.
+x-validacion: &validacion
+  SPRING_PROFILES_ACTIVE: validacion
+  JAVA_TOOL_OPTIONS: -Xms64m -Xmx256m
+  SPRING_CONFIG_IMPORT: configserver:http://config-server:8888
+
+services:
+  postgres:
+    ports: !reset []
+  kafka:
+    ports: !reset []
+    environment:
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+  config-server:
+    ports: !override ["127.0.0.1:18888:8888"]
+    environment:
+      JAVA_TOOL_OPTIONS: -Xms64m -Xmx192m
+  eureka-server:
+    ports: !override ["127.0.0.1:18761:8761"]
+    environment:
+      JAVA_TOOL_OPTIONS: -Xms64m -Xmx192m
+  authorization-server:
+    ports: !override ["127.0.0.1:19000:9000"]
+    environment:
+      JAVA_TOOL_OPTIONS: -Xms64m -Xmx256m
+  batch-init:
+    environment:
+      <<: *validacion
+      SPRING_SQL_INIT_MODE: always
+      SPRING_BATCH_JDBC_INITIALIZE_SCHEMA: always
+  core-banking-service:
+    environment:
+      <<: *validacion
+  payment-service:
+    environment:
+      <<: *validacion
+  customer-service:
+    environment:
+      <<: *validacion
+      CUSTOMER_SQL_INIT_MODE: always
+  bff-web-service:
+    ports: !override ["127.0.0.1:18082:8082"]
+    environment:
+      <<: *validacion
+  bff-mobile-service:
+    ports: !override ["127.0.0.1:18083:8083"]
+    environment:
+      <<: *validacion
+  bff-atm-service:
+    ports: !override ["127.0.0.1:18084:8084"]
+    environment:
+      <<: *validacion

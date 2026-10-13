@@ -1,0 +1,85 @@
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest personalUpdateChangesOnlyAuthorizedFieldsAndKeepsCreationDateAndProfile PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest concurrentPersonalAndProfileUpdatesPreserveBothChanges PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[3] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[4] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unsupportedProfilesAndEnumOrdinalsReturn400(String)[5] PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest duplicateEmailIgnoresCaseAndReturnsASafe409 PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest registersAndReadsThePersistedCustomerWithGeneratedIdentityAndNormalizedData PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest httpValidationRejectsInvalidPersonalInformationWithoutChangingTheCustomer PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest immutableAndUnrelatedFieldsCannotBeAssignedThroughJson PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest healthIsPublicWithTheRealDatasource PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest initializationAndCustomerWritesPreserveExistingDataAndForeignTables PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest malformedJsonIdentifiersAndMissingNamesReturn400 PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest duplicateEmailDuringUpdateLeavesAllOriginalFieldsUnchanged PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest unknownCustomersReturn404ForEveryReadAndUpdate PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest profileReadAndUpdatePreservePersonalInformation PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest concurrentRegistrationsWithTheSameEmailCreateOnlyOneCustomer PASS
+cl.duoc.bancoxyz.customer.CustomerIntegrationTest realSchemaConstraintsProtectTheTableAndCaseInsensitiveUniqueness PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest realAtmAndPaymentTokensAreForbiddenAndCannotAlterCustomers PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest realWebAndMobileTokensCanUseAllFiveCustomerEndpoints PASS
+cl.duoc.bancoxyz.customer.CustomerOAuth2IntegrationTest missingMalformedAndInvalidSignaturesAreUnauthorizedAndHealthIsPublic PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[3] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest otherScopesCannotReachCustomerOperations(String)[4] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest absentOrInvalidSimulatedTokensAreUnauthorized(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest absentOrInvalidSimulatedTokensAreUnauthorized(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest undefinedEndpointsAndMethodsAreDenied PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest allowedScopesCanUseAllFiveEndpoints(String)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest allowedScopesCanUseAllFiveEndpoints(String)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerSecurityTest databaseErrorsDoNotExposeInternalDetails PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidIdentifiersCannotReadOrUpdateCustomers PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest profileUpdateRequiresAProfile PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest registrationRequiresABusinessProfile PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest missingInformationCannotCreateOrUpdateACustomer PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[1] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[2] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[3] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[4] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[5] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[6] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[7] PASS
+cl.duoc.bancoxyz.customer.CustomerServiceTest invalidPersonalDataCannotReachTheDatabase(PersonalInformation)[8] PASS
+Tests run: 44 Failures: 0 Errors: 0 Skipped: 0
+RESULTADO: PASS; casos distintos de la seleccion, no adicionales al reactor.
+healthy 002528533a49ad078feb12154f4b39b3b604bcd072279f3770fa311e9a70bb76
+CUSTOMER_SQL_INIT_MODE=always
+          table_name           
+-------------------------------
+ banking_events
+ batch_job_execution
+ batch_job_execution_context
+ batch_job_execution_params
+ batch_job_instance
+ batch_step_execution
+ batch_step_execution_context
+ clientes
+ cuentas
+ intereses_mensuales
+ movimientos_anuales
+ operaciones_cuenta
+ processed_events
+ resumen_transacciones_diarias
+ transacciones_procesadas
+ withdrawal_transactions
+(16 rows)
+
+ count 
+-------
+     0
+(1 row)
+
+POST http://127.0.0.1:38082/api/bff/web/customers HTTP=201
+{"customerId":1,"firstName":"Cliente","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"ESTANDAR","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:33.299787Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"ESTANDAR","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:33.299787Z"}
+PUT http://127.0.0.1:38082/api/bff/web/customers/1 HTTP=200
+{"customerId":1,"firstName":"Cliente Actualizado","lastName":"Academico","email":"etf_s9@example.invalid","phone":"+56912345678","profile":"ESTANDAR","createdAt":"2026-10-12T21:32:33.299787Z","updatedAt":"2026-10-12T21:32:34.499178Z"}
+GET http://127.0.0.1:38082/api/bff/web/customers/1/profile HTTP=200
+{"customerId":1,"profile":"ESTANDAR","updatedAt":"2026-10-12T21:32:34.499178Z"}
+PUT http://127.0.0.1:38082/api/bff/web/customers/1/profile HTTP=200
+{"customerId":1,"profile":"PREFERENTE","updatedAt":"2026-10-12T21:32:34.585080Z"}
+GET http://127.0.0.1:38083/api/bff/mobile/customers/1 HTTP=200
+{"customerId":1,"name":"Cliente Actualizado Academico","profile":"PREFERENTE"}

@@ -1,0 +1,404 @@
+EVIDENCIA: Tests Maven
+FECHA: 2026-10-05T16:39:05-03:00
+OBJETIVO: Validar la suite completa
+COMANDO: mvn test
+
+RESULTADO REAL:
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Banco XYZ - Semana 8                                               [pom]
+[INFO] shared-events                                                      [jar]
+[INFO] authorization-server                                               [jar]
+[INFO] config-server                                                      [jar]
+[INFO] eureka-server                                                      [jar]
+[INFO] core-banking-service                                               [jar]
+[INFO] bff-web-service                                                    [jar]
+[INFO] bff-mobile-service                                                 [jar]
+[INFO] bff-atm-service                                                    [jar]
+[INFO] 
+[INFO] --------------< cl.duoc.bancoxyz:banco-xyz-microservices >--------------
+[INFO] Building Banco XYZ - Semana 8 1.0.0                                [1/9]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:shared-events >-------------------
+[INFO] Building shared-events 1.0.0                                       [2/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ shared-events ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ shared-events ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/shared-events/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ shared-events ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ shared-events ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] ---------------< cl.duoc.bancoxyz:authorization-server >----------------
+[INFO] Building authorization-server 1.0.0                                [3/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ authorization-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ authorization-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ authorization-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/authorization-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ authorization-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ authorization-server ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.authorization.AuthorizationServerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.784 s -- in cl.duoc.bancoxyz.authorization.AuthorizationServerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:config-server >-------------------
+[INFO] Building config-server 1.0.0                                       [4/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ config-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ config-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ config-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/config-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ config-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ config-server ---
+[INFO] 
+[INFO] -------------------< cl.duoc.bancoxyz:eureka-server >-------------------
+[INFO] Building eureka-server 1.0.0                                       [5/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ eureka-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ eureka-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ eureka-server ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/eureka-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ eureka-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ eureka-server ---
+[INFO] 
+[INFO] ---------------< cl.duoc.bancoxyz:core-banking-service >----------------
+[INFO] Building core-banking-service 1.0.0                                [6/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ core-banking-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ core-banking-service ---
+[INFO] Copying 3 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ core-banking-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ core-banking-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 s -- in cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest
+[INFO] Running cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.997 s -- in cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest
+[INFO] Running cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s -- in cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest
+[INFO] Running cl.duoc.bancoxyz.core.CoreSecurityTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.324 s -- in cl.duoc.bancoxyz.core.CoreSecurityTest
+[INFO] Running cl.duoc.bancoxyz.core.kafka.AsyncWithdrawalServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in cl.duoc.bancoxyz.core.kafka.AsyncWithdrawalServiceTest
+[INFO] Running cl.duoc.bancoxyz.config.BankDataSkipPolicyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in cl.duoc.bancoxyz.config.BankDataSkipPolicyTest
+[INFO] Running cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.03 s -- in cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.708 s -- in cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest
+[INFO] Running cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.532 s -- in cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:bff-web-service >------------------
+[INFO] Building bff-web-service 1.0.0                                     [7/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-web-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-web-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-web-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/bff-web-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-web-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-web-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.web.WebResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.123 s -- in cl.duoc.bancoxyz.web.WebResilience4jTest
+[INFO] Running cl.duoc.bancoxyz.web.WebBearerPropagationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s -- in cl.duoc.bancoxyz.web.WebBearerPropagationTest
+[INFO] Running cl.duoc.bancoxyz.web.WebSecurityTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.630 s -- in cl.duoc.bancoxyz.web.WebSecurityTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------< cl.duoc.bancoxyz:bff-mobile-service >-----------------
+[INFO] Building bff-mobile-service 1.0.0                                  [8/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-mobile-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-mobile-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-mobile-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/bff-mobile-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-mobile-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-mobile-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileSecurityTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.017 s -- in cl.duoc.bancoxyz.mobile.MobileSecurityTest
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileBearerPropagationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 s -- in cl.duoc.bancoxyz.mobile.MobileBearerPropagationTest
+[INFO] Running cl.duoc.bancoxyz.mobile.MobileResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.485 s -- in cl.duoc.bancoxyz.mobile.MobileResilience4jTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------------< cl.duoc.bancoxyz:bff-atm-service >------------------
+[INFO] Building bff-atm-service 1.0.0                                     [9/9]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bff-atm-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bff-atm-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bff-atm-service ---
+[INFO] skip non existing resourceDirectory /home/francisco/proyecto/BACKEND III/SEMANA 8/Exp3_S8_Francisco_Henriquez/proyecto/bff-atm-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bff-atm-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ bff-atm-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cl.duoc.bancoxyz.atm.AtmSecurityTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.918 s -- in cl.duoc.bancoxyz.atm.AtmSecurityTest
+[INFO] Running cl.duoc.bancoxyz.atm.AtmBffControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s -- in cl.duoc.bancoxyz.atm.AtmBffControllerTest
+[INFO] Running cl.duoc.bancoxyz.atm.AtmResilience4jTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.481 s -- in cl.duoc.bancoxyz.atm.AtmResilience4jTest
+[INFO] Running cl.duoc.bancoxyz.atm.AtmBearerPropagationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s -- in cl.duoc.bancoxyz.atm.AtmBearerPropagationTest
+[INFO] Running cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 s -- in cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Banco XYZ - Semana 8 1.0.0:
+[INFO] 
+[INFO] Banco XYZ - Semana 8 ............................... SUCCESS [  0.001 s]
+[INFO] shared-events ...................................... SUCCESS [  0.641 s]
+[INFO] authorization-server ............................... SUCCESS [  6.973 s]
+[INFO] config-server ...................................... SUCCESS [  0.142 s]
+[INFO] eureka-server ...................................... SUCCESS [  0.160 s]
+[INFO] core-banking-service ............................... SUCCESS [ 35.632 s]
+[INFO] bff-web-service .................................... SUCCESS [  7.976 s]
+[INFO] bff-mobile-service ................................. SUCCESS [  6.461 s]
+[INFO] bff-atm-service .................................... SUCCESS [  6.492 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:04 min
+[INFO] Finished at: 2026-10-05T16:40:10-03:00
+[INFO] ------------------------------------------------------------------------
+cl.duoc.bancoxyz.authorization.AuthorizationServerTest {'tests': 8, 'failures': 0, 'errors': 0, 'skipped': 0}
+  tokenEndpointRejectsScopeNotRegisteredForClient: PASS
+  resourceServerRejectsWrongIssuerAndTamperedSignature: PASS
+  registersChannelClientsWithExclusiveScopes: PASS
+  publishedJwkValidatesAccessTokenForResourceServer: PASS
+  contextLoads: PASS
+  jwksEndpointExposesOnlyPublicRsaKey: PASS
+  clientCredentialsIssuesSignedJwtAccessToken: PASS
+  tokenEndpointRejectsInvalidClientSecret: PASS
+cl.duoc.bancoxyz.atm.AtmBearerPropagationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  propagatesAuthenticatedBearerTokenToCore: PASS
+cl.duoc.bancoxyz.atm.AtmBffControllerTest {'tests': 3, 'failures': 0, 'errors': 0, 'skipped': 0}
+  withdrawReturnsServiceUnavailableWhenKafkaPublicationTimesOut: PASS
+  withdrawReturnsServiceUnavailableWhenKafkaPublicationFails: PASS
+  withdrawPublishesKafkaEventAndAcceptsPendingTransaction: PASS
+cl.duoc.bancoxyz.atm.AtmResilience4jTest {'tests': 3, 'failures': 0, 'errors': 0, 'skipped': 0}
+  circuitBreakerStartsClosedAndAllowsSuccessfulCall: PASS
+  circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed: PASS
+  circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits: PASS
+cl.duoc.bancoxyz.atm.AtmSecurityTest {'tests': 9, 'failures': 0, 'errors': 0, 'skipped': 0}
+  authorizedWithdrawalKeepsKafkaTimeoutResponse: PASS
+  rejectsOtherChannelScopes: PASS
+  allowsMatchingScope: PASS
+  authorizedWithdrawalKeepsAcceptedPendingResponse: PASS
+  authorizedWithdrawalKeepsKafkaFailureResponse: PASS
+  rejectsInvalidBearerToken: PASS
+  rejectsRequestsWithoutToken: PASS
+  convertsBearerTokenScopeUsingResourceServer: PASS
+  legacyLoginEndpointIsRemoved: PASS
+cl.duoc.bancoxyz.atm.kafka.AsyncWithdrawalProducerTest {'tests': 5, 'failures': 0, 'errors': 0, 'skipped': 0}
+  publishRestoresInterruptFlagWhenInterrupted: PASS
+  publishFailsWhenKafkaDoesNotAcknowledgeWithinTimeout: PASS
+  publishFailsWhenKafkaSendThrowsImmediately: PASS
+  publishSucceedsWhenKafkaAcknowledgesMessage: PASS
+  publishFailsWhenKafkaRejectsMessage: PASS
+cl.duoc.bancoxyz.mobile.MobileBearerPropagationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  propagatesAuthenticatedBearerTokenToCore: PASS
+cl.duoc.bancoxyz.mobile.MobileResilience4jTest {'tests': 3, 'failures': 0, 'errors': 0, 'skipped': 0}
+  circuitBreakerStartsClosedAndAllowsSuccessfulCall: PASS
+  circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed: PASS
+  circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits: PASS
+cl.duoc.bancoxyz.mobile.MobileSecurityTest {'tests': 6, 'failures': 0, 'errors': 0, 'skipped': 0}
+  rejectsOtherChannelScopes: PASS
+  allowsMatchingScope: PASS
+  rejectsInvalidBearerToken: PASS
+  rejectsRequestsWithoutToken: PASS
+  convertsBearerTokenScopeUsingResourceServer: PASS
+  legacyLoginEndpointIsRemoved: PASS
+cl.duoc.bancoxyz.web.WebBearerPropagationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  propagatesAuthenticatedBearerTokenToCore: PASS
+cl.duoc.bancoxyz.web.WebResilience4jTest {'tests': 3, 'failures': 0, 'errors': 0, 'skipped': 0}
+  circuitBreakerStartsClosedAndAllowsSuccessfulCall: PASS
+  circuitBreakerRecoversThroughHalfOpenAndReturnsToClosed: PASS
+  circuitBreakerOpensAfterConfiguredFailuresAndShortCircuits: PASS
+cl.duoc.bancoxyz.web.WebSecurityTest {'tests': 6, 'failures': 0, 'errors': 0, 'skipped': 0}
+  rejectsOtherChannelScopes: PASS
+  allowsMatchingScope: PASS
+  rejectsInvalidBearerToken: PASS
+  rejectsRequestsWithoutToken: PASS
+  convertsBearerTokenScopeUsingResourceServer: PASS
+  legacyLoginEndpointIsRemoved: PASS
+cl.duoc.bancoxyz.batch.AnnualMovementsStepIntegrationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeProcesarStepAnualSinGenerarArchivoDeSalida: PASS
+cl.duoc.bancoxyz.batch.DailyTransactionsJobIntegrationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeProcesarDatasetDailyHistorico: PASS
+cl.duoc.bancoxyz.batch.MonthlyInterestJobIntegrationTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeProcesarDatasetMonthlyHistorico: PASS
+cl.duoc.bancoxyz.config.BankDataSkipPolicyTest {'tests': 4, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debePermitirInvalidDataException: PASS
+  noDebePermitirExcepcionGenerica: PASS
+  debePermitirFlatFileParseException: PASS
+  noDebePermitirSkipAlAlcanzarLimite: PASS
+cl.duoc.bancoxyz.core.CoreSecurityTest {'tests': 4, 'failures': 0, 'errors': 0, 'skipped': 0}
+  acceptsBearerTokenPropagatedByBff: PASS
+  allowsAuthenticatedOAuth2Token: PASS
+  rejectsInvalidBearerToken: PASS
+  rejectsDirectBankingAccessWithoutToken: PASS
+cl.duoc.bancoxyz.core.kafka.AsyncWithdrawalServiceTest {'tests': 1, 'failures': 0, 'errors': 0, 'skipped': 0}
+  ignoresAnEventAlreadyProcessed: PASS
+cl.duoc.bancoxyz.processor.AnnualMovementProcessorTest {'tests': 11, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeRechazarSignosOtiposInvalidos(String, String)[1]: PASS
+  debeRechazarSignosOtiposInvalidos(String, String)[2]: PASS
+  debeRechazarSignosOtiposInvalidos(String, String)[3]: PASS
+  debeRechazarSignosOtiposInvalidos(String, String)[4]: PASS
+  debeRechazarSignosOtiposInvalidos(String, String)[5]: PASS
+  debeAceptarMovimientosYformatosLegacy(String, String, String)[1]: PASS
+  debeAceptarMovimientosYformatosLegacy(String, String, String)[2]: PASS
+  debeAceptarMovimientosYformatosLegacy(String, String, String)[3]: PASS
+  debeAceptarMovimientosYformatosLegacy(String, String, String)[4]: PASS
+  debeRechazarFechaInvalida(String)[1]: PASS
+  debeRechazarFechaInvalida(String)[2]: PASS
+cl.duoc.bancoxyz.processor.DailyTransactionProcessorTest {'tests': 12, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeRechazarDuplicadoPersistido: PASS
+  debeRechazarMontoOtipoNoPermitido(String, String)[1]: PASS
+  debeRechazarMontoOtipoNoPermitido(String, String)[2]: PASS
+  debeRechazarMontoOtipoNoPermitido(String, String)[3]: PASS
+  debeTransformarTransaccionValidaConFormatosLegacy(String)[1]: PASS
+  debeTransformarTransaccionValidaConFormatosLegacy(String)[2]: PASS
+  debeTransformarTransaccionValidaConFormatosLegacy(String)[3]: PASS
+  debeTransformarTransaccionValidaConFormatosLegacy(String)[4]: PASS
+  debePropagarErrorTemporalParaRetry: PASS
+  debeRechazarDuplicadoEnMismaEjecucion: PASS
+  debeRechazarFechaInvalida(String)[1]: PASS
+  debeRechazarFechaInvalida(String)[2]: PASS
+cl.duoc.bancoxyz.processor.MonthlyInterestProcessorTest {'tests': 8, 'failures': 0, 'errors': 0, 'skipped': 0}
+  debeCalcularInteresParaCuentaPrestamo: PASS
+  debeCalcularInteresParaCuentaAhorro: PASS
+  debeRechazarDatosNoPermitidos(String, String, String)[1]: PASS
+  debeRechazarDatosNoPermitidos(String, String, String)[2]: PASS
+  debeRechazarDatosNoPermitidos(String, String, String)[3]: PASS
+  debeRechazarDatosNoPermitidos(String, String, String)[4]: PASS
+  debeRechazarDatosNoPermitidos(String, String, String)[5]: PASS
+  debeRechazarDatosNoPermitidos(String, String, String)[6]: PASS
+Tests run: 92
+Failures: 0
+Errors: 0
+Skipped: 0
+RESULTADO: PASS

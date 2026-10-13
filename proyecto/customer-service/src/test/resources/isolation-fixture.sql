@@ -1,0 +1,16 @@
+CREATE TABLE cuentas (id INTEGER PRIMARY KEY, dato VARCHAR(40) NOT NULL);
+CREATE TABLE operaciones_cuenta (id INTEGER PRIMARY KEY, dato VARCHAR(40) NOT NULL);
+CREATE TABLE withdrawal_transactions (id INTEGER PRIMARY KEY, dato VARCHAR(40) NOT NULL);
+CREATE TABLE banking_events (id INTEGER PRIMARY KEY, dato VARCHAR(40) NOT NULL);
+CREATE TABLE intereses_mensuales (id INTEGER PRIMARY KEY, dato VARCHAR(40) NOT NULL);
+CREATE TABLE transacciones_procesadas (id INTEGER PRIMARY KEY, dato VARCHAR(40) NOT NULL);
+CREATE TABLE movimientos_anuales (id INTEGER PRIMARY KEY, dato VARCHAR(40) NOT NULL);
+CREATE TABLE resumen_transacciones_diarias (id INTEGER PRIMARY KEY, dato VARCHAR(40) NOT NULL);
+INSERT INTO cuentas VALUES (1, 'Dato aislado previo');
+INSERT INTO operaciones_cuenta VALUES (1, 'Dato aislado previo');
+INSERT INTO withdrawal_transactions VALUES (1, 'Dato aislado previo');
+INSERT INTO banking_events VALUES (1, 'Dato aislado previo');
+INSERT INTO intereses_mensuales VALUES (1, 'Dato aislado previo');
+INSERT INTO transacciones_procesadas VALUES (1, 'Dato aislado previo');
+INSERT INTO movimientos_anuales VALUES (1, 'Dato aislado previo');
+INSERT INTO resumen_transacciones_diarias VALUES (1, 'Dato aislado previo');

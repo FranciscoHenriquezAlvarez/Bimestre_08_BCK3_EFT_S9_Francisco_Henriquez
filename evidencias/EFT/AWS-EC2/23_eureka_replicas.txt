@@ -1,0 +1,34 @@
+=== REGISTRO DE SERVICIOS EN EUREKA ===
+=== VERIFICACION 1 ===
+CUSTOMER-SERVICE: 2 UP, 2 identificadores distintos
+  ID: customer-service:865c5ae4d494:8086
+  ID: customer-service:bff0692aeeef:8086
+CORE-BANKING-SERVICE: 2 UP, 2 identificadores distintos
+  ID: core-banking-service:9fa1295d17dc:8081
+  ID: core-banking-service:cd62dac794a1:8081
+PAYMENT-SERVICE: 2 UP, 2 identificadores distintos
+  ID: payment-service:bce3c9032755:8085
+  ID: payment-service:fb3a0d45d261:8085
+EUREKA: 6 INSTANCIAS BANCARIAS REGISTRADAS Y UP
+=== CONTENEDORES AWS ===
+NAMES                           STATUS
+etf_s9-payment-service-2        Up About a minute (healthy)
+etf_s9-core-banking-service-2   Up 2 minutes (healthy)
+etf_s9-customer-service-2       Up 3 minutes (healthy)
+etf_s9-bff-atm-service-1        Up 5 minutes (healthy)
+etf_s9-bff-mobile-service-1     Up 6 minutes (healthy)
+etf_s9-bff-web-service-1        Up 7 minutes (healthy)
+etf_s9-payment-service-1        Up 8 minutes (healthy)
+etf_s9-core-banking-service-1   Up 10 minutes (healthy)
+etf_s9-customer-service-1       Up 11 minutes (healthy)
+etf_s9-authorization-server-1   Up 28 minutes (healthy)
+etf_s9-eureka-server-1          Up 35 minutes (healthy)
+etf_s9-config-server-1          Up 35 minutes (healthy)
+etf_s9-postgres-1               Up 39 minutes (healthy)
+etf_s9-kafka-1                  Up 39 minutes (healthy)
+=== RECURSOS AWS ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       3.8Gi       231Mi        21Mi       3.9Gi       3.8Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        28G  7.6G   21G  28% /

@@ -1,0 +1,4 @@
+=== LOGS KAFKA PARA TX_OK=e1f51bbc-3167-4973-bbfc-a083e5b4f56a ===
+core-banking-service-1  | 2026-09-29T01:06:46.813Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=2 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 eventId=dd2f7cc5-a068-40b9-bbe9-051d264fd44f transactionId=e1f51bbc-3167-4973-bbfc-a083e5b4f56a
+core-banking-service-1  | 2026-09-29T01:06:46.841Z  INFO 1 --- [core-banking-service] [ntainer#0-2-C-1] c.d.b.core.kafka.AsyncWithdrawalService  : [Banking] Withdrawal completed accountId=104 transactionId=e1f51bbc-3167-4973-bbfc-a083e5b4f56a
+bff-atm-service-1       | 2026-09-29T01:06:46.792Z  INFO 1 --- [bff-atm-service] [vice-producer-1] c.d.b.atm.kafka.AsyncWithdrawalProducer  : [Kafka][Producer] WithdrawalRequested eventId=dd2f7cc5-a068-40b9-bbe9-051d264fd44f transactionId=e1f51bbc-3167-4973-bbfc-a083e5b4f56a

@@ -1,0 +1,13 @@
+EVIDENCIA: Resultado del retiro
+FECHA: 2026-10-05T16:54:39-03:00
+OBJETIVO: Esperar estado terminal y verificar saldo
+COMANDO: GET /api/bff/atm/accounts/transactions/$TRANSACTION_ID; SELECT saldo
+
+RESULTADO REAL:
+Intento: 1
+HTTP status: 200
+{"transactionId":"2bf0e66c-fa42-427d-8819-939b14b6ede1","accountId":102,"amount":10000.00,"status":"COMPLETED","finalBalance":200.00,"rejectionReason":null,"updatedAt":"2026-10-05T19:54:20.161248Z"}
+Estado final: COMPLETED
+Saldo antes: 10200.00
+Saldo después: 200.00
+RESULTADO: PASS

@@ -1,0 +1,16 @@
+EVIDENCIA: Flujo Kafka
+FECHA: 2026-10-05T16:55:39-03:00
+OBJETIVO: Relacionar publicación, consumo y resultado
+COMANDO: docker compose logs --no-color bff-atm-service core-banking-service; filtro TRANSACTION_ID
+
+RESULTADO REAL:
+bff-atm-service-1  | 2026-10-05T19:54:19.797Z  INFO 1 --- [bff-atm-service] [nio-8084-exec-7] c.d.b.atm.kafka.AsyncWithdrawalProducer  : [Kafka][Producer] WithdrawalRequested eventId=cf47d1cb-6d30-48af-9472-bb19e10d52e5 transactionId=2bf0e66c-fa42-427d-8819-939b14b6ede1
+core-banking-service-1  | 2026-10-05T19:54:20.028Z  INFO 1 --- [core-banking-service] [ntainer#0-0-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Consumer] partition=0 thread=org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 eventId=cf47d1cb-6d30-48af-9472-bb19e10d52e5 transactionId=2bf0e66c-fa42-427d-8819-939b14b6ede1
+core-banking-service-1  | 2026-10-05T19:54:20.190Z  INFO 1 --- [core-banking-service] [ntainer#0-0-C-1] c.d.b.core.kafka.AsyncWithdrawalService  : [Banking] Withdrawal completed accountId=102 transactionId=2bf0e66c-fa42-427d-8819-939b14b6ede1
+core-banking-service-1  | 2026-10-05T19:54:20.717Z  INFO 1 --- [core-banking-service] [ntainer#0-0-C-1] c.d.b.c.k.WithdrawalRequestedConsumer    : [Kafka][Producer] bank.withdrawal.completed transactionId=2bf0e66c-fa42-427d-8819-939b14b6ede1
+     event_type      |            transaction_id            | account_id |  amount  
+---------------------+--------------------------------------+------------+----------
+ WithdrawalRequested | 2bf0e66c-fa42-427d-8819-939b14b6ede1 |        102 | 10000.00
+ WithdrawalCompleted | 2bf0e66c-fa42-427d-8819-939b14b6ede1 |        102 | 10000.00
+(2 rows)
+

@@ -1,0 +1,28 @@
+EVIDENCIA VERIFICACION FINAL - SEMANA 5
+
+ESTADO POSTGRESQL
+NAME                 IMAGE         COMMAND                  SERVICE    CREATED          STATUS                    PORTS
+banco-xyz-postgres   postgres:16   "docker-entrypoint.s…"   postgres   21 minutes ago   Up 21 minutes (healthy)   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp
+
+PUERTO HTTPS
+LISTEN 0      100                 *:8443             *:*    users:(("java",pid=249075,fd=19))     
+
+CONTEOS POSTGRESQL
+          tabla           | registros 
+--------------------------+-----------
+ transacciones_procesadas |       387
+ intereses_mensuales      |        50
+ movimientos_anuales      |       289
+(3 rows)
+
+
+EVIDENCIAS GENERADAS
+01_compilacion_https.txt
+02_certificado_https.txt
+03_seguridad_web.txt
+04_seguridad_mobile.txt
+05_seguridad_atm.txt
+06_autorizacion_roles.txt
+07_atm_retiro_https.txt
+08_verificacion_final.txt
+09_pruebas_automatizadas.txt

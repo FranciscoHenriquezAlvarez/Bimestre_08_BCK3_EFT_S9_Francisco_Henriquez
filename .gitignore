@@ -1,0 +1,12 @@
+target/
+**/target/
+logs/
+*.log
+.idea/
+.vscode/
+*.tmp
+*.bak
+*.old
+*.orig
+*Zone.Identifier*
+.DS_Store

@@ -1,0 +1,10 @@
+EVIDENCIA: 16_core_token_valido.txt
+FECHA: 2026-10-05T16:53:57-03:00
+OBJETIVO: Comprobar HTTP 200
+COMANDO: GET http://localhost:8081/api/core/accounts/102/balance; Bearer en memoria cuando corresponde
+
+RESULTADO REAL:
+Intento: 1
+HTTP status: 200
+{"accountId":102,"balance":10200.00}
+RESULTADO: PASS

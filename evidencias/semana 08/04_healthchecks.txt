@@ -1,0 +1,28 @@
+EVIDENCIA: Healthchecks
+FECHA: 2026-10-05T16:46:57-03:00
+OBJETIVO: Comprobar HTTP 200 y UP
+COMANDO: GET /actuator/health en siete servicios
+
+RESULTADO REAL:
+Puerto: 8888
+HTTP status: 200
+{"status":"UP"}
+Puerto: 8761
+HTTP status: 200
+{"status":"UP"}
+Puerto: 9000
+HTTP status: 200
+{"status":"UP"}
+Puerto: 8081
+HTTP status: 200
+{"status":"UP"}
+Puerto: 8082
+HTTP status: 200
+{"status":"UP"}
+Puerto: 8083
+HTTP status: 200
+{"status":"UP"}
+Puerto: 8084
+HTTP status: 200
+{"status":"UP"}
+RESULTADO: PASS
